@@ -1,1 +1,1 @@
-# AGATAE
+# AGATAE: ["Adrine", "Gor", "Arevik", "Tukhik", "Arusik", "Edgar"];
