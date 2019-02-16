@@ -40,3 +40,5 @@ class Lavaguynner extends Component {
 		)
 	}
 }
+
+export {Lavaguynner};
