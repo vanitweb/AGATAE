@@ -9,10 +9,10 @@ class TeacherPage extends Component{
     render() {
     return(
         <div className="">
-        
-        </div>      
- 
+        <Button color="danger">Danger!</Button>
+        </div>   
     )
   }
 }
+export default TeacherPage;
 
