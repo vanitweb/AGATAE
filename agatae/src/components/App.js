@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Header} from './Header/Header';
 import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import {Navbar} from './Navbar/Navbar';
 import {TeacherPage} from './TeacherPage/TeacherPage';
@@ -9,6 +10,7 @@ class App extends Component {
     return (
       <div className="App">
 		<Navbar />
+		<Header />
 		<Slider />
 		<TeacherPage />
 		<Lavaguynner />
