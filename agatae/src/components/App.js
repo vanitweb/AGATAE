@@ -5,12 +5,19 @@ import {Navbar} from './Navbar/Navbar';
 import {TeacherPage} from './TeacherPage/TeacherPage';
 import {Slider} from './Slider/Slider';
 
+import {observer} from 'mobx-react';
+import PropTypes from 'prop-types';
+
+import {UIStore} from '../stores/UIStore';
+
+@observer
 class App extends Component {
+	uiStore = new UIStore();
   render() {
     return (
       <div className="App">
-		<Navbar />
 		<Header />
+		<Navbar />
 		<Slider />
 		<TeacherPage />
 		<Lavaguynner />
