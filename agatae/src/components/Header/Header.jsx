@@ -14,7 +14,7 @@ class Header extends Component {
       	<Row>
       		<Col xs="2" sm="2">
       			<a href="#">
-      				<img src="https://banner2.kisspng.com/20180809/qrh/kisspng-teacher-graphic-design-logo-education-vector-graph-kumpulan-soal-jelang-un-2-17-tips-amp-trik-mengu-5b6cec422d8257.5302761115338650261864.jpg" alt="LOGO" /> 
+      				<img src="./public/favicon.ico" alt="LOGO" /> 
       			</a>
 			</Col>
       	</Row>
