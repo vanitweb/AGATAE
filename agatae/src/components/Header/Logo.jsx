@@ -5,6 +5,7 @@ import {
 	Col,
 	Media
 	} from 'reactstrap';
+import logo from '../../../assets/images/logo.png';
 
 
 class Logo extends Component {
@@ -12,7 +13,7 @@ class Logo extends Component {
     return (
       <Col xs="2" sm="2">
 		<a href="#">
-			<img src="../../../assets/images/logo.png" alt="LOGO" /> 
+			<img src={logo} width="32" height="32" alt="Logo" />
 		</a>
 	  </Col>
     );

@@ -5,7 +5,7 @@ import {
 	Col,
 	Media
 	} from 'reactstrap';
-import '../../../assets/styles/Header/Header.css';
+import logo from '../../../assets/styles/Header/Header.css';
 import {Logo} from './Logo';
 import {Sign} from './Sign';
 
