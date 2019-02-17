@@ -12,10 +12,16 @@ class Header extends Component {
     return (
       <Container>
       	<Row>
-      		<Col xs="2" sm="2">
+      		<Col xs="9" sm="9">
       			<a href="#">
-      				<img src="./public/favicon.ico" alt="LOGO" /> 
+      				<img src="../../../assets/images/logo.png" alt="LOGO" /> 
       			</a>
+			</Col>
+     		<Col xs="1" sm="1">
+      			<a href="#">Գրանցվել</a>
+			</Col>
+     		<Col xs="1" sm="1">
+      			<a href="#">Մուտք</a>
 			</Col>
       	</Row>
       </Container>
