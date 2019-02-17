@@ -3,7 +3,7 @@ import { Button } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import teacher_1 from "./images/teacher_1.jpg";
 import './css/style.css';
-import {MainTabs} from './MainTabs.js';
+/*import {MainTabs} from './MainTabs.js';*/
 
 class TeacherPage extends Component{
     render() {
@@ -29,9 +29,7 @@ class TeacherPage extends Component{
     <Col lg={true}><img src={teacher_1} width="250" height="300" alt="Your Teacher" rounded/></Col>
     <Col></Col>
   </Row>
-  <MainTabs/>
 </Container>
-   
     )
   }
 }
