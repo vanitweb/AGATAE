@@ -10,7 +10,7 @@ import {
 class Logo extends Component {
   render() {
     return (
-      <Col xs="9" sm="9">
+      <Col xs="1" sm="1">
 		<a href="#">
 			<img src="../../../assets/images/logo.png" alt="LOGO" /> 
 		</a>
