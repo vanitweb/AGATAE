@@ -5,11 +5,12 @@ import {Navbar} from './Navbar/Navbar';
 import {TeacherPage} from './TeacherPage/TeacherPage';
 import {Slider} from './Slider/Slider';
 
+import '../../assets/styles/App.css';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-		<Navbar />
 		<Header />
 		<Slider />
 		<TeacherPage />
