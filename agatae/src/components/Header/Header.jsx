@@ -17,6 +17,7 @@ class Header extends Component {
 		  <Container>
 			<Row>
 				<Logo />
+				<Col xs="7" sm="7"></Col>
 				<SignIn />
 				<SignUp />
 			</Row>
