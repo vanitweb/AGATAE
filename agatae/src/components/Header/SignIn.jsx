@@ -10,7 +10,7 @@ import {
 class SignIn extends Component {
   render() {
     return (
-      <Col xs="1" sm="1">
+      <Col xs="6" sm="6">
       	<a href="#">Մուտք</a>
 	  </Col>
     );

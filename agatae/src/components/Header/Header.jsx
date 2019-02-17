@@ -7,8 +7,7 @@ import {
 	} from 'reactstrap';
 import '../../../assets/styles/Header/Header.css';
 import {Logo} from './Logo';
-import {SignIn} from './SignIn';
-import {SignUp} from './SignUp';
+import {Sign} from './Sign';
 
 class Header extends Component {
   render() {
@@ -17,9 +16,7 @@ class Header extends Component {
 		  <Container>
 			<Row>
 				<Logo />
-				<Col xs="7" sm="7"></Col>
-				<SignIn />
-				<SignUp />
+				<Sign />
 			</Row>
 		  </Container>
 		</header>

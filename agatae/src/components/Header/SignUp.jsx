@@ -10,7 +10,7 @@ import {
 class SignUp extends Component {
   render() {
     return (
-      <Col xs="1" sm="1">
+      <Col xs="6" sm="6">
       	<a href="#">Գրանցվել</a>
 	  </Col>
     );
