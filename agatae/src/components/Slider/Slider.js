@@ -9,22 +9,22 @@ import {
 
 const items = [
   {
-    src: 'http://doctrinavita.ru/pluginfile.php/2/course/section/2/Top-Vakansii-na-2011-god-v-stranah-SNG-Ukraina-Rossija-Belorussija.jpg',
+    src: '../../../assets/images/Slider/education.jpg',
     altText: 'Կրթություն',
     caption: 'Կրթություն'
   },
   {
-    src: 'https://cs5.pikabu.ru/post_img/big/2015/09/23/10/1443024916_311901261.jpg',
+    src: '../../../assets/images/Slider/art.jpg',
     altText: 'Արվեստ',
     caption: 'Slide 2'
   },
   {
-    src: 'www.meme-arsenal.com/memes/a3fca2bf83160db761a707ad59579e0b.jpg',
+    src: '../../../assets/images/Slider/sport.jpg',
     altText: 'Սպորտ',
     caption: 'Սպորտ'
   },
   {
-    src: 'https://ec.europa.eu/sport/sites/sport/files/erasmus-plus-sport.jpg',
+    src: '../../../assets/images/Slider/other.jpg',
     altText: 'Slide 4',
     caption: 'Slide 4'
   }
