@@ -3,6 +3,7 @@ import './App.css'
 import {Header} from './Header/Header';
 import {Navbar} from './Navbar/Navbar';
 import {Content} from './Content/Content';
+import {Footer} from './Footer/Footer';
 import {Par} from './Par/Par';
 import {BrowserRouter, Route} from 'react-router-dom'
 
@@ -23,7 +24,7 @@ class App extends Component {
 	
 	
       </div>
-	  
+	  <Footer />
     </div>
     </BrowserRouter>
     );
