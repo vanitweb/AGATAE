@@ -5,20 +5,21 @@ import {
 	Col,
 	Media
 	} from 'reactstrap';
-
+import logo from '../../../assets/styles/Header/Header.css';
+import {Logo} from './Logo';
+import {Sign} from './Sign';
 
 class Header extends Component {
   render() {
     return (
-      <Container>
-      	<Row>
-      		<Col xs="2" sm="2">
-      			<a href="#">
-      				<img src="./public/favicon.ico" alt="LOGO" /> 
-      			</a>
-			</Col>
-      	</Row>
-      </Container>
+		<header>
+		  <Container>
+			<Row>
+				<Logo />
+				<Sign />
+			</Row>
+		  </Container>
+		</header>
     );
   }
 }

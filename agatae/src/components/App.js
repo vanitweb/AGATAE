@@ -6,11 +6,14 @@ import {Content} from './Content/Content';
 import {Par} from './Par/Par';
 import {BrowserRouter, Route} from 'react-router-dom'
 
+import '../../assets/styles/App.css';
+
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
       <div className="App">
+<<<<<<< HEAD
   		<Header />
   		<Navbar />
       <div>
@@ -19,6 +22,13 @@ class App extends Component {
 
 	
       
+=======
+		<Header />
+		<Navbar />
+		<Slider />
+		<TeacherPage />
+		<Lavaguynner />
+>>>>>>> 16393658f5ceb4eb44f5402c8660e882bc531f80
       </div>
 	  
     </div>
