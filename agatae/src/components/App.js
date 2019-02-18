@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
+import './App.css'
 import {Header} from './Header/Header';
-import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import {Navbar} from './Navbar/Navbar';
-import {TeacherPage} from './TeacherPage/TeacherPage';
-import {Slider} from './Slider/Slider';
+import {Content} from './Content/Content';
+import {Par} from './Par/Par';
+import {BrowserRouter, Route} from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
-		<Navbar />
-		<Header />
-		<Slider />
-		<TeacherPage />
-		<Lavaguynner />
+  		<Header />
+  		<Navbar />
+      <div>
+      <Route path='/glxavor'  component ={Content}/>
+      <Route com='/par'  component ={Par} />
+
+	
+      
       </div>
+	  
+    </div>
+    </BrowserRouter>
     );
   }
 }
