@@ -11,7 +11,7 @@ class Cards extends Component {
                 {arrayOfLavTeachers.map((item,i) => {
                     return (
 						<Card key={i}>
-							<CardImg top width="100%" src="arrayOfLavTeachers[i].photo"/>
+							<img top width="100%" src={arrayOfLavTeachers[i].photo}/>
 							<CardBody key={i}>
 								<CardTitle key={i}>{arrayOfLavTeachers[i].name}</CardTitle>
 								<CardSubtitle key={i}>{arrayOfLavTeachers[i].subject}</CardSubtitle>
