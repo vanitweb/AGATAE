@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import {Cards} from "./Cards";
-import art from '../../../assets/images/mix/art.png';
 
 
 class Lavaguynner extends Component {
 	arrayOfLavTeachers = [
 	{
-		photo:  {art},
+		photo: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180',
 		name: "Ադրինե Սեթաղյան",
 		subject: "Արվեստ",
 		aboutMe: "Անձնական ինֆորմացիա"
