@@ -1,14 +1,30 @@
-import React, { Component } from 'react';
-import { Tab, Tabs, TabList, TabPanel, Nav } from 'react-tabs';
-import Figure from 'react-bootstrap/Figure'
 import { Container, Row, Col } from 'reactstrap';
-
+import React, { Component } from 'react';
 
 
 class MainTabs extends Component {
+    state = {
+        toDoArray: [
+            'Email:myEmailExample@,mail.ru',
+            'Tel: (0322)4-56-98',
+            'Vanadzor: Shinararneri 15 Street',
+        ]
+    }
+
     render() {
         return (
-
+            <Container className="main2">
+            <Row>
+            <Col md={7}></Col>
+            <Col className="_liitem">
+			<ul>
+		  	{this.state.toDoArray.map(item =>{
+		  		return <li key = {item}>{item}</li>
+		  	})}
+		  	</ul>
+		  	</Col>
+		  	  </Row>
+</Container>
         )
     }
 }
