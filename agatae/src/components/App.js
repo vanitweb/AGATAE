@@ -1,9 +1,11 @@
+
 import React, { Component } from 'react';
 import './App.css'
 import {Header} from './Header/Header';
 import {Navbar} from './Navbar/Navbar';
 import {Content} from './Content/Content';
 import {Footer} from './Footer/Footer';
+import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import {Par} from './Par/Par';
 import {BrowserRouter, Route} from 'react-router-dom'
 
@@ -14,15 +16,11 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div className="App">
-
   		<Header />
   		<Navbar />
       <div>
       <Route path='/glxavor'  component ={Content}/>
-      <Route com='/par'  component ={Par} />
-
-	
-	
+      <Route com='/lavaguynner'  component ={Lavaguynner} />
       </div>
 	  <Footer />
     </div>
