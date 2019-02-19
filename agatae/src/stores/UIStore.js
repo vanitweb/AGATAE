@@ -4,22 +4,30 @@ import {extendObservable, computed} from 'mobx';
 class UIStore {
 	appProps = {
 		_teachers: [],
+		_teacherName: "",
+		_subjectName: ""
 	};
 	constructor() {
 		extendObservable(this, this.appProps);
 		this.init();
 	}
-	@computed get teachersData(teacherName) {
-		return this._teachers.filter(item => (item.name.substring(0, teacherName.length) === teacherName));
+	@computed get teachersData() {
+		return this._teachers.filter(item => (item.name.substring(0, this._teacherName.length) === this._teacherName));
 	}
-	@computed get subjectData(subjectName) {
-		return this._teachers.filter(item => (item.subject === subjectName));
+	@computed get subjectData() {
+		return this._teachers.filter(item => (item.subject === this._subjectName));
 	}
 	set teachersData(teachers) {
 		this._teachers = teachers;
 	}
+	set teacherName(teacher) {
+		this._teacherName = teacher;
+	}
+	set subjectName(subject) {
+		this._subjectName = subject;
+	}
 	init() {
-		teachersData = teachers;
+		this.teachersData = teachers;
 	}
 	
 }
