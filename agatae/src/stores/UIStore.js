@@ -1,5 +1,5 @@
 import {teachers} from '../data/data';
-import {extendObservable, action} from 'mobx';
+import {extendObservable, computed} from 'mobx';
 
 class UIStore {
 	appProps = {
@@ -9,8 +9,11 @@ class UIStore {
 		extendObservable(this, this.appProps);
 		this.init();
 	}
-	get teachersData(key) {
-		return this._teachers;
+	@computed get teachersData(teacherName) {
+		return this._teachers.filter(item => (item.name.substring(0, teacherName.length) === teacherName));
+	}
+	@computed get subjectData(subjectName) {
+		return this._teachers.filter(item => (item.subject === subjectName));
 	}
 	set teachersData(teachers) {
 		this._teachers = teachers;
@@ -18,5 +21,6 @@ class UIStore {
 	init() {
 		teachersData = teachers;
 	}
+	
 }
 export {UIStore};
