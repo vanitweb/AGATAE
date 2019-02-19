@@ -7,13 +7,16 @@ class UIStore {
 	};
 	constructor() {
 		extendObservable(this, this.appProps);
+		this.init();
 	}
-	getTeachers() {
-		this.teachers = teachers;
+	get teachersData(key) {
+		return this._teachers;
 	}
-	set teachers(teachers) {
+	set teachersData(teachers) {
 		this._teachers = teachers;
 	}
+	init() {
+		teachersData = teachers;
+	}
 }
-
 export {UIStore};

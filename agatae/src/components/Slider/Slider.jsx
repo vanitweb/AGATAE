@@ -6,25 +6,29 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import education from '../../../assets/images/Slider/education.jpg';
+import art from '../../../assets/images/Slider/art.jpg';
+import sport from '../../../assets/images/Slider/sport.jpg';
+import other from '../../../assets/images/Slider/other.jpg';
 
 const items = [
   {
-    src: '../../../assets/images/Slider/education.jpg',
+    src: education,
     altText: 'Կրթություն',
     caption: 'Կրթություն'
   },
   {
-    src: '../../../assets/images/Slider/art.jpg',
+    src: art,
     altText: 'Արվեստ',
     caption: 'Slide 2'
   },
   {
-    src: '../../../assets/images/Slider/sport.jpg',
+    src: sport,
     altText: 'Սպորտ',
     caption: 'Սպորտ'
   },
   {
-    src: '../../../assets/images/Slider/other.jpg',
+    src: other,
     altText: 'Slide 4',
     caption: 'Slide 4'
   }
