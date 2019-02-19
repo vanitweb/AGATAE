@@ -8,7 +8,7 @@ import {Footer} from './Footer/Footer';
 import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import {Par} from './Par/Par';
 import {BrowserRouter, Route} from 'react-router-dom'
-
+import {Slider} from './Slider/Slider';
 import '../../assets/styles/App.css';
 
 class App extends Component {
@@ -18,6 +18,7 @@ class App extends Component {
       <div className="App">
   		<Header />
   		<Navbar />
+      <Slider />
       <div>
       <Route path='/glxavor'  component ={Content}/>
       <Route com='/lavaguynner'  component ={Lavaguynner} />
