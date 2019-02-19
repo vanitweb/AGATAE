@@ -5,11 +5,11 @@ import teacher_1 from "./images/teacher_1.jpg";
 import './css/style.css';
 /*import {MainTabs} from './MainTabs.js';*/
 
-class TeacherPage extends Component{
+class TeacherPage extends Component {
     render() {
-    return(
-     
-<Container className="main">
+        return (
+
+            <Container className="main">
     <Row className="justify-content-lg-left">
     
     <Col xs={8}>
@@ -30,8 +30,9 @@ class TeacherPage extends Component{
     <Col></Col>
   </Row>
 </Container>
-    )
-  }
+
+        )
+    }
 }
 
-export {TeacherPage};
+export { TeacherPage };
