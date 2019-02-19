@@ -1,41 +1,48 @@
 import React, {Component} from 'react';
-import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
+import {Cards} from "./Cards";
 
 
 class Lavaguynner extends Component {
+	arrayOfLavTeachers = [
+	{
+		photo: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180',
+		name: "Ադրինե Սեթաղյան",
+		subject: "Արվեստ",
+		aboutMe: "Անձնական ինֆորմացիա"
+	},
+		{
+		photo: "../../assets/images/mix/education.png",
+		name: "Թուխիկ Ղարագյոզյան",
+		subject: "Կրթություն",
+		aboutMe: "Անձնական ինֆորմացիա"
+	},
+		{
+		photo: "../../assets/images/mix/science.jpg",
+		name: "Գոռ Մանուկյան",
+		subject: "Գիտություն",
+		aboutMe: "Անձնական ինֆորմացիա"
+	},
+		{
+		photo: "../../assets/images/mix/sport.jpg",
+		name: "Էդգար Նիկողոսյան",
+		subject: "Սպորտ",
+		aboutMe: "Անձնական ինֆորմացիա"
+	},
+		{
+		photo: "../../assets/images/mix/other.jpg",
+		name: "Արուսիկ Ափինյան",
+		subject: "Այլ",
+		aboutMe: "Անձնական ինֆորմացիա"
+	}
+];
+	
+	
+	
 	render() {
+		console.log(this.arrayOfLavTeachers);
 		return(
 			<div className="container">
-				<CardDeck>
-				  <Card>
-					<CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
-					<CardBody>
-					  <CardTitle>Card title</CardTitle>
-					  <CardSubtitle>Card subtitle</CardSubtitle>
-					  <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-					  <Button>Button</Button>
-					</CardBody>
-				  </Card>
-				  <Card>
-					<CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
-					<CardBody>
-					  <CardTitle>Card title</CardTitle>
-					  <CardSubtitle>Card subtitle</CardSubtitle>
-					  <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-					  <Button>Button</Button>
-					</CardBody>
-				  </Card>
-				  <Card>
-					<CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
-					<CardBody>
-					  <CardTitle>Card title</CardTitle>
-					  <CardSubtitle>Card subtitle</CardSubtitle>
-					  <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-					  <Button>Button</Button>
-					</CardBody>
-				  </Card>
-				</CardDeck>
-			
+				<Cards arrayOfLavTeachers={this.arrayOfLavTeachers}/>
 			</div>
 		)
 	}

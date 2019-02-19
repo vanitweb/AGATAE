@@ -5,26 +5,21 @@ import {
 	Col,
 	Media
 	} from 'reactstrap';
-
+import logo from '../../../assets/styles/Header/Header.css';
+import {Logo} from './Logo';
+import {Sign} from './Sign';
 
 class Header extends Component {
   render() {
     return (
-      <Container>
-      	<Row>
-      		<Col xs="9" sm="9">
-      			<a href="#">
-      				<img src="../../../assets/images/logo.png" alt="LOGO" /> 
-      			</a>
-			</Col>
-     		<Col xs="1" sm="1">
-      			<a href="#">Գրանցվել</a>
-			</Col>
-     		<Col xs="1" sm="1">
-      			<a href="#">Մուտք</a>
-			</Col>
-      	</Row>
-      </Container>
+		<header>
+		  <Container>
+			<Row>
+				<Logo />
+				<Sign />
+			</Row>
+		  </Container>
+		</header>
     );
   }
 }

@@ -1,11 +1,16 @@
-.nav {
-	grid-area: n;
-	background-color: burlywood;
-	padding-top: 20px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
 }
- .item a {
- 	color: white;
- }
- .item a.activeLink {
- 	color: gold;
- }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+}
