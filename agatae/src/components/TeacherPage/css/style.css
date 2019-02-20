@@ -32,9 +32,10 @@ body {
     margin-top: 20px
 }
 
-li{
+ li{
     font-size: 18px;
     list-style: none;
+    color: #222;
 }
 ._liitem li:nth-child(1):before{
     content: "";

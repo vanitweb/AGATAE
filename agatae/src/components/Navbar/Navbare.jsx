@@ -9,6 +9,7 @@ import {
 	FormGroup,
 	Input
 } from 'reactstrap';
+import logo from '../../../assets/images/logo.png';
 
 class Navbare extends React.Component {
   constructor(props) {
@@ -28,8 +29,10 @@ class Navbare extends React.Component {
   render() {
     return (
     <div>
-	<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  	<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+	<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="secondary">
+  	<Navbar.Brand href="#home">
+	<img src={logo} width="30" height="30" alt=""/>
+  	</Navbar.Brand>
   	<Navbar.Collapse id="responsive-navbar-nav">
 
        
@@ -73,7 +76,7 @@ class Navbare extends React.Component {
  <Form inline>
 	<FormGroup>
 		<Input type="input" name="search" placeholder="Search" />
-		<Button variant="success">Search</Button>
+		<Button variant="secondary">Search</Button>
 	</FormGroup>
 </Form>
     </Navbar.Collapse>
