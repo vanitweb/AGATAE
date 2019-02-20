@@ -11,7 +11,6 @@ const navs = [
 		name: "arvest",
 		options: ['Պար', 'Երգ', 'Երաժշտություն']
 	},
-]
-
+];
 
 export {navs};

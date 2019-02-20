@@ -1,11 +1,12 @@
 import {teachers} from '../data/data';
-import {extendObservable, computed} from 'mobx';
+import {extendObservable, computed, action} from 'mobx';
 
 class UIStore {
 	appProps = {
 		_teachers: [],
 		_teacherName: "",
-		_subjectName: ""
+		_subjectName: "",
+		navbarOpenedDropdown: ""
 	};
 	constructor() {
 		extendObservable(this, this.appProps);
@@ -28,6 +29,16 @@ class UIStore {
 	}
 	init() {
 		this.teachersData = teachers;
+	}
+	
+	@action
+	setOpenedDropdown = (name) => {
+		if(name === this.navbarOpenedDropdown) {
+			this.navbarOpenedDropdown = '';
+		} else {
+			this.navbarOpenedDropdown = name;
+		}
+		// this.navbarOpenedDropdown = name === this.navbarOpenedDropdown ? '' : name;
 	}
 	
 }
