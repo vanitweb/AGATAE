@@ -20,7 +20,7 @@ class App extends Component {
   		<Navbar />
       <div>
       <Route path='/glxavor'  component ={Content}/>
-      <Route com='/lavaguynner'  component ={Lavaguynner} />
+      <Route com='/par'  component ={Lavaguynner} />
       </div>
 	  <Footer />
     </div>
