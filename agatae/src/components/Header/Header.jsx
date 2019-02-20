@@ -18,7 +18,6 @@ class Header extends Component {
 		  <Container>
 			<Row>
 				<Logo />
-				<Search />
 				<SignIn />
 				<SignUp />
 			</Row>
