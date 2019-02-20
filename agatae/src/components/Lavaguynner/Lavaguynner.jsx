@@ -6,7 +6,7 @@ import science from '../../../assets/images/mix/science.jpg';
 import sport from '../../../assets/images/mix/sport.jpg';
 import kitchen from '../../../assets/images/mix/kitchen.jpg';
 import other from '../../../assets/images/mix/other.jpg';
-import './Lavaguynner.css';
+
 
 class Lavaguynner extends Component {
 	arrayOfLavTeachers = [

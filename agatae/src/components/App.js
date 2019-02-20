@@ -8,7 +8,7 @@ import {UIStore} from '../stores/UIStore';
 import './App.css';
 
 import {Header} from './Header/Header';
-import {Navbar} from './Navbar/Navbar';
+import {Navbare} from './Navbar/Navbare';
 import {Content} from './Content/Content';
 import {Footer} from './Footer/Footer';
 import {Lavaguynner} from './Lavaguynner/Lavaguynner';
@@ -28,7 +28,7 @@ class App extends Component {
       <BrowserRouter>
       <div className="App">
   		<Header />
-  		<Navbar />
+  		<Navbare />
       <Slider />
       <div>
       <Route path='/glxavor'  component ={Content}/>
