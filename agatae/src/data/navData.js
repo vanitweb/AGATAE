@@ -1,6 +1,6 @@
 const navs = [
 	{
-		name: "krtutyun",
+		name: "Կրթություն",
 		options: ['Հայերեն', 'Ռուսերեն', 'Անգլերեն'],
 	},
 	{

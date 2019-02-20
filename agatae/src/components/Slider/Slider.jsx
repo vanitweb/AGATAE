@@ -89,7 +89,7 @@ class Slider extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img  className="d-block w-100" src={item.src} alt={item.altText} />
+          <img  className="d-block w-100" height="500" src={item.src} alt={item.altText} />
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );
