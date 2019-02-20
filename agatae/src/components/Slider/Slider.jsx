@@ -7,9 +7,11 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import education from '../../../assets/images/Slider/education.jpg';
-import art from '../../../assets/images/Slider/art.jpg';
+import dance from '../../../assets/images/Slider/dance.jpg';
+import knitting from '../../../assets/images/Slider/knitting.jpg';
+import painting from '../../../assets/images/Slider/painting.jpg';
 import sport from '../../../assets/images/Slider/sport.jpg';
-import other from '../../../assets/images/Slider/other.jpg';
+
 
 const items = [
   {
@@ -18,21 +20,26 @@ const items = [
     caption: 'Կրթություն'
   },
   {
-    src: art,
+    src: dance,
     altText: 'Արվեստ',
-    caption: 'Slide 2'
+    caption: 'Արվեստ'
+  },
+  {
+    src: knitting,
+    altText: 'Այլ',
+    caption: 'Այլ'
+  },
+  {
+    src: painting,
+    altText: 'Արվեստ',
+    caption: 'Արվեստ'
   },
   {
     src: sport,
     altText: 'Սպորտ',
     caption: 'Սպորտ'
+
   },
-  {
-    src: other,
-    altText: 'Slide 4',
-    caption: 'Slide 4'
-  }
-  
 
 ];
 
@@ -82,7 +89,7 @@ class Slider extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
+          <img  className="d-block w-100" height="500" src={item.src} alt={item.altText} />
           <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );

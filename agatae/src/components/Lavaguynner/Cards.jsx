@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Button, CardImg, CardTitle, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
+import './Lavaguynner.css';
 
 
 class Cards extends Component {
@@ -10,13 +11,13 @@ class Cards extends Component {
             <CardDeck>
                 {arrayOfLavTeachers.map((item,i) => {
                     return (
-						<Card key={i}>
+						<Card key={i} style={{backgroundColor:'#FFFFD2'}}>
 							<CardImg top width="100%" src={arrayOfLavTeachers[i].photo}/>
-							<CardBody key={i}>
+							<CardBody key={i} >
 								<CardTitle key={i}>{arrayOfLavTeachers[i].name}</CardTitle>
 								<CardSubtitle key={i}>{arrayOfLavTeachers[i].subject}</CardSubtitle>
 
-								<Button key={i} color="info">{arrayOfLavTeachers[i].aboutMe}</Button>
+								<Button key={i} color="success" >{arrayOfLavTeachers[i].aboutMe}</Button>
 							</CardBody>
 						</Card>
 					)

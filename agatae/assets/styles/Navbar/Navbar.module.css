@@ -4,7 +4,7 @@
 	padding-top: 20px;
 }
  .item a {
- 	color: white;
+ 	color: white !important;
  }
  .item a.activeLink {
  	color: gold;

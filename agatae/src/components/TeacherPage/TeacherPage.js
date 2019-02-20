@@ -26,7 +26,7 @@ class TeacherPage extends Component {
     Vivamus bibendum ex diam, tempor rhoncus libero imperdiet ac.</p>
     <Button color="success"className="btn">Hertagrvel</Button>
     </Col>
-    <Col lg={true}><img src={teacher_1} width="250" height="300" alt="Your Teacher"/></Col>
+    <Col lg={true}><img className="teacherImage"src={teacher_1} width="250" height="300" alt="Your Teacher"/></Col>
     <MainTabs/>
     <Col>
     </Col>
