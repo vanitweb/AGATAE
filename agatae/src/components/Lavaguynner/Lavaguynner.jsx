@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {Cards} from "./Cards";
-import art from '../../../assets/images/mix/art.png';
-import education from '../../../assets/images/mix/education.png';
-import science from '../../../assets/images/mix/science.png';
-import sport from '../../../assets/images/mix/sport.png';
-import other from '../../../assets/images/mix/other.png';
+import art from '../../../assets/images/mix/art.jpg';
+import education from '../../../assets/images/mix/education.jpg';
+import science from '../../../assets/images/mix/science.jpg';
+import sport from '../../../assets/images/mix/sport.jpg';
+import kitchen from '../../../assets/images/mix/kitchen.jpg';
+import other from '../../../assets/images/mix/other.jpg';
+
 
 class Lavaguynner extends Component {
 	arrayOfLavTeachers = [
@@ -12,31 +14,25 @@ class Lavaguynner extends Component {
 		photo: art,
 		name: "Ադրինե Սեթաղյան",
 		subject: "Արվեստ",
-		aboutMe: "Անձնական ինֆորմացիա"
+		aboutMe: "Իմ մասին"
 	},
 		{
 		photo: education,
 		name: "Թուխիկ Ղարագյոզյան",
 		subject: "Կրթություն",
-		aboutMe: "Անձնական ինֆորմացիա"
+		aboutMe: "Իմ մասին"
 	},
 		{
 		photo: science,
 		name: "Գոռ Մանուկյան",
 		subject: "Գիտություն",
-		aboutMe: "Անձնական ինֆորմացիա"
+		aboutMe: "Իմ մասին"
 	},
 		{
 		photo: sport,
 		name: "Էդգար Նիկողոսյան",
 		subject: "Սպորտ",
-		aboutMe: "Անձնական ինֆորմացիա"
-	},
-		{
-		photo: other,
-		name: "Արուսիկ Ափինյան",
-		subject: "Այլ",
-		aboutMe: "Անձնական ինֆորմացիա"
+		aboutMe: "Իմ մասին"
 	}
 ];
 	
