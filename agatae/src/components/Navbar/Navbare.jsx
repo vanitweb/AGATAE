@@ -9,7 +9,10 @@ import {
 	FormGroup,
 	Input
 } from 'reactstrap';
-import logo from '../../../assets/images/logo.png';
+import logo from '../../../assets/images/LogoAgate.png';
+import {SignIn} from './SignIn';
+import {SignUp} from './SignUp';
+import {SighInButton} from './SighInButton';
 
 class Navbare extends React.Component {
   constructor(props) {
@@ -29,9 +32,10 @@ class Navbare extends React.Component {
   render() {
     return (
     <div>
+
 	<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="secondary">
   	<Navbar.Brand href="#home">
-	<img src={logo} width="30" height="30" alt=""/>
+	<img src={logo} width="100" height="35" alt=""/>
   	</Navbar.Brand>
   	<Navbar.Collapse id="responsive-navbar-nav">
 
@@ -79,9 +83,11 @@ class Navbare extends React.Component {
 		<Button variant="secondary">Search</Button>
 	</FormGroup>
 </Form>
+<SighInButton/>
+<SignUp/>
     </Navbar.Collapse>
-	</Navbar>
-	</div>
+  </Navbar>
+  </div>
     );
   }
 }

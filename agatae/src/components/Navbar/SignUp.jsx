@@ -3,18 +3,19 @@ import {
 	Container,
 	Row,
 	Col,
-	Media
+	Media,
+	Button
 	} from 'reactstrap';
 
 
-class SignIn extends Component {
+class SignUp extends Component {
   render() {
     return (
       <Col xs="1" sm="1">
-      	<a href="#">Մուտք</a>
+      	<a href="#">Գրանցվել</a>
 	  </Col>
     );
   }
 }
 
-export {SignIn};
+export {SignUp};
