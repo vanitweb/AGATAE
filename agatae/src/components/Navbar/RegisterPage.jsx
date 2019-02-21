@@ -6,9 +6,9 @@ import { FormControl, FormLabel} from 'react-bootstrap';
 import { Container, Row, Col,} from 'reactstrap';
 import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink,  } from 'reactstrap';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import {Messages} from '../Messages.js';
+import {Messages} from '../../Messages';
 
-class registerpage extends Component {
+class RegisterPage extends Component {
    state = {
       messages: Messages,
     }
@@ -67,4 +67,4 @@ class registerpage extends Component {
     );
   }
 }
-export default RegisterPage;
+export {RegisterPage};
