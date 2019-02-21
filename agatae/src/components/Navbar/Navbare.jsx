@@ -1,4 +1,7 @@
 import React from 'react';
+
+import {navs} from '../../configs/navData';
+import {NavbarDropdown} from './NavbarDropdown';
 import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 import {Lavaguynner} from '../Lavaguynner/Lavaguynner';
 import { Container, Row, Col } from 'reactstrap';
@@ -24,59 +27,27 @@ class Navbare extends React.Component {
     };
   }
 
-  toggle() {
+  toggle(e) {
+	console.log(e.target.getAttribute('data-name'));
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+      dropdownOpen: e.target.getAttribute('data-name')
     });
   }
   render() {
     return (
     <div>
-
 	<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="secondary">
   	<Navbar.Brand href="#home">
 	<img src={logo} width="100" height="35" alt=""/>
   	</Navbar.Brand>
-  	<Navbar.Collapse id="responsive-navbar-nav">
-
-       
-          <NavItem>
+  	<Navbar.Collapse id="responsive-navbar-nav">       
+        <NavItem>
             <NavLink href="/glxavor" active>Գլխավոր</NavLink>
-          </NavItem>
-          
-	<Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-    	<DropdownToggle nav caret>Կրթություն
-            </DropdownToggle>
-            	<DropdownMenu>
-		        	<NavLink href="/lavaguynner">Հայերեն</NavLink>
-		        	<NavLink href="/lavaguynner">Ռուսերեն</NavLink>
-		        	<NavLink href="/lavaguynner">Անգլերեն</NavLink>
-        		</DropdownMenu>
-	</Dropdown>
-         <Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-            <DropdownToggle nav caret>Արվեստ
-            </DropdownToggle>
-            <DropdownMenu>
-            <NavLink href="/lavaguynner">Պար</NavLink>
-            <NavLink href="/lavaguynner">Երգ</NavLink>
-            <NavLink href="/lavaguynner">Երաժշտություն</NavLink>
-            </DropdownMenu>
-          </Dropdown>
-		<Dropdown nav isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-            <DropdownToggle nav caret>Սպորտ
-            </DropdownToggle>
-            <DropdownMenu>
-              <NavLink href="/lavaguynner">Կառատե</NavLink>
-              <NavLink href="/lavaguynner">Ձյուդո</NavLink>
-              <NavLink href="/lavaguynner">Շախմատ</NavLink>
-            </DropdownMenu>
-          </Dropdown>
- 		<NavItem>
-            <NavLink href="#">Այլ</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#">Մեր մասին</NavLink>
-          </NavItem>
+        </NavItem>
+		{navs.map((nav)=> (
+			<NavbarDropdown nav={nav} />
+		))}
+		     
  <Form inline>
 	<FormGroup>
 		<Input type="input" name="search" placeholder="Search" />
@@ -86,7 +57,7 @@ class Navbare extends React.Component {
 <SighInButton/>
 <SignUp/>
     </Navbar.Collapse>
-  </Navbar>
+	</Navbar>
   </div>
     );
   }

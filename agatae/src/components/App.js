@@ -17,11 +17,16 @@ import '../../assets/styles/App.css';
 
 @observer
 class App extends Component {
+	static childContextTypes = {
+		uiStore: PropTypes.object
+	};
+
 	getChildContext() {
 		return {
-			myStore: new UIStore()
+			uiStore: new UIStore()
 		};
   	};
+	
   render() {
     return (
       <BrowserRouter>
