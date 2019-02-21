@@ -16,6 +16,7 @@ import logo from '../../../assets/images/LogoAgate.png';
 import {SignIn} from './SignIn';
 import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
+import {RegisterPage} from './RegisterPage';
 
 class Navbare extends React.Component {
   constructor(props) {
@@ -36,7 +37,7 @@ class Navbare extends React.Component {
   render() {
     return (
     <div>
-	<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="secondary">
+	<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="dark">
   	<Navbar.Brand href="#home">
 	<img src={logo} width="100" height="35" alt=""/>
   	</Navbar.Brand>
@@ -51,11 +52,14 @@ class Navbare extends React.Component {
  <Form inline>
 	<FormGroup>
 		<Input type="input" name="search" placeholder="Search" />
-		<Button variant="secondary">Search</Button>
+		<Button variant="outline-primary">Search</Button>
 	</FormGroup>
 </Form>
 <SighInButton/>
 <SignUp/>
+			<NavItem>
+            <NavLink href="/RegisterPage" active>Գրանցվել</NavLink>
+        </NavItem>
     </Navbar.Collapse>
 	</Navbar>
   </div>

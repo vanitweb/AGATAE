@@ -18,10 +18,10 @@ class SignIn extends Component {
     <Modal
         {...this.props}
         size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
+        aria-labelledby="Login-content"
         centered>
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
+          <Modal.Title id="Login-content">
             Մուտք AGATAE
           </Modal.Title>
         </Modal.Header>

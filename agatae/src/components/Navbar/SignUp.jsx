@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
+import  { ButtonToolbar, Button } from 'reactstrap';
 import {
 	Container,
 	Row,
 	Col,
 	Media,
-	Button
 	} from 'reactstrap';
+	import {BrowserRouter, Route} from 'react-router-dom';
 
 
 class SignUp extends Component {
+
+constructor(...args) {
+    super(...args);
+    this.state = { modalShow: false };
+  }
   render() {
     return (
-      <Col xs="1" sm="1">
-      	<a href="#">Գրանցվել</a>
-	  </Col>
+      
+   <div></div>
+     
     );
   }
 }
