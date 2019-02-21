@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import {UIStore} from '../stores/UIStore';
 import './App.css';
 
-import {Header} from './Header/Header';
 import {Navbare} from './Navbar/Navbare';
 import {Content} from './Content/Content';
 import {Footer} from './Footer/Footer';
@@ -32,7 +31,6 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div className="App">
-  		<Header />
   		<Navbare />
       <Slider />
       <div>

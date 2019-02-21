@@ -12,7 +12,11 @@ import {
 	FormGroup,
 	Input
 } from 'reactstrap';
-import logo from '../../../assets/images/logo.png';
+import logo from '../../../assets/images/LogoAgate.png';
+import {SignIn} from './SignIn';
+import {SignUp} from './SignUp';
+import {SighInButton} from './SighInButton';
+import {RegisterPage} from './RegisterPage';
 
 class Navbare extends React.Component {
   constructor(props) {
@@ -32,10 +36,10 @@ class Navbare extends React.Component {
   }
   render() {
     return (
-    
-	<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="secondary">
+    <div>
+	<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="dark">
   	<Navbar.Brand href="#home">
-	<img src={logo} width="30" height="30" alt=""/>
+	<img src={logo} width="100" height="35" alt=""/>
   	</Navbar.Brand>
   	<Navbar.Collapse id="responsive-navbar-nav">       
         <NavItem>
@@ -44,21 +48,21 @@ class Navbare extends React.Component {
 		{navs.map((nav)=> (
 			<NavbarDropdown nav={nav} />
 		))}
-		  
-	
-         
-		
- 		
-          
+		     
  <Form inline>
 	<FormGroup>
 		<Input type="input" name="search" placeholder="Search" />
-		<Button variant="secondary">Search</Button>
+		<Button variant="outline-primary">Search</Button>
 	</FormGroup>
 </Form>
+<SighInButton/>
+<SignUp/>
+			<NavItem>
+            <NavLink href="/RegisterPage" active>Գրանցվել</NavLink>
+        </NavItem>
     </Navbar.Collapse>
 	</Navbar>
-	
+  </div>
     );
   }
 }
