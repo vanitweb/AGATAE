@@ -15,7 +15,14 @@ class SignUp extends Component {
   render() {
     return (
 
-<Button tag={/SighInButton} to="/RegisterPage" />
+     <ButtonToolbar>
+        <Button
+          variant="dark"
+          onClick={() => this.setState({ modalShow: true })}
+        >
+          Register
+        </Button>
+      </ButtonToolbar>
     );
   }
 }

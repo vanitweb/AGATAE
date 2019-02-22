@@ -11,6 +11,7 @@ import {
 	import Modal from 'react-bootstrap/Modal';
 	import {LoginForm} from './LoginForm';
   import './ModalContent.css';
+  import logo from '../../../assets/images/New Project4.png';
 
 
 class SignIn extends Component {
@@ -23,7 +24,7 @@ class SignIn extends Component {
         centered>
         <Modal.Header closeButton>
           <Modal.Title id="Login-content">
-            Login 
+        <img src={logo} width="130" height="40" alt=""/>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

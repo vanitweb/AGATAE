@@ -12,7 +12,7 @@ import {
 	FormGroup,
 	Input
 } from 'reactstrap';
-import logo from '../../../assets/images/LogoAgate.png';
+import logo from '../../../assets/images/New Project4.png';
 import {SignIn} from './SignIn';
 import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
@@ -39,7 +39,7 @@ class Navbare extends React.Component {
     <div>
 	<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="dark">
   	<Navbar.Brand href="#home">
-	<img src={logo} width="100" height="35" alt=""/>
+	<img src={logo} width="130" height="40" alt=""/>
   	</Navbar.Brand>
   	<Navbar.Collapse id="responsive-navbar-nav">       
         <NavItem>
