@@ -30,7 +30,7 @@ class NavbarDropdown extends React.Component {
 				</DropdownToggle>
 				<DropdownMenu>
 					{nav.options.map((option)=> (
-						<NavLink to="/lavaguynner">{option}</NavLink>
+						<NavLink to='/lavaguynner'>{option}</NavLink>
 					))}
 				</DropdownMenu>
 			</Dropdown> 

@@ -2,7 +2,8 @@ import React from 'react';
 
 import {navs} from '../../configs/navData';
 import {NavbarDropdown} from './NavbarDropdown';
-import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import {Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink} from 'reactstrap';
+import {Link} from 'react-router-dom';
 import {Lavaguynner} from '../Lavaguynner/Lavaguynner';
 import { Container, Row, Col } from 'reactstrap';
 import Navbar from 'react-bootstrap/Navbar';
@@ -43,7 +44,7 @@ class Navbare extends React.Component {
   	</Navbar.Brand>
   	<Navbar.Collapse id="responsive-navbar-nav">       
         <NavItem>
-            <NavLink href="/glxavor" active>Գլխավոր</NavLink>
+            <NavLink tag={Link} to="/" active>Գլխավոր</NavLink>
         </NavItem>
 		{navs.map((nav)=> (
 			<NavbarDropdown nav={nav} />
