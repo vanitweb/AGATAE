@@ -24,7 +24,11 @@ class AppStore {
 	@computed get subjectData() {
 		return this._teachers.filter(item => (item.subject === this._subjectName));
 	}
-	set teachers1(teachers) {
+	@computed get bestTeachers() {
+		let tempTeachersArray = [...this._teachers];
+		return (tempTeachersArray.sort((a,b) => (a.raiting > b.raiting) ? 1 : ((b.raiting > a.raiting) ? -1 : 0)).slice(0, 8));
+	}
+	set teachersData(teachers) {
 		this._teachers = teachers;
 	}
 	set teacherName(teacher) {

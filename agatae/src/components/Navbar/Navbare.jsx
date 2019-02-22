@@ -13,7 +13,7 @@ import {
 	FormGroup,
 	Input
 } from 'reactstrap';
-import logo from '../../../assets/images/New Project4.png';
+import logo from '../../../assets/images/newProject4.png';
 import {SignIn} from './SignIn';
 import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';

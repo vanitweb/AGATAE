@@ -5,9 +5,9 @@ import {Form} from 'react-bootstrap';
 import { Container, Row, Col } from 'reactstrap';
 import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import {Messages} from '../Messages';
-import logo from '../../assets/images/New Project4.png';
-import './Navbar/RegisterPage.css';
+import {Messages} from '../../Messages';
+import logo from '../../../assets/images/newProject4.png';
+import './RegisterPage.css';
 
 class App extends Component {
    state = {
