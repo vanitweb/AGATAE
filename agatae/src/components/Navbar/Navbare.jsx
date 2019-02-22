@@ -1,8 +1,11 @@
 import React from 'react';
+import {observer} from "mobx-react";
+import {observable, computed} from "mobx";
 
 import {navs} from '../../configs/navData';
 import {NavbarDropdown} from './NavbarDropdown';
-import {Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink} from 'reactstrap';
+import {Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink, InputGroup,
+  InputGroupAddon} from 'reactstrap';
 import {Link} from 'react-router-dom';
 import {Lavaguynner} from '../Lavaguynner/Lavaguynner';
 import { Container, Row, Col } from 'reactstrap';
@@ -14,11 +17,12 @@ import {
 	Input
 } from 'reactstrap';
 import logo from '../../../assets/images/newProject4.png';
+import search from '../../../assets/images/search.png';
 import {SignIn} from './SignIn';
 import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
 import {RegisterPage} from './RegisterPage';
-
+@observer
 class Navbare extends React.Component {
   constructor(props) {
     super(props);
@@ -28,7 +32,10 @@ class Navbare extends React.Component {
       dropdownOpen: false
     };
   }
-
+	@observable searchText;
+	onchangeSearch = (event) => {
+		this.searchText = event.target.value;
+	}
   toggle(e) {
 	console.log(e.target.getAttribute('data-name'));
     this.setState({
@@ -50,12 +57,14 @@ class Navbare extends React.Component {
 			<NavbarDropdown nav={nav} />
 		))}
 		     
- <Form inline>
-	<FormGroup>
-		<Input type="input" name="search" placeholder="Search" />
-		<Button variant="outline-primary">Search</Button>
-	</FormGroup>
-</Form>
+ 		<InputGroup>
+          <Input placeholder="Search..." onChange={this.onchangeSearch}/>
+          <InputGroupAddon addonType="append">
+			  <Button color="secondary">
+			  	<img src={search} width="25" height="25" alt=""/>
+			  </Button>
+          </InputGroupAddon>
+        </InputGroup>
 <SighInButton/>
 <SignUp/>
     </Navbar.Collapse>
