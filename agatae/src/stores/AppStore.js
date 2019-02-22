@@ -1,10 +1,12 @@
-import {extendObservable} from 'mobx';
+import {extendObservable, computed, action} from 'mobx';
 
-import {teachersData} from '../data/teachersData';
+import {teachers} from '../data/data';
 
 class AppStore {
 	storeValues = {
-		teachers: []
+		_teachers: [],
+		_teacherName: "",
+		_subjectName: ""
 	};
 	
 	constructor() {
@@ -13,18 +15,27 @@ class AppStore {
 	
 	@action
 	initData = () => {
-		this.teachers = observable(teachersData);
+		this.teachers = observable(teachers);
 		// set(this.teachers, teachersData);
 	};
-	
-	getData = () => {
-		// TODO load some data
-		return teachersData;
-	};
-
-	saveData = () => {
-		// send some data
-	};
+	@computed get teachersData() {
+		return this._teachers.filter(item => (item.name.substring(0, this._teacherName.length) === this._teacherName));
+	}
+	@computed get subjectData() {
+		return this._teachers.filter(item => (item.subject === this._subjectName));
+	}
+	set teachersData(teachers) {
+		this._teachers = teachers;
+	}
+	set teacherName(teacher) {
+		this._teacherName = teacher;
+	}
+	set subjectName(subject) {
+		this._subjectName = subject;
+	}
+	init() {
+		this.teachersData = teachers;
+	}
 }
 
 export {AppStore};

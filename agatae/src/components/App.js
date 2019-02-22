@@ -5,6 +5,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import {UIStore} from '../stores/UIStore';
+import {AppStore} from '../stores/AppStore';
 import './App.css';
 
 import {Navbare} from './Navbar/Navbare';
@@ -18,12 +19,14 @@ import '../../assets/styles/App.css';
 @observer
 class App extends Component {
 	static childContextTypes = {
-		uiStore: PropTypes.object
+		uiStore: PropTypes.object,
+		
 	};
 
 	getChildContext() {
 		return {
-			uiStore: new UIStore()
+			uiStore: new UIStore(),
+			
 		};
   	};
 	
