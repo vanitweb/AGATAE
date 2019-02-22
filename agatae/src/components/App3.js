@@ -5,12 +5,10 @@ import Form from 'react-bootstrap/Form';
 import { Container, Row, Col,} from 'reactstrap';
 import { FormControl, FormLabel} from 'react-bootstrap';
 
-
-class LoginForm extends Component {
+class App extends Component {
   render() {
     return (
-<Container>
-<Row className="justify-content-md-center">
+
 <Form>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
@@ -25,19 +23,15 @@ class LoginForm extends Component {
     <Form.Control type="password" placeholder="Password" />
   </Form.Group>
   <Form.Group controlId="formBasicChecbox">
-    <Form.Check type="checkbox" label="Remember me" />
+    <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
-  <div>
-  <Button variant="dark" type="submit"  fullWidth ClassName="loginBtn">
-    Login
+  <Button variant="primary" type="submit">
+    Submit
   </Button>
-  </div>
 </Form>
-</Row>
-</Container>
+
     );
   }
 }
 
-export {LoginForm};
-
+export default App;

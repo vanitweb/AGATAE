@@ -57,9 +57,6 @@ class Navbare extends React.Component {
 </Form>
 <SighInButton/>
 <SignUp/>
-			<NavItem>
-            <NavLink href="/RegisterPage" active>Գրանցվել</NavLink>
-        </NavItem>
     </Navbar.Collapse>
 	</Navbar>
   </div>

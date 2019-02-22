@@ -10,19 +10,20 @@ import {
 	} from 'reactstrap';
 	import Modal from 'react-bootstrap/Modal';
 	import {LoginForm} from './LoginForm';
+  import './ModalContent.css';
 
 
 class SignIn extends Component {
   render() {
     return (
-    <Modal
+    <Modal className="ModalContent"
         {...this.props}
-        size="lg"
+        size="md"
         aria-labelledby="Login-content"
         centered>
         <Modal.Header closeButton>
           <Modal.Title id="Login-content">
-            Մուտք AGATAE
+            Login 
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

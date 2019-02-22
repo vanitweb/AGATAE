@@ -6,20 +6,16 @@ import {
 	Col,
 	Media,
 	} from 'reactstrap';
-	import {BrowserRouter, Route} from 'react-router-dom';
+	import {RegisterPage} from './RegisterPage';
+	import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
+	import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 
 
 class SignUp extends Component {
-
-constructor(...args) {
-    super(...args);
-    this.state = { modalShow: false };
-  }
   render() {
     return (
-      
-   <div></div>
-     
+
+<Button tag={/SighInButton} to="/RegisterPage" />
     );
   }
 }

@@ -15,10 +15,10 @@ class SighInButton extends Component {
     return (
       <ButtonToolbar>
         <Button
-          variant="primary"
+          variant="dark"
           onClick={() => this.setState({ modalShow: true })}
         >
-          ՄՈՒՏՔ
+          Login
         </Button>
 
         <SignIn
