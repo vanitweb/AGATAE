@@ -27,7 +27,7 @@ const teachers = [
 	},
 	{
 		photo: "../../assets/images/Edgar.jpg",
-		name: "Թուխիկ Զարագյոզյան",
+		name: "Թուխիկ Ղարագյոզյան",
 		subject: "Լող",
 		phone: "(+374)-43-08-70-15",
 		email: "tukhik_k@mail.ru",
