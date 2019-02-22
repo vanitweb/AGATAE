@@ -30,16 +30,16 @@ const routes = [{
 class App extends Component {
 	static childContextTypes = {
 		uiStore: PropTypes.object,
-		
+		appStore: PropTypes.object
 	};
 
 	getChildContext() {
 		return {
 			uiStore: new UIStore(),
-			
+			appStore: new AppStore()
 		};
   	};
-	
+	//constructor
   render() {
         const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
     return (

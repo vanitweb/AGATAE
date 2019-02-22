@@ -15,7 +15,7 @@ class AppStore {
 	
 	@action
 	initData = () => {
-		this.teachers = observable(teachers);
+		this._teachers = observable(teachers);
 		// set(this.teachers, teachersData);
 	};
 	@computed get teachersData() {
@@ -24,7 +24,7 @@ class AppStore {
 	@computed get subjectData() {
 		return this._teachers.filter(item => (item.subject === this._subjectName));
 	}
-	set teachersData(teachers) {
+	set teachers1(teachers) {
 		this._teachers = teachers;
 	}
 	set teacherName(teacher) {
@@ -32,9 +32,6 @@ class AppStore {
 	}
 	set subjectName(subject) {
 		this._subjectName = subject;
-	}
-	init() {
-		this.teachersData = teachers;
 	}
 }
 
