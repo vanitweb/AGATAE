@@ -11,13 +11,11 @@ import './Navbar/RegisterPage.css';
 
 
 
-class App extends Component{
-  state = {
-      messages: Messages,
-    }
+class Header extends Component{
+	
 
 
-   render() {
+	 render() {
     const {messages} = this.state;
     return (
     <Container>
@@ -38,4 +36,4 @@ class App extends Component{
    );
   }
 }
-export default App;
+export default Header;

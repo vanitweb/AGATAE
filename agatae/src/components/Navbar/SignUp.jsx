@@ -14,15 +14,8 @@ import {
 class SignUp extends Component {
   render() {
     return (
-
-     <ButtonToolbar>
-        <Button
-          variant="dark"
-          onClick={() => this.setState({ modalShow: true })}
-        >
-          Register
-        </Button>
-      </ButtonToolbar>
+    <div></div> 
+    
     );
   }
 }
