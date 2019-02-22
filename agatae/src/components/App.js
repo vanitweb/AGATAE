@@ -28,6 +28,12 @@ const routes = [{
 
 @observer
 class App extends Component {
+	constructor() {
+		super();
+		this.appStore = new AppStore();
+		this.uiStore = new UIStore();
+	}
+	
 	static childContextTypes = {
 		uiStore: PropTypes.object,
 		appStore: PropTypes.object
@@ -35,11 +41,13 @@ class App extends Component {
 
 	getChildContext() {
 		return {
-			uiStore: new UIStore(),
-			appStore: new AppStore()
+			uiStore: this.uiStore,
+			appStore: this.appStore
 		};
   	};
-	//constructor
+	componentDidMount() {
+		this.appStore.initData;
+	}
   render() {
         const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
     return (
