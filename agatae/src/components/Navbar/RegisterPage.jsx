@@ -1,10 +1,10 @@
 import React, { Component} from 'react';
 import {FormGroup, Button} from 'reactstrap';
 import InputGroup from 'react-bootstrap/InputGroup';
-import {Form} from 'react-bootstrap/Form';
+import { Form } from 'react-bootstrap/Form';
 import { FormControl, FormLabel} from 'react-bootstrap';
-import { Container, Row, Col,} from 'reactstrap';
-import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink,  } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import {Messages} from '../../Messages';
 
@@ -60,8 +60,6 @@ class RegisterPage extends Component {
     </InputGroup.Prepend>
     <FormControl aria-label="default" aria-describedby="repeat-password" />
   </InputGroup>
-
-
 </Row>
 </Container>
     );

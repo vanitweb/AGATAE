@@ -4,6 +4,7 @@ import {observer} from 'mobx-react';
 import PropTypes from 'prop-types';
 
 import {UIStore} from '../stores/UIStore';
+import {AppStore} from '../stores/AppStore';
 import './App.css';
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
@@ -28,12 +29,14 @@ const routes = [{
 @observer
 class App extends Component {
 	static childContextTypes = {
-		uiStore: PropTypes.object
+		uiStore: PropTypes.object,
+		
 	};
 
 	getChildContext() {
 		return {
-			uiStore: new UIStore()
+			uiStore: new UIStore(),
+			
 		};
   	};
 	
