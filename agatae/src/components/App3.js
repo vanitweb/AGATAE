@@ -5,7 +5,7 @@ import {Form} from 'react-bootstrap';
 import { Container, Row, Col } from 'reactstrap';
 import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import logo from '../../assets/images/New Project4.png';
+import logo from '../../assets/images/newProject4.png';
 import classes from './Navbar/RegisterPage.module.css';
 import { Header } from './Navbar/Header';
 
