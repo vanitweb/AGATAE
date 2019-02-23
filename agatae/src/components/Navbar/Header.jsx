@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Messages } from '../../Messages';
-import logo from '../../../assets/images/New Project4.png';
+import logo from '../../../assets/images/newProject4.png';
 import { Container, Row, Col } from 'reactstrap';
 import './Header.css';
 class Header extends Component {
