@@ -3,19 +3,19 @@ import {extendObservable, computed, action} from 'mobx';
 
 class UIStore {
 	appProps = {
-		navbarOpenedDropdown: ""
+	    navbarOpenedDropdown: ''
 	};
 	constructor() {
-		extendObservable(this, this.appProps);
+	    extendObservable(this, this.appProps);
 	}
 	@action
 	setOpenedDropdown = (name) => {
-		if(name === this.navbarOpenedDropdown) {
-			this.navbarOpenedDropdown = '';
-		} else {
-			this.navbarOpenedDropdown = name;
-		}
-		// this.navbarOpenedDropdown = name === this.navbarOpenedDropdown ? '' : name;
+	    if(name === this.navbarOpenedDropdown) {
+	        this.navbarOpenedDropdown = '';
+	    } else {
+	        this.navbarOpenedDropdown = name;
+	    }
+	    // this.navbarOpenedDropdown = name === this.navbarOpenedDropdown ? '' : name;
 	}
 	
 }

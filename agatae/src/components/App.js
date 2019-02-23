@@ -17,56 +17,56 @@ import {Slider} from './Slider/Slider';
 import '../../assets/styles/App.css';
 
 const routes = [{
-  path: '/',
-  component: Content,
+    path: '/',
+    component: Content
 }, {
-  path: '/lavaguynner',
-  component: Lavaguynner,
+    path: '/lavaguynner',
+    component: Lavaguynner
 }];
 
 
 
 @observer
 class App extends Component {
-	constructor() {
-		super();
-		this.appStore = new AppStore();
-		this.uiStore = new UIStore();
-	}
+    constructor() {
+        super();
+        this.appStore = new AppStore();
+        this.uiStore = new UIStore();
+    }
 	
 	static childContextTypes = {
-		uiStore: PropTypes.object,
-		appStore: PropTypes.object
+	    uiStore: PropTypes.object,
+	    appStore: PropTypes.object
 	};
 
 	getChildContext() {
-		return {
-			uiStore: this.uiStore,
-			appStore: this.appStore
-		};
-  	};
+	    return {
+	        uiStore: this.uiStore,
+	        appStore: this.appStore
+	    };
+  	}
 	componentDidMount() {
-		this.appStore.initData;
+	    this.appStore.initData;
 	}
-  render() {
-        const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
-    return (
+	render() {
+	    const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
+	    return (
 
-      <BrowserRouter>
-      <div className="App">
-  		<Navbare />
-      <div>
-      <Switch>
-      {routeComponents}
-      </Switch>
-      /*<Route path='/glxavor'  component ={Content}/>
-      <Route path='/par'  component ={Par} />*/
-      </div>
-  	  <Footer />
-      </div>
-      </BrowserRouter>
-    );
-  }
+    <BrowserRouter>
+    <div className="App">
+            <Navbare />
+	                <div>
+	                    <Switch>
+	                        {routeComponents}
+    </Switch>
+      /*<Route path='/glxavor' component ={Content}/>
+            <Route path='/par' component ={Par} />*/
+        </div>
+            <Footer />
+        </div>
+	        </BrowserRouter>
+	    );
+	}
 }
 
 export default App;
