@@ -21,11 +21,8 @@ class SignUp extends Component {
     
     );
   }
-<<<<<<< HEAD
 
 }
-=======
-  }
->>>>>>> 8907851713f6131600e56539fecf7f2d7805399d
+
 
 export {SignUp};
