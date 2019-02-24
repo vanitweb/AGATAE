@@ -11,6 +11,7 @@ import {Content} from './Content/Content';
 import {Footer} from './Footer/Footer';
 import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import '../../assets/styles/App.css';
+import {RegisterPage} from './Navbar/RegisterPage';
 
 const routes = [{
     path: '/',
@@ -18,6 +19,10 @@ const routes = [{
 }, {
     path: '/lavaguynner',
     component: Lavaguynner
+},
+ {
+    path: '/register',
+    component: RegisterPage
 }];
 
 //const-@ routern em tnelu
