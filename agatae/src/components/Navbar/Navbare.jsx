@@ -22,9 +22,6 @@ import {RegisterPage} from './RegisterPage';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import {Routes} from '../Routes';
 
-
-
-
 @observer
 class Navbare extends React.Component {
     constructor(props) {
@@ -48,13 +45,10 @@ class Navbare extends React.Component {
 	    return (
 	        <div>
         		<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="dark">
-    				<Navbar.Brand href="#home">
+    				<Navbar.Brand href="/">
                 		<img src={logo} width="130" height="40" alt=""/>
 	                </Navbar.Brand>
     				<Navbar.Collapse id="responsive-navbar-nav">       
-	                    <NavItem>
-	                        <NavLink tag={Link} to="/" active>Գլխավոր</NavLink>
-        				</NavItem>
     					{navs.map((nav) => (
 							<NavbarDropdown nav={nav} />
 	                    ))}
