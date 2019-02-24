@@ -9,12 +9,16 @@ import {
 	import {RegisterPage} from './RegisterPage';
 	import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 	import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+	import {Routes} from '../Routes';
 
 
 class SignUp extends Component {
   render() {
     return (
-    <div></div> 
+    <div>
+		<a href="/register">Register</a>
+		
+    </div> 
     
     );
   }

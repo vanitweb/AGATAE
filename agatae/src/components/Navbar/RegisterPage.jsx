@@ -11,9 +11,10 @@ import { Header } from './Header';
 import {Messages} from '../../Messages';
 
 class RegisterPage extends Component {
+
   render() {
     return (
-<Container className='Reg_Page_Bg'>
+<Container className={classes.mainForm}>
   <Row>
     <Col md={7}></Col>
       <Col md={5}>
