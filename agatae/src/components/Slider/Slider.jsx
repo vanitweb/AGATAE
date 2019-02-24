@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+	Container,
     Carousel,
     CarouselItem,
     CarouselControl,
@@ -11,6 +12,7 @@ import dance from '../../../assets/images/Slider/dance.jpg';
 import knitting from '../../../assets/images/Slider/knitting.jpg';
 import painting from '../../../assets/images/Slider/painting.jpg';
 import sport from '../../../assets/images/Slider/sport.jpg';
+
 
 const items = [
     {
@@ -86,16 +88,18 @@ class Slider extends Component {
             );
         });
         return (
-            <Carousel
-                activeIndex={activeIndex}
-                next={this.next}
-                previous={this.previous}
-            >
-                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-                {slides}
-                <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-                <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-            </Carousel>
+			<Container>
+				<Carousel
+					activeIndex={activeIndex}
+					next={this.next}
+					previous={this.previous}
+				>
+					<CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+					{slides}
+					<CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+					<CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+				</Carousel>
+			</Container>
         );
     }
 }

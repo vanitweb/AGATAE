@@ -10,7 +10,8 @@ import {
     InputGroup,
     InputGroupAddon,
     Button,
-    Input
+    Input,
+	Container
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
