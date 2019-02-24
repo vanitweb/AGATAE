@@ -36,33 +36,6 @@ class App extends Component {
 	};
 
 	getChildContext() {
-<<<<<<< HEAD
-		return {
-			uiStore: new UIStore(),
-			
-		};
-  	};
-	
-  render() {
-    //ays constn em tanelu
-        const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
-    return (
-
-      <BrowserRouter>
-      <div className="App">
-  		<Navbare />
-      //div-i parunakutyunn em tanelu
-      <div>
-      <Switch>
-      {routeComponents}
-      </Switch>
-      </div>
-  	  <Footer />
-      </div>
-      </BrowserRouter>
-    );
-  }
-=======
 	    return {
 	        uiStore: this.uiStore,
 	        appStore: this.appStore
@@ -82,15 +55,13 @@ class App extends Component {
 	                    <Switch>
 	                        {routeComponents}
     </Switch>
-      /*<Route path='/glxavor' component ={Content}/>
-            <Route path='/par' component ={Par} />*/
+
         </div>
             <Footer />
         </div>
 	        </BrowserRouter>
 	    );
 	}
->>>>>>> 0b3c517ee7e020505a9d3e7e93f136143f75c465
 }
 
 export default App;

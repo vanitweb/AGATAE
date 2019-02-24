@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import  { ButtonToolbar, Button } from 'reactstrap';
 import {
 	Container,
@@ -23,15 +22,7 @@ class SignUp extends Component {
     
     );
   }
-=======
 
-class SignUp extends Component {
-    render() {
-        return (
-            <div></div>     
-        );
-    }
->>>>>>> f8e4714181c64cb31f96b989f052208e7fb94870
 }
 
 export {SignUp};
