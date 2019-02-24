@@ -65,6 +65,5 @@ class RegisterPage extends Component {
             </Container>
         );
     }
->>>>>>> f8e4714181c64cb31f96b989f052208e7fb94870
 }
 export {RegisterPage};
