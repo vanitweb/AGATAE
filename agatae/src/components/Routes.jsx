@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+const routes = [{
+  path: '/',
+  component: Content,
+}, {
+  path: '/lavaguynner',
+  component: Lavaguynner,
+}];
+
+const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
+
+
+
+
+export {Routes}
+=======
 import React, { Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { BrowserRouter, Route, Switch} from "react-router-dom";
@@ -29,3 +45,4 @@ render() {
 }
 
 export {Routes};
+>>>>>>> 0b3c517ee7e020505a9d3e7e93f136143f75c465
