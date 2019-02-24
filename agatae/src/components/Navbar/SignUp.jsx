@@ -16,13 +16,11 @@ class SignUp extends Component {
     return (
     <div>
 		<a href="/register">Register</a>
-		
     </div> 
     
     );
   }
 
 }
-
 
 export {SignUp};
