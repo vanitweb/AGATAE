@@ -13,23 +13,30 @@ import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import '../../assets/styles/App.css';
 
 const routes = [{
-  path: '/',
-  component: Content,
+    path: '/',
+    component: Content
 }, {
-  path: '/lavaguynner',
-  component: Lavaguynner,
+    path: '/lavaguynner',
+    component: Lavaguynner
 }];
 
 //const-@ routern em tnelu
 
 @observer
 class App extends Component {
+    constructor() {
+        super();
+        this.appStore = new AppStore();
+        this.uiStore = new UIStore();
+    }
+	
 	static childContextTypes = {
-		uiStore: PropTypes.object,
-		
+	    uiStore: PropTypes.object,
+	    appStore: PropTypes.object
 	};
 
 	getChildContext() {
+<<<<<<< HEAD
 		return {
 			uiStore: new UIStore(),
 			
@@ -55,6 +62,35 @@ class App extends Component {
       </BrowserRouter>
     );
   }
+=======
+	    return {
+	        uiStore: this.uiStore,
+	        appStore: this.appStore
+	    };
+  	}
+	componentDidMount() {
+	    this.appStore.initData;
+	}
+	render() {
+	    const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
+	    return (
+
+    <BrowserRouter>
+    <div className="App">
+            <Navbare />
+	                <div>
+	                    <Switch>
+	                        {routeComponents}
+    </Switch>
+      /*<Route path='/glxavor' component ={Content}/>
+            <Route path='/par' component ={Par} />*/
+        </div>
+            <Footer />
+        </div>
+	        </BrowserRouter>
+	    );
+	}
+>>>>>>> 0b3c517ee7e020505a9d3e7e93f136143f75c465
 }
 
 export default App;
