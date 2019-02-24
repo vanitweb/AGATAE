@@ -6,13 +6,13 @@ import {
 	Col
 } from 'reactstrap';
 import teacher_1 from './images/teacher_1.jpg';
-import './css/style.css';
+import tStyle from './css/style.module.css';
 import {MainTabs} from './MainTabs';
 
 class TeacherPage extends Component {
     render() {
         return (
-            <Container className="main">
+           <Container className={tStyle.main}>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
                         <h1>David Smith</h1>
@@ -26,9 +26,9 @@ class TeacherPage extends Component {
     quam dapibus convallis sed quis diam. Pellentesque auctor enim vitae 
     lacus rutrum facilisis. Aliquam dignissim augue a molestie pharetra.
     Vivamus bibendum ex diam, tempor rhoncus libero imperdiet ac.</p>
-                        <Button color="success"className="btn">Hertagrvel</Button>
+                        <Button color="success"className={tStyle.btn}>Hertagrvel</Button>
                     </Col>
-                    <Col lg={true}><img className="teacherImage"src={teacher_1} width="250" height="300" alt="Your Teacher"/></Col>
+                    <Col lg={true}><img className={tStyle.teacherImage} src={teacher_1} width="250" height="300" alt="Your Teacher"/></Col>
                     <MainTabs/>
                     <Col>
                     </Col>

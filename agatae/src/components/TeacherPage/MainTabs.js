@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import tStyle from '../TeacherPage/css/style.module.css';
 
 class MainTabs extends Component {
     state = {
@@ -14,7 +15,7 @@ class MainTabs extends Component {
             <Container className="main2">
                 <Row>
                     <Col md={7}></Col>
-                    <Col className="_liitem">
+                    <Col className={tStyle._liitem}>
                         <ul>
                             {this.state.toDoArray.map(item => {
 		  		return <li key = {item}>{item}</li>;
