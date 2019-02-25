@@ -49,12 +49,12 @@ class Navbare extends React.Component {
                     <Navbar.Brand href="/">
                         <img src={logo} width="130" height="40" alt=""/>
                     </Navbar.Brand>
-                    <Navbar.Collapse id="responsive-navbar-nav">       
+                    <Navbar.Collapse className="collapseGroup" id="responsive-navbar-nav">       
                         {navs.map((nav) => (
                             <NavbarDropdown nav={nav} />
                         ))}
-                        <InputGroup>
-                            <Input placeholder="Search..." onChange={this.onchangeSearch}/>
+                        <InputGroup className="searchGroup">
+                            <Input placeholder="Search..." onChange={this.onchangeSearch} className="search"/>
                             <InputGroupAddon addonType="append">
                                 <Button color="secondary">
                                     <img src={search} width="25" height="25" alt=""/>
