@@ -1,119 +1,73 @@
-﻿
+﻿import React from 'react';
+import {observer} from 'mobx-react';
+import {observable} from 'mobx';
+import {Form} from 'react-bootstrap';
+import {navs} from '../../configs/navData';
+import {NavbarDropdown} from './NavbarDropdown';
+import {
+    NavItem,
+    NavLink,
+    InputGroup,
+    InputGroupAddon,
+    Button,
+    Input,
+	Container
+} from 'reactstrap';
+import {Link} from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import logo from '../../../assets/images/newProject4.png';
+import navCss from '../../../assets/styles//Navbar/Navbar.module.css';
+import search from '../../../assets/images/search.png';
+import {SignUp} from './SignUp';
+import {SighInButton} from './SighInButton';
+import {RegisterPage} from './RegisterPage';
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 
-import React from 'react';
-import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
-import {Lavaguynner} from '../Lavaguynner/Lavaguynner';
-import navData from '../../data/navData';
-import Dropdown from './Dropdown';
+@observer
+class Navbare extends React.Component {
+    constructor(props) {
+        super(props);
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            dropdownOpen: false
+        };
+    }
+	@observable searchText;
+	onchangeSearch = (event) => {
+	    this.searchText = event.target.value;
+	}
+	toggle(e) {
+	    console.log(e.target.getAttribute('data-name'));
+	    this.setState({
+	        dropdownOpen: e.target.getAttribute('data-name')
+	    });
+	}
+	render() {
+	    return (
+	        <div>
+        		<Navbar collapseOnSelect expand="lg" bg="dark" >
+    				<Navbar.Brand href="/">
+                		<img src={logo} width="130" height="40" alt=""/>
+	                </Navbar.Brand>
+    				<Navbar.Collapse id="responsive-navbar-nav">       
+    					{navs.map((nav) => (
+							<NavbarDropdown nav={nav} />
+	                    ))}
 
-class Navbar extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      dropdownOpen: false
-    };
-  }
-
-  toggle() {
-    this.setState({
-      dropdownOpen: !this.state.dropdownOpen
-    });
-  }
-
-  render() {
-	  
-    return (
-      <div>
-        <Nav tabs>
-          <NavItem>
-            <NavLink href="/glxavor" active>Գլխավոր</NavLink>
-          </NavItem>
-          <Dropdown />
-          
-          <NavItem>
-            <NavLink href="#">Այլ</NavLink>
-          </NavItem>
-        </Nav>
-      </div>
-    );
-  }
+							<Input  className={navCss.inputSrch} placeholder="Search" size='sm' onChange={this.onchangeSearch}/>
+							<InputGroupAddon addonType="append">
+								<Button color="secondary">
+									<img src={search} width="25" height="25" alt=""/>
+								</Button>
+							</InputGroupAddon>
+    					<SighInButton/>
+    					<SignUp/>
+	                </Navbar.Collapse>
+	            </Navbar>
+    		</div>
+	    );
+	}
 }
 
-
-export {Navbar};
-
-
-
-
-.container {
-  position: relative;
-  display: inline-block;
-}
-.button {
-  padding: 0;
-  width: 50px;
-  border: 0;
-  background-color: #fff;
-  color: #333;
-  cursor: pointer;
-  outline: 0;
-  font-size: 40px;
-}
-
-.dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 300px;
-  z-index: 2;
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-li {
-  padding: 8px 12px;
-}
-
-li:hover {
-  background-color: rgba(0, 0, 0, 0.14);
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #dddddd;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  padding: 8px;
-}
+export {Navbare};

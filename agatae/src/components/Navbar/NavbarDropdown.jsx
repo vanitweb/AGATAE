@@ -22,7 +22,7 @@ class NavbarDropdown extends React.Component {
 	    const {nav} = this.props;
 	    const {uiStore} = this.context;
 	    return(
-	      <Dropdown nav isOpen={uiStore.navbarOpenedDropdown == nav.name} toggle={this.onToggle}>
+	      <Dropdown nav isOpen={uiStore.navbarOpenedDropdown == nav.name} toggle={this.onToggle} >
            <DropdownToggle nav caret>
           {nav.name}
          </DropdownToggle>

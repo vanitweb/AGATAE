@@ -4,40 +4,37 @@
 }
 
 .mainDiv{
+
 	padding: 30px 50px;
+	bottom: 0;
 	text-align: left;
 	color: #f2f2f2;
 	background-image: url(../../../assets/images/Footer/footer.jpg);
 	background-size: cover; 
-	background-color: #dedede;
+	background-color: ;
 	min-width:100%;
     max-width:100%;
+    margin-top: 50px;
 }
 .ftrLi a{
 	color:#f2f2f2;
 	line-height: 2em;
 	font-style: italic;
 	font-size: 14px;
+	transition:  0.5s;
 }
+
 .ftrLi a:hover{
 	color: #4d88ff;
 }
-
-
 
 .mainDiv div:nth-child(1n+2){
 	border-left: 1px solid #f2f2f2;
 	padding: 0 20px;
 }
+
 .logo{
-	text-align: center;
-	margin-top: 4%;
-
-}
-.cpyRght{
-	text-align: center;
-	margin-top: 50px;
-	text-decoration: overline;
-
+  display: flex;
+  align-items: center;
 }
 

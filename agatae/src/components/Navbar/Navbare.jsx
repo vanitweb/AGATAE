@@ -1,7 +1,7 @@
 import React from 'react';
 import {observer} from 'mobx-react';
 import {observable} from 'mobx';
-
+import {Form} from 'react-bootstrap';
 import {navs} from '../../configs/navData';
 import {NavbarDropdown} from './NavbarDropdown';
 import {
@@ -16,6 +16,7 @@ import {
 import {Link} from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../../assets/images/newProject4.png';
+import navCss from '../../../assets/styles//Navbar/Navbar.module.css';
 import search from '../../../assets/images/search.png';
 import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
@@ -45,7 +46,7 @@ class Navbare extends React.Component {
 	render() {
 	    return (
 	        <div>
-        		<Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="dark">
+        		<Navbar collapseOnSelect expand="sm" bg="dark">
     				<Navbar.Brand href="/">
                 		<img src={logo} width="130" height="40" alt=""/>
 	                </Navbar.Brand>
@@ -53,14 +54,13 @@ class Navbare extends React.Component {
     					{navs.map((nav) => (
 							<NavbarDropdown nav={nav} />
 	                    ))}
-	                    <InputGroup>
-							<Input placeholder="Search..." onChange={this.onchangeSearch}/>
+
+							<Input  className={navCss.inputSrch} placeholder="Search" size='sm' onChange={this.onchangeSearch}/>
 							<InputGroupAddon addonType="append">
 								<Button color="secondary">
 									<img src={search} width="25" height="25" alt=""/>
 								</Button>
 							</InputGroupAddon>
-        				</InputGroup>
     					<SighInButton/>
     					<SignUp/>
 	                </Navbar.Collapse>

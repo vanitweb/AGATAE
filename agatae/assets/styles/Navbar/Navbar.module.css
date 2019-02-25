@@ -9,3 +9,7 @@
  .item a.activeLink {
  	color: gold;
  }
+.inputSrch {
+	max-width: 250px;
+	float: left;
+}
