@@ -18,8 +18,8 @@ class MainTabs extends Component {
                     <Col className={tStyle._liitem}>
                         <ul>
                             {this.state.toDoArray.map(item => {
-		  		return <li key = {item}>{item}</li>;
-		  	})}
+                                return <li key = {item}>{item}</li>;
+                            })}
                         </ul>
                     </Col>
                 </Row>

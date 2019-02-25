@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {
-	Button,
-	Container,
-	Row, 
-	Col
+    Button,
+    Container,
+    Row, 
+    Col
 } from 'reactstrap';
 import teacher_1 from './images/teacher_1.jpg';
 import tStyle from './css/style.module.css';
@@ -12,7 +12,7 @@ import {MainTabs} from './MainTabs';
 class TeacherPage extends Component {
     render() {
         return (
-           <Container className={tStyle.main}>
+            <Container className={tStyle.main}>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
                         <h1>David Smith</h1>
