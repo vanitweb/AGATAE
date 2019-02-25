@@ -32,7 +32,7 @@ class Navbare extends React.Component {
             dropdownOpen: false
         };
     }
-<<<<<<< HEAD
+
 	@observable searchText;
 	onchangeSearch = (event) => {
 	    this.searchText = event.target.value;
@@ -43,46 +43,10 @@ class Navbare extends React.Component {
 	        dropdownOpen: e.target.getAttribute('data-name')
 	    });
 	}
-	render() {
-	    return (
-	        <div>
-        		<Navbar collapseOnSelect expand="sm" bg="dark">
-    				<Navbar.Brand href="/">
-                		<img src={logo} width="130" height="40" alt=""/>
-	                </Navbar.Brand>
-    				<Navbar.Collapse id="responsive-navbar-nav">       
-    					{navs.map((nav) => (
-							<NavbarDropdown nav={nav} />
-	                    ))}
-
-							<Input  className={navCss.inputSrch} placeholder="Search" size='sm' onChange={this.onchangeSearch}/>
-							<InputGroupAddon addonType="append">
-								<Button color="secondary">
-									<img src={search} width="25" height="25" alt=""/>
-								</Button>
-							</InputGroupAddon>
-    					<SighInButton/>
-    					<SignUp/>
-	                </Navbar.Collapse>
-	            </Navbar>
-    		</div>
-	    );
-	}
-=======
-    @observable searchText;
-    onchangeSearch = (event) => {
-        this.searchText = event.target.value;
-    }
-    toggle(e) {
-        console.log(e.target.getAttribute('data-name'));
-        this.setState({
-            dropdownOpen: e.target.getAttribute('data-name')
-        });
-    }
     render() {
         return (
             <div>
-                <Navbar collapseOnSelect expand="lg" bg="dark justify-content-between" variant="dark">
+                <Navbar collapseOnSelect expand="lg" className={navCss.main} variant="light">
                     <Navbar.Brand href="/">
                         <img src={logo} width="130" height="40" alt=""/>
                     </Navbar.Brand>
@@ -100,12 +64,12 @@ class Navbare extends React.Component {
                         </InputGroup>
                         <SighInButton/>
                         <SignUp/>
+
                     </Navbar.Collapse>
                 </Navbar>
             </div>
         );
     }
->>>>>>> 8b27a982ba560d6f1b1775c41fb903c1e8e98879
 }
 
 export {Navbare};

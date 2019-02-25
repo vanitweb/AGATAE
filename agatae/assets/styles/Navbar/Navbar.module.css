@@ -3,13 +3,22 @@
 	background-color: burlywood;
 	padding-top: 20px;
 }
- .item a {
- 	color: white !important;
- }
+
  .item a.activeLink {
  	color: gold;
  }
 .inputSrch {
 	max-width: 250px;
 	float: left;
+}
+.main{
+	background-color: rgba(13, 13, 13, 0.6);
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	
+}
+.nav-link a{
+	color:#f2f2f2 ;
 }

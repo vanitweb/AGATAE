@@ -4,6 +4,7 @@ import art from '../../../assets/images/mix/art.jpg';
 import education from '../../../assets/images/mix/education.jpg';
 import science from '../../../assets/images/mix/science.jpg';
 import sport from '../../../assets/images/mix/sport.jpg';
+import './Lavaguynner.css';
 
 class Lavaguynner extends Component {
     arrayOfLavTeachers = [
@@ -34,7 +35,7 @@ class Lavaguynner extends Component {
     ];
     render() {
         return(
-            <div className="container">
+            <div className="containerL">
                 <Cards arrayOfLavTeachers={this.arrayOfLavTeachers}/>
             </div>
         );
