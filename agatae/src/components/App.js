@@ -52,7 +52,7 @@ class App extends Component {
         };
     }
     componentDidMount() {
-        this.appStore.initData;
+        this.appStore.initData();
     }
     render() {
         const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);

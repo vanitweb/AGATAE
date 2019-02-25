@@ -6,7 +6,7 @@ import science from '../../../assets/images/mix/science.jpg';
 import sport from '../../../assets/images/mix/sport.jpg';
 import './Lavaguynner.css';
 
-class Lavaguynner extends Component {    
+class Lavaguynner extends Component {   
     render() {
         return(
             <div className="container">

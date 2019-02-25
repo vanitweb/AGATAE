@@ -1,6 +1,6 @@
 const teachers = [
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '../../assets/images/teacher.jpg',
         name: 'Էդգար Նիկողոսյան',
         subject: 'Մաթեմատիկա',
         phone: '(+374)-77-33-36-96',
