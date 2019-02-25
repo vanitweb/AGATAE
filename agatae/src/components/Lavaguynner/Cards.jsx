@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { 
-	Card,
-	Button,
-	CardImg,
-	CardTitle,
-	CardDeck,
-	CardSubtitle,
-	CardBody
+    Card,
+    Button,
+    CardImg,
+    CardTitle,
+    CardDeck,
+    CardSubtitle,
+    CardBody
 } from 'reactstrap';
 import './Lavaguynner.css';
 

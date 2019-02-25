@@ -4,7 +4,6 @@ import logo from '../../../assets/images/newProject4.png';
 import { Container, Row, Col } from 'reactstrap';
 import './Header.css';
 
-
 class Header extends Component {
     state = {
         messages: Messages
@@ -33,4 +32,5 @@ class Header extends Component {
         );
     }
 }
+
 export {Header};

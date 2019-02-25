@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-	Container,
+    Container,
     Carousel,
     CarouselItem,
     CarouselControl,
@@ -88,18 +88,18 @@ class Slider extends Component {
             );
         });
         return (
-			<Container>
-				<Carousel
-					activeIndex={activeIndex}
-					next={this.next}
-					previous={this.previous}
-				>
-					<CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-					{slides}
-					<CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-					<CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-				</Carousel>
-			</Container>
+            <Container>
+                <Carousel
+                    activeIndex={activeIndex}
+                    next={this.next}
+                    previous={this.previous}
+                >
+                    <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+                    {slides}
+                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+                    <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+                </Carousel>
+            </Container>
         );
     }
 }

@@ -4,44 +4,41 @@ import art from '../../../assets/images/mix/art.jpg';
 import education from '../../../assets/images/mix/education.jpg';
 import science from '../../../assets/images/mix/science.jpg';
 import sport from '../../../assets/images/mix/sport.jpg';
-import kitchen from '../../../assets/images/mix/kitchen.jpg';
-import other from '../../../assets/images/mix/other.jpg';
 
 class Lavaguynner extends Component {
-	arrayOfLavTeachers = [
-	    {
-	        photo: art,
-	        name: 'Ադրինե Սեթաղյան',
-	        subject: 'Արվեստ',
-	        aboutMe: 'Իմ մասին'
-	    },
-	    {
-	        photo: education,
-	        name: 'Թուխիկ Ղարագյոզյան',
-	        subject: 'Կրթություն',
-	        aboutMe: 'Իմ մասին'
-	    },
-	    {
-	        photo: science,
-	        name: 'Գոռ Մանուկյան',
-	        subject: 'Գիտություն',
-	        aboutMe: 'Իմ մասին'
-	    },
-	    {
-	        photo: sport,
-	        name: 'Էդգար Նիկողոսյան',
-	        subject: 'Սպորտ',
-	        aboutMe: 'Իմ մասին'
-	    }
-	];	
-	render() {
-	    console.log(this.arrayOfLavTeachers);
-	    return(
-	        <div className="container">
-	            <Cards arrayOfLavTeachers={this.arrayOfLavTeachers}/>
-    		</div>
-	    );
-	}
+    arrayOfLavTeachers = [
+        {
+            photo: art,
+            name: 'Ադրինե Սեթաղյան',
+            subject: 'Արվեստ',
+            aboutMe: 'Իմ մասին'
+        },
+        {
+            photo: education,
+            name: 'Թուխիկ Ղարագյոզյան',
+            subject: 'Կրթություն',
+            aboutMe: 'Իմ մասին'
+        },
+        {
+            photo: science,
+            name: 'Գոռ Մանուկյան',
+            subject: 'Գիտություն',
+            aboutMe: 'Իմ մասին'
+        },
+        {
+            photo: sport,
+            name: 'Էդգար Նիկողոսյան',
+            subject: 'Սպորտ',
+            aboutMe: 'Իմ մասին'
+        }
+    ];
+    render() {
+        return(
+            <div className="container">
+                <Cards arrayOfLavTeachers={this.arrayOfLavTeachers}/>
+            </div>
+        );
+    }
 }
 
 export {Lavaguynner};

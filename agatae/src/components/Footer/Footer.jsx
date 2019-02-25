@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'reactstrap';
 import logo from '../../../assets/images/mainLogo.png';
 import fStyle from '../../../assets/styles/Footer/footer.module.css';
 
-/*import './../../../assets/styles/Footer.css';*/
 class Footer extends Component {
     render() {
         return (
@@ -11,7 +10,7 @@ class Footer extends Component {
                 <Container className={fStyle.mainDiv}>
                     <Row>
                         <Col md={4} sm={2} className={fStyle.logo}>
-                            <img  className={fStyle.img} src={logo} alt="LOGO"/>
+                            <img className={fStyle.img} src={logo} alt="LOGO"/>
                         </Col>
                         <Col md={3} sm={7} className={fStyle.ftrLi}>
                             <h2>About us</h2>
@@ -29,12 +28,13 @@ class Footer extends Component {
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                         </Col>
                     </Row>
-                  <div className={fStyle.cpyRght} fluid>
-          &copy; {new Date().getFullYear()} Copyright:   <a href="#"> Example.com </a>
-        </div>
+                    <div className={fStyle.cpyRght} fluid>
+                        &copy; {new Date().getFullYear()} Copyright:   <a href="#"> Example.com </a>
+                    </div>
                 </Container>
             </footer>
         );
     }
 }
+
 export {Footer};
