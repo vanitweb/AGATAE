@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { observer } from 'mobx-react';
+import './Lavaguynner.css';
 import { 
     Card,
     Button,
@@ -8,21 +11,30 @@ import {
     CardSubtitle,
     CardBody
 } from 'reactstrap';
-import './Lavaguynner.css';
 
+
+@observer
 class Cards extends Component {
+    static contextTypes = {
+        appStore: PropTypes.object.isRequired
+    };
+
+    static propTypes = {
+        bestTeachers: PropTypes.object
+    }; 
     render() {
-        const{arrayOfLavTeachers} = this.props;
+        const {bestTeachers} = this.context.appStore;
+		console.log(bestTeachers);
         return(
             <CardDeck>
-                {arrayOfLavTeachers.map((item,i) => {
+                {bestTeachers.map((item,i) => {
                     return (
                         <Card key={i} style={{backgroundColor:'#FFFFD2'}}>
-                            <CardImg top width="100%" src={arrayOfLavTeachers[i].photo}/>
+                            <CardImg top width="100%" src={bestTeachers[item].photo}/>
                             <CardBody key={i} >
-                                <CardTitle key={i}>{arrayOfLavTeachers[i].name}</CardTitle>
-                                <CardSubtitle key={i}>{arrayOfLavTeachers[i].subject}</CardSubtitle>
-                                <Button key={i} color="success" >{arrayOfLavTeachers[i].aboutMe}</Button>
+                                <CardTitle key={i}>{bestTeachers[item].name}</CardTitle>
+                                <CardSubtitle key={i}>{bestTeachers[item].subject}</CardSubtitle>
+                                <Button key={i} color="success" >{bestTeachers[item].aboutMe}</Button>
                             </CardBody>
                         </Card>
                     );
