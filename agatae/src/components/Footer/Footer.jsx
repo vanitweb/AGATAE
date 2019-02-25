@@ -6,7 +6,7 @@ import fStyle from '../../../assets/styles/Footer/footer.module.css';
 class Footer extends Component {
     render() {
         return (
-            <footer className="fixed-bottom" id={fStyle.fId}>
+            <footer>
                 <Container className={fStyle.mainDiv}>
                     <Row>
                         <Col md={4} sm={2} className={fStyle.logo}>
