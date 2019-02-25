@@ -66,4 +66,5 @@ class RegisterPage extends Component {
         );
     }
 }
+
 export {RegisterPage};

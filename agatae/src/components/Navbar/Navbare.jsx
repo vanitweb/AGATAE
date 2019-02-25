@@ -32,7 +32,6 @@ class Navbare extends React.Component {
             dropdownOpen: false
         };
     }
-
 	@observable searchText;
 	onchangeSearch = (event) => {
 	    this.searchText = event.target.value;
@@ -64,7 +63,6 @@ class Navbare extends React.Component {
                         </InputGroup>
                         <SighInButton/>
                         <SignUp/>
-
                     </Navbar.Collapse>
                 </Navbar>
             </div>
