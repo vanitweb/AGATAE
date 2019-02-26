@@ -43,3 +43,9 @@
   align-items: center;
 }
 
+.aboutUs h2 {
+	display: block;
+}
+.aboutUs p {
+	font-size: 8px;
+}
