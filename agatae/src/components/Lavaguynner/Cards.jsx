@@ -24,7 +24,7 @@ class Cards extends Component {
             <CardDeck>
                 {bestTeachers.map((item,i) => {
                     return (
-                        <Col sm={6} md={4} lg={3} >
+                        <Col sm={6} md={4} lg={3} className="pt-4">
                             <Card key={i} style={{backgroundColor:'#FFFFD2'}}>
                                 <CardImg top width="100%" src={bestTeachers[i].photo}/>
                                 <CardBody key={i} >
