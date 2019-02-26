@@ -5,13 +5,19 @@ import education from '../../../assets/images/mix/education.jpg';
 import science from '../../../assets/images/mix/science.jpg';
 import sport from '../../../assets/images/mix/sport.jpg';
 import './Lavaguynner.css';
+import {
+    Container,
+    Row
+} from 'reactstrap';
 
 class Lavaguynner extends Component {   
     render() {
         return(
-            <div className="container">
-                <Cards bestTeachers={this.bestTeachers}/>
-            </div>
+            <Container>
+                <Row className="justify-content-center">
+                    <Cards bestTeachers={this.bestTeachers}/>
+                </Row>                
+            </Container>
         );
     }
 }
