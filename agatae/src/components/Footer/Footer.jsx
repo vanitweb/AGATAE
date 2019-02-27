@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import logo from '../../../assets/images/mainLogo.png';
 import '../../../assets/styles/Footer/Footer.css';
-import fStyle from '../../../assets/styles/Footer/footer.module.css';
 
 class Footer extends Component {
     render() {
         return (
             <footer>
-                <Container className={fStyle.mainDiv}>
+                <Container>
                     <Row className="aboutUs py-4 justify-content-center">
                         <Col md={12}><h4>ԿԱՅՔԻ ՄԱՍԻՆ</h4></Col>
                         <Col md={12}><img src={logo} alt="logo" width="100px" height="25px"/></Col>
@@ -19,18 +18,20 @@ class Footer extends Component {
                         </Col>
                     </Row>
                     <Row>
-
-                        <Col  className={fStyle.logo}>
-                            <img className={fStyle.img} src={logo} alt="LOGO"/>
-                        </Col>
                         <Col md={4} sm={2} className="contacts">
                             <h6>ԿՈՆՏԱԿՏԱՅԻՆ ՏՎՅԱԼՆԵՐ</h6>
                             <p>Ք. Վանաձոր</p>
                             <p>example@mail.ru</p>
                             <p>(+374)93354565</p>
                         </Col>
-                        <Col md={3} sm={7} className={fStyle.ftrLi}>
-                           <h6>ՄԵԶ ԿԱՐՈՂ ԵՔ ՀԵՏԵՎԵԼ</h6>
+                        <Col md={5} sm={7} className="hetevel">
+                            <h6>ՄԵԶ ԿԱՐՈՂ ԵՔ ՀԵՏԵՎԵԼ</h6>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            </p>
+                        </Col>
+                        <Col md={3} sm={7} className="we">
+                            <h6>ՄԵՐ ՄԱՍԻՆ</h6>
                             <ul>
                                 <li ><a href="https://www.facebook.com/adrine.setaghyan" target="_blanc">Ադրինե Սեթաղյան</a></li>
                                 <li><a href="https://www.facebook.com/gor.manukyan.545" target="_blanc">Գոռ Մանուկյան</a></li>
@@ -40,8 +41,7 @@ class Footer extends Component {
                                 <li><a href="https://www.facebook.com/Edgar.nikoghosyan.Sebo" target="_blanc">Էդգար Նիկողոսյան</a></li>
                             </ul>
                         </Col>
-                        </Row>
-
+                    </Row>
                     <div className="copy">
                         <p>Copyright &copy; AGATAE {new Date().getFullYear()}</p>
                     </div>
