@@ -49,9 +49,11 @@ class Navbare extends React.Component {
             <div>
                 <Navbar collapseOnSelect expand="lg" className={navCss.main} variant="light" >
                 <DrowButton click = {drawClick} className={navCss.rowButton} />
-                    <Navbar.Brand href="/" className={navCss.brand} >
+               <NavLink to="/"  tag={Link}>
+                    <Navbar.Brand  className={navCss.brand} >
                         <img src={logo} width="130" height="40" alt=""/>
                     </Navbar.Brand>
+                </NavLink>
                     <Navbar.Collapse className="collapseGroup" id="responsive-navbar-nav" className={navCss.mainMenu}>       
                         {navs.map((nav) => (
                             <NavbarDropdown nav={nav} />
