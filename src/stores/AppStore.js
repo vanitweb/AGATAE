@@ -6,9 +6,9 @@ class AppStore {
     storeValues = {
         _teachers: [],
         _teacherName: '',
-        _subjectName: 'Մաթեմատիկա',
+        _subjectName: '',
 		_searchValue: '',
-		_currentLink: ''
+		_currentLink: '/'
     };	
     constructor() {
         extendObservable(this, this.storeValues);
@@ -17,11 +17,8 @@ class AppStore {
     initData = () => {
         this._teachers = teachers;
     };
-    @computed get teachersData() {
-        return this._teachers.filter(item => (item.name.substring(0, this._teacherName.length) === this._teacherName));
-    }
     @computed get subjectData() {
-        return this._teachers.filter(item => (item.subject === this._subjectName && item.name.includes(this._searchValue) /*|| item.name === this._searchValue*/));
+        return this._teachers.filter(item => (item.subject === this._subjectName && item.name.includes(this._searchValue) || (item.name === this._searchValue && item.subject.includes(this._subjectName))));
     }
     @computed get bestTeachers() {
         let tempTeachersArray = [...this._teachers];
