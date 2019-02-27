@@ -7,6 +7,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import {UIStore} from '../stores/UIStore';
 import {AppStore} from '../stores/AppStore';
+import {UserSrore} from '../stores/UserSrore';
 import {Navbare} from './Navbar/Navbare';
 import {Content} from './Content/Content';
 import {Footer} from './Footer/Footer';
@@ -45,15 +46,18 @@ class App extends Component {
         super();
         this.appStore = new AppStore();
         this.uiStore = new UIStore();
+		/*this.userStore = new UserSrore();*/
     }	
     static childContextTypes = {
         uiStore: PropTypes.object,
-        appStore: PropTypes.object
+        appStore: PropTypes.object,
+		/*userStore: PropTypes.object*/
     };
     getChildContext() {
         return {
             uiStore: this.uiStore,
-            appStore: this.appStore
+            appStore: this.appStore,
+			/*userStore: this.userStore*/
         };
     }
     componentDidMount() {
