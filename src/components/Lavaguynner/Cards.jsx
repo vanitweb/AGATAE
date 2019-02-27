@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import s from'./Lavaguynner.module.css';
 import { Container, Row, Col } from 'reactstrap';
+import {TeacherPage} from '../TeacherPage/TeacherPage'
+import {Link} from 'react-router-dom';
 import { 
     Card,
     Button,
@@ -11,6 +13,7 @@ import {
     CardDeck,
     CardSubtitle,
     CardBody,
+	NavLink,
 } from 'reactstrap';
 
 @observer
