@@ -13,6 +13,7 @@ import {Footer} from './Footer/Footer';
 import {RegisterPage} from './Navbar/RegisterPage';
 import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import {ErrorPage} from './Error';
+import {TeacherPage} from './TeacherPage/TeacherPage';
 
 import './App.css';
 import '../../assets/styles/App.css';
@@ -29,6 +30,10 @@ const routes = [{
 {
     path: '/register',
     component: RegisterPage
+},
+{
+    path: '/teacherPage',
+    component: TeacherPage
 },
 {
     component: ErrorPage
