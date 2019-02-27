@@ -16,6 +16,8 @@ import {ErrorPage} from './Error';
 
 import './App.css';
 import '../../assets/styles/App.css';
+import {SideDrawer} from './Navbar/ResponsiveNavbar/SideDrawer';
+import {BackDrop} from './Navbar/ResponsiveNavbar/Backdrop/BackDrop.js';
 
 const routes = [{
     path: '/',
@@ -36,6 +38,9 @@ const routes = [{
 
 @observer
 class App extends Component {
+    state ={
+        sideDrowOpen: false
+    }
     constructor() {
         super();
         this.appStore = new AppStore();
@@ -54,12 +59,34 @@ class App extends Component {
     componentDidMount() {
         this.appStore.initData();
     }
+
+
+    drawClickHandler = () => {
+        this.setState((prevState) => {
+            return {sideDrowOpen: !prevState.sideDrowOpen};
+        });
+    };
+
+    backdropClickHendler = () => {
+        this.setState({sideDrowOpen: false});
+    };
+
+
     render() {
+        let backDrop;
+
+        if (this.state.sideDrowOpen) {
+            backDrop = <BackDrop click={this.backdropClickHendler}/>;
+        }
+
         const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
         return (
+
             <BrowserRouter>
                 <div className="App">
-                    <Navbare />
+                    <Navbare drawClick={this.drawClickHandler} />
+                    <SideDrawer show={this.state.sideDrowOpen}/>
+                    {backDrop}
                     <div>
                         <Switch>
                             {routeComponents}
@@ -68,6 +95,7 @@ class App extends Component {
                     <Footer />
                 </div>
             </BrowserRouter>
+              
         );
     }
 }

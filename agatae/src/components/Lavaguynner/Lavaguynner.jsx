@@ -9,7 +9,7 @@ import './Lavaguynner.css';
 class Lavaguynner extends Component {   
     render() {
         return(
-            <div className="container">
+            <div className="containerL">
                 <Cards bestTeachers={this.bestTeachers}/>
             </div>
         );

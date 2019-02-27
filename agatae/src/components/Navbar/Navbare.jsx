@@ -22,6 +22,7 @@ import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
 import {RegisterPage} from './RegisterPage';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
+import {DrowButton} from './ResponsiveNavbar/DrowButton';
 
 @observer
 class Navbare extends React.Component {
@@ -43,13 +44,15 @@ class Navbare extends React.Component {
 	    });
 	}
     render() {
+    const {drawClick} = this.props;
         return (
             <div>
-                <Navbar collapseOnSelect expand="lg" className={navCss.main} variant="light">
-                    <Navbar.Brand href="/">
+                <Navbar collapseOnSelect expand="lg" className={navCss.main} variant="light" >
+                <DrowButton click = {drawClick} className={navCss.rowButton} />
+                    <Navbar.Brand href="/" className={navCss.brand} >
                         <img src={logo} width="130" height="40" alt=""/>
                     </Navbar.Brand>
-                    <Navbar.Collapse className="collapseGroup" id="responsive-navbar-nav">       
+                    <Navbar.Collapse className="collapseGroup" id="responsive-navbar-nav" className={navCss.mainMenu}>       
                         {navs.map((nav) => (
                             <NavbarDropdown nav={nav} />
                         ))}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import './Lavaguynner.css';
+import { Container, Row, Col } from 'reactstrap';
 import { 
     Card,
     Button,

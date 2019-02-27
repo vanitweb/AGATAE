@@ -13,11 +13,6 @@ class Header extends Component {
         const { messages } = this.state;
         return (
             <Container className="header">
-                <Row className="justify-content-md-center">
-                    <Col>
-                        <img src={logo} width="230" height="60" alt=""/>
-                    </Col>
-                </Row>
                 <Row>
                     <Col>
                         <h1>{messages.CreateAccount}</h1>

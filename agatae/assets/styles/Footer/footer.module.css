@@ -11,9 +11,11 @@
 	background-image: url(../../../assets/images/Footer/footer.jpg);
 	background-size: cover; 
 	background-color: ;
-	min-width:100%;
-    max-width:100%;
+	max-width:100%;
+    min-width:998px;
     margin-top: 50px;
+    position: relative;
+    bottom: 0;
 }
 
 .mainDiv p{
@@ -41,5 +43,16 @@
 .logo{
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 576px){
+	.mainDiv {
+		min-width: 100%;
+		text-align: center;
+	}
+	.mainDiv div:nth-child(1n+2){
+		border: none;
+		padding-top: 15px;
+	}
 }
 
