@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import logo from '../../../assets/images/mainLogo.png';
-import '../../../assets/styles/Footer/Footer.css';
+import ftrStyle from '../../../assets/styles/Footer/footer.module.css';
+import {FontIcons} from './FontIcons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Footer extends Component {
     render() {
         return (
             <footer>
-                <Container>
+                <Container className={ftrStyle.mainDiv}>
                     <Row className="aboutUs py-4 justify-content-center">
-                        <Col md={12}><h4>ԿԱՅՔԻ ՄԱՍԻՆ</h4></Col>
-                        <Col md={12}><img src={logo} alt="logo" width="100px" height="25px"/></Col>
-                        <Col md={12} className="my-3">
-                            <p>
-                                Կայքը նախատեսված է կրթական համակարգի բարելավման և զարգացման համար, այն նպատակ ունի հավաքագրել բոլոր դասավանդողների տվյալները մեկ հարթակում՝ խնայելով կայքի շահառուների ժամանակը: Բացի այդ հնարավորություն է տալիս այն մարդկանց, ովքեր ունեն բավարար գիտելիքներ և փորձ, գտնել համապատասխան աշխատանք:
-                            </p>
-                        </Col>
+                        <Col className={ftrStyle.logo}md={12}><img src={logo} alt="logo" width="160px" height="50px"/></Col>
                     </Row>
                     <Row>
                         <Col md={4} sm={2} className="contacts">
@@ -24,13 +21,14 @@ class Footer extends Component {
                             <p>example@mail.ru</p>
                             <p>(+374)93354565</p>
                         </Col>
-                        <Col md={5} sm={7} className="hetevel">
-                            <h6>ՄԵԶ ԿԱՐՈՂ ԵՔ ՀԵՏԵՎԵԼ</h6>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <Col md={5} sm={7}>
+                            <h5>ԿԱՅՔԻ ՄԱՍԻՆ</h5>
+                           <p>
+                                Կայքը նախատեսված է կրթական համակարգի բարելավման և զարգացման համար, այն նպատակ ունի հավաքագրել բոլոր դասավանդողների տվյալները մեկ հարթակում՝ խնայելով կայքի շահառուների ժամանակը: Բացի այդ հնարավորություն է տալիս այն մարդկանց, ովքեր ունեն բավարար գիտելիքներ և փորձ, գտնել համապատասխան աշխատանք:
                             </p>
+                            <FontIcons />
                         </Col>
-                        <Col md={3} sm={7} className="we">
+                        <Col md={3} sm={7} className={ftrStyle.ftrLi}>
                             <h6>ՄԵՐ ՄԱՍԻՆ</h6>
                             <ul>
                                 <li ><a href="https://www.facebook.com/adrine.setaghyan" target="_blanc">Ադրինե Սեթաղյան</a></li>
@@ -42,9 +40,9 @@ class Footer extends Component {
                             </ul>
                         </Col>
                     </Row>
-                    <div className="copy">
+                    <Row className="justify-content-md-center">
                         <p>Copyright &copy; AGATAE {new Date().getFullYear()}</p>
-                    </div>
+                    </Row>
                 </Container>
             </footer>
         );

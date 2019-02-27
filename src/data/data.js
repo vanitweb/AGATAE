@@ -1,6 +1,6 @@
 const teachers = [
     {
-        photo: '../../assets/images/teacher.jpg',
+        photo: '/static/assets/images/sport.jpg',
         name: 'Էդգար Նիկողոսյան',
         subject: 'Մաթեմատիկա',
         phone: '(+374)-77-33-36-96',
@@ -10,10 +10,12 @@ const teachers = [
         graphic: '16:00-18:00',
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
-        raiting: 5
+        raiting: 5,
+		username: 'Edgar',
+		password: 'E112233'
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/teacher.jpg',
         name: 'Արևիկ Ղարագյոզյան',
         subject: 'Շախմատ',
         phone: '(+374)-77-75-85-10',
@@ -23,10 +25,12 @@ const teachers = [
         graphic: '16:00-18:00',
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
-        raiting: 5
+        raiting: 5,
+		username: 'Arevik',
+		password: 'A112233'
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/education.jpg',
         name: 'Թուխիկ Ղարագյոզյան',
         subject: 'Լող',
         phone: '(+374)-43-08-70-15',
@@ -36,10 +40,12 @@ const teachers = [
         graphic: '16:00-18:00',
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
-        raiting: 5
+        raiting: 5,
+		username: 'Tukhik',
+		password: 'T112233'
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/kitchen.jpg',
         name: 'Արուսիկ Ափինյան',
         subject: 'Հայերեն',
         phone: '(+374)-99-42-55-85',
@@ -49,10 +55,12 @@ const teachers = [
         graphic: '16:00-18:00',
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
-        raiting: 5
+        raiting: 5,
+		username: 'Arusik',
+		password: 'A223311'
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/art.jpg',
         name: 'Ադրինե Սեթաղյան',
         subject: 'Ռուսերեն',
         phone: '(+374)-77-85-37-88',
@@ -62,10 +70,12 @@ const teachers = [
         graphic: '16:00-18:00',
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
-        raiting: 5
+        raiting: 5,
+		username: 'Adrine',
+		password: 'A332211'
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/science.jpg',
         name: 'Գոռ Մանուկյան',
         subject: 'Ձյուդո',
         phone: '(+374)-94-16-19-90',
@@ -75,7 +85,9 @@ const teachers = [
         graphic: '16:00-18:00',
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
-        raiting: 5
+        raiting: 5,
+		username: 'Gor',
+		password: 'G112233'
     }
 ];
 
