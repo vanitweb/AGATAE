@@ -18,6 +18,11 @@ import './App.css';
 import '../../assets/styles/App.css';
 import {SideDrawer} from './Navbar/ResponsiveNavbar/SideDrawer';
 import {BackDrop} from './Navbar/ResponsiveNavbar/Backdrop/BackDrop.js';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faIgloo } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faIgloo)
 
 const routes = [{
     path: '/',
