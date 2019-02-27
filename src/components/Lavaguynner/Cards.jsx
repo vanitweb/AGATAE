@@ -27,10 +27,10 @@ class Cards extends Component {
 	}*/
 	
     render() {
-        const {bestTeachers} = this.context.appStore;
+        const {currentTeachers} = this.context.appStore;
         return(
             <CardDeck>
-                {bestTeachers.map((item,i) => {
+                {currentTeachers.map((item,i) => {
                     return (
 <<<<<<< HEAD
                         <Col sm={6} md={4} lg={3} className="pt-4">

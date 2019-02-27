@@ -21,7 +21,7 @@ class AppStore {
         return this._teachers.filter(item => (item.name.substring(0, this._teacherName.length) === this._teacherName));
     }
     @computed get subjectData() {
-        return this._teachers.filter(item => (item.subject === this._subjectName || item.name === this._searchValue));
+        return this._teachers.filter(item => (item.subject === this._subjectName && item.name.includes(this._searchValue) /*|| item.name === this._searchValue*/));
     }
     @computed get bestTeachers() {
         let tempTeachersArray = [...this._teachers];
@@ -34,8 +34,8 @@ class AppStore {
 			return this.subjectData;
 		}
 	}
-    set teacherName(teacher) {
-        this._teacherName = teacher;
+    set searchValue(search) {
+        this._searchValue = search;
     }
     set subjectName(subject) {
         this._subjectName = subject;
