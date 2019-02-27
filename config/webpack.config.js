@@ -9,6 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const safePostCssParser = require('postcss-safe-parser');
@@ -487,6 +488,13 @@ module.exports = function(webpackEnv) {
             ]
         },
         plugins: [
+			new CopyWebpackPlugin([{
+              from: 'assets/images/*',
+              to: 'static/assets/images/',
+              flatten: true
+          }],
+            { copyUnmodified: true }
+          ),
             // Generates an `index.html` file with the <script> injected.
             new HtmlWebpackPlugin(
         Object.assign(

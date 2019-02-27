@@ -1,6 +1,6 @@
 const teachers = [
     {
-        photo: '../../assets/images/teacher.jpg',
+        photo: '/static/assets/images/teacher.jpg',
         name: 'Էդգար Նիկողոսյան',
         subject: 'Մաթեմատիկա',
         phone: '(+374)-77-33-36-96',
@@ -13,7 +13,7 @@ const teachers = [
         raiting: 5
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/Edgar.jpg',
         name: 'Արևիկ Ղարագյոզյան',
         subject: 'Շախմատ',
         phone: '(+374)-77-75-85-10',
@@ -26,7 +26,7 @@ const teachers = [
         raiting: 5
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/Edgar.jpg',
         name: 'Թուխիկ Ղարագյոզյան',
         subject: 'Լող',
         phone: '(+374)-43-08-70-15',
@@ -39,7 +39,7 @@ const teachers = [
         raiting: 5
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/Edgar.jpg',
         name: 'Արուսիկ Ափինյան',
         subject: 'Հայերեն',
         phone: '(+374)-99-42-55-85',
@@ -52,7 +52,7 @@ const teachers = [
         raiting: 5
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/Edgar.jpg',
         name: 'Ադրինե Սեթաղյան',
         subject: 'Ռուսերեն',
         phone: '(+374)-77-85-37-88',
@@ -65,7 +65,7 @@ const teachers = [
         raiting: 5
     },
     {
-        photo: '../../assets/images/Edgar.jpg',
+        photo: '/static/assets/images/Edgar.jpg',
         name: 'Գոռ Մանուկյան',
         subject: 'Ձյուդո',
         phone: '(+374)-94-16-19-90',
