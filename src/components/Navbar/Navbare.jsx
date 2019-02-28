@@ -40,6 +40,10 @@ class Navbare extends React.Component {
 	onchangeSearch = (event) => {
 	    this.context.appStore.searchValue = event.target.value;
 	}
+	onclick = (event) => {
+		this.context.appStore.subjectName = event.currentTarget.getAttribute('data-option');
+		this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
+	}
 	toggle(e) {
 	    console.log(e.target.getAttribute('data-name'));
 	    this.setState({
@@ -52,7 +56,7 @@ class Navbare extends React.Component {
             <div>
                 <Navbar collapseOnSelect expand="lg" className={navCss.main} variant="light" >
                 <DrowButton click = {drawClick} className={navCss.rowButton} />
-                <NavLink to='/' tag={Link}>
+                <NavLink onClick={this.onclick} data-option="ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ" data-link="/" to='/' tag={Link}>
                     <Navbar.Brand href="/" className={navCss.brand} >
                         <img src={logo} width="130" height="40" alt=""/>
                     </Navbar.Brand>
