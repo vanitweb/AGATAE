@@ -6,13 +6,19 @@ import {Form} from 'react-bootstrap';
 import {navs} from '../../configs/navData';
 import {NavbarDropdown} from './NavbarDropdown';
 import {
+    Nav,
     NavItem,
     NavLink,
     InputGroup,
     InputGroupAddon,
     Button,
     Input,
-    Container
+    Collapse,
+    Container,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem 
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';

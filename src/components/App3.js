@@ -1,40 +1,81 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {observer} from 'mobx-react';
+import PropTypes from 'prop-types';
+import {observable} from 'mobx';
+import {Form} from 'react-bootstrap';
+import {navs} from '../configs/navData';
+import {NavbarDropdown} from './Navbar/NavbarDropdown';
 import {
-  Button,
-  Container,
-  Row, 
-  Col
+    NavItem,
+    NavLink,
+    InputGroup,
+    InputGroupAddon,
+    Button,
+    Input,
+    Container
 } from 'reactstrap';
-import teacher_1 from '../components/TeacherPage/images/teacher_1.jpg';
-import tStyle from './TeacherPage/css/style.module.css';
-import {MainTabs} from './TeacherPage/MainTabs.js';
+import {Link} from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import logo from '../../assets/images/newProject4.png';
+import navCss from '../../assets/styles//Navbar/Navbar.module.css';
+import search from '../../assets/images/search.png';
+import {SignUp} from './Navbar/SignUp';
+import {SighInButton} from './Navbar/SighInButton';
+import {RegisterPage} from './Navbar/RegisterPage';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import {DrowButton} from './Navbar/ResponsiveNavbar/DrowButton';
 
-class App extends Component {
-  render() {
-    return (
-            <Container className={tStyle.main}>
-                <Row className="justify-content-lg-left">    
-                    <Col xs={8}>
-                        <h1>David Smith</h1>
-                        <h6>Marketing Director</h6>
-                        <p>Laorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam praesentium, 
-    odit assumenda perspiciatis optio! Laudantium doloribus non velit officia. Temporibus 
-    modi, minus, molestias enim optio tempora dolor voluptatum quaerat distinctio perspiciatis
-    aliquam sed quam! Dolores, repudiandae, consequatur. Et, eligendi nisi voluptatibus voluptate 
-    ratione recusandae deleniti ducimus, repellat in nobis temporibus?</p>
-                        <p>Integer dignissim lorem vel venenatis euismod. Donec sit amet purus et 
-    quam dapibus convallis sed quis diam. Pellentesque auctor enim vitae 
-    lacus rutrum facilisis. Aliquam dignissim augue a molestie pharetra.
-    Vivamus bibendum ex diam, tempor rhoncus libero imperdiet ac.</p>
-                        <Button color="success"className={tStyle.btn}>Hertagrvel</Button>
-                    </Col>
-                    <Col lg={true}><img className={tStyle.teacherImage} src={teacher_1} width="250" height="300" alt="Your Teacher"/></Col>
-                    <MainTabs/>
-                    <Col>
-                    </Col>
-                </Row>
-            </Container>
+@observer
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+            dropdownOpen: false
+        };
+    }
+    static contextTypes = {
+        appStore: PropTypes.object.isRequired
+    };
+    onchangeSearch = (event) => {
+        this.context.appStore.searchValue = event.target.value;
+    }
+    toggle(e) {
+        console.log(e.target.getAttribute('data-name'));
+        this.setState({
+            dropdownOpen: e.target.getAttribute('data-name')
+        });
+    }
+    render() {
+    const {drawClick} = this.props;
+        return (
+            <div>
+                <Navbar collapseOnSelect expand="lg" className={navCss.main} variant="light" >
+                <DrowButton click = {drawClick} className={navCss.rowButton} />
+                <NavLink to='/' tag={Link}>
+                    <Navbar.Brand href="/" className={navCss.brand} >
+                        <img src={logo} width="130" height="40" alt=""/>
+                    </Navbar.Brand>
+                    </NavLink>
+                    <Navbar.Collapse className="collapseGroup" id="responsive-navbar-nav" className={navCss.mainMenu}>       
+                        {navs.map((nav) => (
+                            <NavbarDropdown nav={nav} />
+                        ))}
+                        <InputGroup className="searchGroup">
+                            <Input placeholder="Search..." onChange={this.onchangeSearch} className="search"/>
+                            <InputGroupAddon addonType="append">
+                                <Button color="secondary">
+                                    <img src={search} width="25" height="25" alt=""/>
+                                </Button>
+                            </InputGroupAddon>
+                        </InputGroup>
+                        <SighInButton/>
+                        <SignUp/>
+                    </Navbar.Collapse>
+                </Navbar>
+            </div>
         );
     }
 }
+
 export default App;
