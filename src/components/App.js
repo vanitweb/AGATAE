@@ -15,11 +15,8 @@ import {RegisterPage} from './Navbar/RegisterPage';
 import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import {ErrorPage} from './Error';
 import {TeacherPage} from './TeacherPage/TeacherPage';
-
 import './App.css';
 import '../../assets/styles/App.css';
-import {SideDrawer} from './Navbar/ResponsiveNavbar/SideDrawer';
-import {BackDrop} from './Navbar/ResponsiveNavbar/Backdrop/BackDrop.js';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIgloo } from '@fortawesome/free-solid-svg-icons';
@@ -99,8 +96,6 @@ class App extends Component {
             <BrowserRouter>
                 <div className="App">
                     <Navbare drawClick={this.drawClickHandler} />
-                    <SideDrawer show={this.state.sideDrowOpen}/>
-                    {backDrop}
                     <div>
                         <Switch>
                             {routeComponents}

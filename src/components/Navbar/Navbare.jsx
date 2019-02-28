@@ -31,7 +31,6 @@ import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
 import {RegisterPage} from './RegisterPage';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
-import {DrowButton} from './ResponsiveNavbar/DrowButton';
 
 @observer
 class Navbare extends React.Component {
@@ -80,7 +79,7 @@ class Navbare extends React.Component {
     const {drawClick} = this.props;
         return (
             <div>
-                <Navbar expand="lg" fixed="top"  bg="light" variant="dark" className={navCss.main}>
+                <Navbar expand="lg" fixed="top"  bg="dark" variant="light" className={navCss.main}>
                      <NavbarBrand href="/"> <img src={logo} width="130" height="40" alt=""/></NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                             <Collapse isOpen={this.state.isOpen} navbar className={navCss.mainMenu}>
