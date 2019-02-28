@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {PersonalPageUsers} from '../PersonalPageUsers/PersonalPageUsers'
 import {
     Button,
     Container,
@@ -33,6 +34,7 @@ class TeacherPage extends Component {
                     <Col>
                     </Col>
                 </Row>
+				<PersonalPageUsers />
             </Container>
         );
     }
