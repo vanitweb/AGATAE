@@ -13,15 +13,16 @@ class NavbarDropdown extends React.Component {
         uiStore: PropTypes.shape({
             setOpenedDropdown: PropTypes.func
         }),
-		appStore: PropTypes.object.isRequired
+        appStore: PropTypes.object.isRequired
     };	
     onToggle = () => {
         this.context.uiStore.setOpenedDropdown(this.props.nav.name);
     };	
-	onClick = (event) => {
-		this.context.appStore.subjectName = event.currentTarget.getAttribute('data-option');
-		this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
-	}
+    onClick = (event) => {
+        this.context.appStore.subjectName = event.currentTarget.getAttribute('data-option');
+        this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
+        this.context.appStore.searchValue = '';
+    }
 
     render() {
         const {nav} = this.props;
@@ -33,7 +34,7 @@ class NavbarDropdown extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu >
                     {nav.options.map((option) => (
-                        <NavLink to='/lavaguynner' tag={Link}>{option}</NavLink>
+                        <NavLink onClick={this.onClick} data-option={option} data-link='/lavaguynner' to='/lavaguynner' tag={Link}>{option}</NavLink>
                     ))}
                 </DropdownMenu>
             </Dropdown> 

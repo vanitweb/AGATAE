@@ -6,9 +6,9 @@ class SignUp extends Component {
     render() {
         return (
             <div>
-             <NavLink to="/register" tag={Link}>
-               <Button variant="success">Register</Button>
-              </NavLink>
+                <NavLink to="/register" tag={Link}>
+                    <Button variant="success">Register</Button>
+                </NavLink>
             </div>
         );
     }

@@ -13,7 +13,7 @@ import {
     CardDeck,
     CardSubtitle,
     CardBody,
-	NavLink,
+    NavLink,
 } from 'reactstrap';
 
 @observer
@@ -21,11 +21,11 @@ class Cards extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
-	
-	onClick = (event) => {
-		this.context.appStore.teacher = this.context.appStore.currentTeachers[event.currentTarget.getAttribute('data-option')];
-	}
-	
+    
+    onClick = (event) => {
+        this.context.appStore.teacher = this.context.appStore.currentTeachers[event.currentTarget.getAttribute('data-option')];
+    }
+    
     render() {
         const {currentTeachers} = this.context.appStore;
         return(

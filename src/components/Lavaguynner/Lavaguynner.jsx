@@ -8,11 +8,11 @@ import {
 } from 'reactstrap';
 @observer
 class Lavaguynner extends Component { 
-	static contextTypes = {
+    static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
     render() {
-		const {subjectName} = this.context.appStore;
+        const {subjectName} = this.context.appStore;
         return(
 
             <div className="containerL">

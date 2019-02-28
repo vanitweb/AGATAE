@@ -1,8 +1,8 @@
 const teachers = [
     {
         photo: '/static/assets/images/football1.jpg',
-        name: '????? ????????',
-        subject: '???????',
+        name: 'Վահագն Դավթյան',
+        subject: 'Ռուսերեն',
         phone: '(+374)-77-67-98-55',
         email: 'karensimonyan@gmail.com',
         sex: '??????',
@@ -17,7 +17,7 @@ const teachers = [
 	{
         photo: '/static/assets/images/football2.jpg',
         name: '?????? ????????',
-        subject: '???????',
+        subject: 'Հայերեն',
         phone: '(+374)-98-72-12-23',
         email: 'grigorsahakyan@gmail.com',
         sex: '??????',
@@ -32,7 +32,7 @@ const teachers = [
 	{
         photo: '/static/assets/images/football3.jpg',
         name: '???? ?????????',
-        subject: '???????',
+        subject: 'Հայերեն',
         phone: '(+374)-99-69-23-44',
         email: 'arenhovsepyan@gmail.com',
         sex: '??????',
