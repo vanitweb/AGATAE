@@ -1,5 +1,6 @@
 import React from 'react';
 import {observer} from 'mobx-react';
+import PropTypes from 'prop-types';
 import {observable} from 'mobx';
 import {Form} from 'react-bootstrap';
 import {navs} from '../../configs/navData';
@@ -33,9 +34,11 @@ class Navbare extends React.Component {
             dropdownOpen: false
         };
     }
-	@observable searchText;
+	static contextTypes = {
+        appStore: PropTypes.object.isRequired
+    };
 	onchangeSearch = (event) => {
-	    this.searchText = event.target.value;
+	    this.context.appStore.searchValue = event.target.value;
 	}
 	toggle(e) {
 	    console.log(e.target.getAttribute('data-name'));

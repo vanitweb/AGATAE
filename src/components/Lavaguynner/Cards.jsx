@@ -22,9 +22,9 @@ class Cards extends Component {
         appStore: PropTypes.object.isRequired
     };
 	
-	/*onClick = (event) => {
-		this.context.appStore.currentTarget = event.currentTarget.getAttribute('data-option')
-	}*/
+	onClick = (event) => {
+		this.context.appStore.teacher = this.context.appStore.currentTeachers[event.currentTarget.getAttribute('data-option')];
+	}
 	
     render() {
         const {currentTeachers} = this.context.appStore;

@@ -8,7 +8,8 @@ class AppStore {
         _teacherName: '',
         _subjectName: '',
 		_searchValue: '',
-		_currentLink: '/'
+		_currentLink: '/',
+		_teacher: {}
     };	
     constructor() {
         extendObservable(this, this.storeValues);
@@ -31,12 +32,18 @@ class AppStore {
 			return this.subjectData;
 		}
 	}
+	@computed get teacher() {
+		return this._teacher;
+	}
     set searchValue(search) {
         this._searchValue = search;
     }
     set subjectName(subject) {
         this._subjectName = subject;
     }
+	set teacher(teacherObject) {
+		this._teacher = teacherObject;
+	}
 }
 
 export {AppStore};
