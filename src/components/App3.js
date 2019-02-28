@@ -6,18 +6,26 @@ import {Form} from 'react-bootstrap';
 import {navs} from '../configs/navData';
 import {NavbarDropdown} from './Navbar/NavbarDropdown';
 import {
+    Nav,
     NavItem,
     NavLink,
+    NavbarBrand,
     InputGroup,
+    NavbarToggler,
     InputGroupAddon,
     Button,
     Input,
-    Container
+    Collapse,
+    Container,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem 
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/images/newProject4.png';
-import navCss from '../../assets/styles//Navbar/Navbar.module.css';
+import navCss from '../../assets/styles/Navbar/Navbar.module.css';
 import search from '../../assets/images/search.png';
 import {SignUp} from './Navbar/SignUp';
 import {SighInButton} from './Navbar/SighInButton';
@@ -25,57 +33,58 @@ import {RegisterPage} from './Navbar/RegisterPage';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import {DrowButton} from './Navbar/ResponsiveNavbar/DrowButton';
 
-@observer
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-            dropdownOpen: false
-        };
-    }
-    static contextTypes = {
-        appStore: PropTypes.object.isRequired
+ class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
     };
-    onchangeSearch = (event) => {
-        this.context.appStore.searchValue = event.target.value;
-    }
-    toggle(e) {
-        console.log(e.target.getAttribute('data-name'));
-        this.setState({
-            dropdownOpen: e.target.getAttribute('data-name')
-        });
-    }
-    render() {
-    const {drawClick} = this.props;
-        return (
-            <div>
-                <Navbar collapseOnSelect expand="lg" className={navCss.main} variant="light" >
-                <DrowButton click = {drawClick} className={navCss.rowButton} />
-                <NavLink to='/' tag={Link}>
-                    <Navbar.Brand href="/" className={navCss.brand} >
-                        <img src={logo} width="130" height="40" alt=""/>
-                    </Navbar.Brand>
-                    </NavLink>
-                    <Navbar.Collapse className="collapseGroup" id="responsive-navbar-nav" className={navCss.mainMenu}>       
-                        {navs.map((nav) => (
-                            <NavbarDropdown nav={nav} />
-                        ))}
-                        <InputGroup className="searchGroup">
-                            <Input placeholder="Search..." onChange={this.onchangeSearch} className="search"/>
-                            <InputGroupAddon addonType="append">
-                                <Button color="secondary">
-                                    <img src={search} width="25" height="25" alt=""/>
-                                </Button>
-                            </InputGroupAddon>
-                        </InputGroup>
-                        <SighInButton/>
-                        <SignUp/>
-                    </Navbar.Collapse>
-                </Navbar>
-            </div>
-        );
-    }
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div>
+        <Navbar bg="dark" variant="light" expand="md">
+          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/components/">Components</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  Options
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    Option 1
+                  </DropdownItem>
+                  <DropdownItem>
+                    Option 2
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    Reset
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
 
 export default App;
