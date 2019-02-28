@@ -6,7 +6,7 @@ class AppStore {
     storeValues = {
         _teachers: [],
         _teacherName: '',
-        _subjectName: '',
+        _subjectName: 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ',
 		_searchValue: '',
 		_currentLink: '/',
 		_teacher: {}
@@ -19,7 +19,8 @@ class AppStore {
         this._teachers = teachers;
     };
     @computed get subjectData() {
-        return this._teachers.filter(item => (item.subject === this._subjectName && item.name.includes(this._searchValue) || (item.name === this._searchValue && item.subject.includes(this._subjectName))));
+        /*return this._teachers.filter(item => (item.subject === this._subjectName && item.name.includes(this._searchValue) || (item.name === this._searchValue && item.subject.includes(this._subjectName))));*/
+		return this._teachers.filter(item => item.subject === this._subjectName || item.name === this._searchValue);
     }
     @computed get bestTeachers() {
         let tempTeachersArray = [...this._teachers];
@@ -35,6 +36,9 @@ class AppStore {
 	@computed get teacher() {
 		return this._teacher;
 	}
+	@computed get subjectName() {
+		return this._subjectName;
+	}
     set searchValue(search) {
         this._searchValue = search;
     }
@@ -43,6 +47,9 @@ class AppStore {
     }
 	set teacher(teacherObject) {
 		this._teacher = teacherObject;
+	}
+	set currentLink(link) {
+		this._currentLink = link;
 	}
 }
 

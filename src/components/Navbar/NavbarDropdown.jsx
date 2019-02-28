@@ -12,11 +12,17 @@ class NavbarDropdown extends React.Component {
     static contextTypes = {
         uiStore: PropTypes.shape({
             setOpenedDropdown: PropTypes.func
-        })
+        }),
+		appStore: PropTypes.object.isRequired
     };	
     onToggle = () => {
         this.context.uiStore.setOpenedDropdown(this.props.nav.name);
     };	
+	onClick = (event) => {
+		this.context.appStore.subjectName = event.currentTarget.getAttribute('data-option');
+		this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
+	}
+
     render() {
         const {nav} = this.props;
         const {uiStore} = this.context;

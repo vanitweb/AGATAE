@@ -32,13 +32,17 @@ class Cards extends Component {
             <CardDeck>
                 {currentTeachers.map((item,i) => {
                     return (
-                        <Col key={i} sm={6} md={4} lg={3} className="pt-4">
-                            <Card style={{backgroundColor:'#FFFFD2'}}>
+                        <Col sm={6} md={4} lg={3} className="pt-4">
+                            <Card key={i} style={{backgroundColor:'#FFFFD2'}}>
                                 <CardImg top width="100%" src={item.photo}/>
                                 <CardBody >
                                     <CardTitle className={s.font}>{item.name}</CardTitle>
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>
-                                    <Button data-option={i} onClick={this.onClick} color="success" >{item.aboutMe}</Button>
+                                    <Button data-option={i} onClick={this.onClick} color="success" >
+                                        <NavLink to="/teacherPage" tag={Link}>
+                                           {item.aboutMe}
+                                        </NavLink>
+                                    </Button>
                                 </CardBody>
                             </Card>
                         </Col>

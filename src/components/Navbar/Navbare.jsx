@@ -46,8 +46,19 @@ class Navbare extends React.Component {
 	static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
+	@observable currentSearch;
 	onchangeSearch = (event) => {
-	    this.context.appStore.searchValue = event.target.value;
+	    this.currentSearch = event.target.value;
+	}
+	onclick = (event) => {
+		this.context.appStore.subjectName = event.currentTarget.getAttribute('data-option');
+		this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
+		this.context.appStore.searchValue = '';
+	}
+	onclicSearch = (event) => {
+		this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
+		this.context.appStore.searchValue = this.currentSearch;
+		this.context.appStore.subjectName = '';
 	}
 	toggle(e) {
 	    console.log(e.target.getAttribute('data-name'));
