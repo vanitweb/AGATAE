@@ -1,0 +1,71 @@
+body {
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    color: #222;
+}
+
+.main {
+    box-shadow: 0 3px 0 #e0e0e0;
+    width: 100%;
+    text-align: left;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+}
+.main2{
+ right: 0;
+
+ float: right;
+}
+.btn{
+    margin-left: 10px;
+}
+.btn:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+.teacherImage{
+    border-radius: 50%;
+    margin-top: 20px
+}
+
+ li{
+    font-size: 18px;
+    list-style: none;
+    color: #222;
+}
+._liitem li:nth-child(1):before{
+    content: "";
+    display: inline-block;
+    background: url("../images/address-book-solid.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 0 0;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+._liitem li:nth-of-type(2):before{
+    content: "";
+    display: inline-block;
+    background: url("../images/for_tel.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 0 0;
+    margin-top: 5px;
+    margin-left: 15px;
+   
+}
+._liitem li:nth-last-child(1):before{
+    content: "";
+    display: inline-block;
+    background: url("../images/for_address.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 0 0;
+    margin-top: 5px;
+    margin-left: 15px;
+}

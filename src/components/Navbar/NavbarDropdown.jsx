@@ -17,11 +17,12 @@ class NavbarDropdown extends React.Component {
     };	
     onToggle = () => {
         this.context.uiStore.setOpenedDropdown(this.props.nav.name);
-    };
+    };	
 	onClick = (event) => {
 		this.context.appStore.subjectName = event.currentTarget.getAttribute('data-option');
 		this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
 	}
+
     render() {
         const {nav} = this.props;
         const {uiStore} = this.context;
@@ -32,7 +33,7 @@ class NavbarDropdown extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu >
                     {nav.options.map((option) => (
-                        <NavLink data-option={option} data-link="/lavaguynner" onClick={this.onClick} to='/lavaguynner' tag={Link}>{option}</NavLink>
+                        <NavLink to='/lavaguynner' tag={Link}>{option}</NavLink>
                     ))}
                 </DropdownMenu>
             </Dropdown> 

@@ -10,6 +10,8 @@ import {
     NavItem,
     NavLink,
     InputGroup,
+    NavbarBrand,
+    NavbarToggler,
     InputGroupAddon,
     Button,
     Input,
@@ -37,7 +39,8 @@ class Navbare extends React.Component {
         super(props);
         this.toggle = this.toggle.bind(this);
         this.state = {
-            dropdownOpen: false
+            dropdownOpen: false,
+            isOpen: false
         };
     }
 	static contextTypes = {
@@ -63,38 +66,44 @@ class Navbare extends React.Component {
 	        dropdownOpen: e.target.getAttribute('data-name')
 	    });
 	}
+     toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+     toggle2() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    });
+  }
     render() {
     const {drawClick} = this.props;
         return (
             <div>
-                <Navbar collapseOnSelect expand="lg" className={navCss.main} variant="light" >
-                <DrowButton click = {drawClick} className={navCss.rowButton} />
-                <NavLink onClick={this.onclick} data-option="ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ" data-link="/" to='/' tag={Link}>
-                    <Navbar.Brand href="/" className={navCss.brand} >
-                        <img src={logo} width="130" height="40" alt=""/>
-                    </Navbar.Brand>
-                    </NavLink>
-                    <Navbar.Collapse className="collapseGroup" id="responsive-navbar-nav" className={navCss.mainMenu}>       
-                        {navs.map((nav) => (
-                            <NavbarDropdown nav={nav} />
-                        ))}
-                        <InputGroup className="searchGroup">
-                            <Input placeholder="Search..." onChange={this.onchangeSearch} className="search"/>
-                            <InputGroupAddon addonType="append">
-                               <NavLink onClick={this.onclicSearch} data-link="/lavaguynner" to='/lavaguynner' tag={Link}>
-                                <Button color="secondary">
-                                    <img src={search} width="25" height="25" alt=""/>
-                                </Button>
-								</NavLink>
-                            </InputGroupAddon>
-                        </InputGroup>
-                        <SighInButton/>
-                        <SignUp/>
-                    </Navbar.Collapse>
-                </Navbar>
+                <Navbar expand="lg" fixed="top"  bg="light" variant="dark" className={navCss.main}>
+                     <NavbarBrand href="/"> <img src={logo} width="130" height="40" alt=""/></NavbarBrand>
+                        <NavbarToggler onClick={this.toggle} />
+                            <Collapse isOpen={this.state.isOpen} navbar className={navCss.mainMenu}>
+                                <Nav className="mr-auto" navbar className={navCss.nav}>
+                                    {navs.map((nav) => (
+                                        <NavbarDropdown nav={nav} />
+                                    ))}
+                         
+                            <InputGroup className={navCss.inputSrch}>
+                                <Input placeholder="Search..." onChange={this.onchangeSearch} className="search"/>
+                                    <InputGroupAddon addonType="append">
+                                        <Button color="secondary" className={navCss.btn}>
+                                            <img  src={search} width="25" height="25" alt=""/>
+                                        </Button>
+                                    </InputGroupAddon>
+                            </InputGroup>
+                                </Nav>
+                                <SighInButton/>
+                                <SignUp/>
+                            </Collapse>
+                        </Navbar>
             </div>
         );
     }
 }
-
 export {Navbare};

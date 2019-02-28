@@ -2,13 +2,13 @@
 .inputSrch {
     max-width: 250px;
     float: left;
+    margin-top: 15px;
+    padding: 15px;
 }
 
 .main {
-    background-color: rgba(25, 30, 40, 0.7);
-    position: fixed;
+    background-color: rgba(25, 30, 40, 0.7) !important;
     height: 70px;
-    top: 0;
     z-index: 999;
     width: 100%;
     border-bottom: 1px solid rgba(242, 242, 242, 0.5);
@@ -17,11 +17,8 @@
 }
 .main:hover{
 	height: 90px;
-	
 }
-.mainMenu li:hover {
-	border-top: 2px solid #FF7F38;
-}
+
 
 .mainMenu li{
 	padding: 24px 20px;
@@ -29,7 +26,7 @@
 }
 .mainMenu {
     justify-content: flex-end;
-    margin-right: 20px;
+   
 }
 
 .nav-link a {
@@ -44,4 +41,11 @@
 	position: relative;
 	right: 30%
 }
+}
+.btn {
+    margin-left: 8px;
+    margin-top: 0px;
+    padding:  0px 10px 0px 10px;
+    background: #17A2B8;
+    color: #f2f2f2;
 }
