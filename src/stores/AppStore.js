@@ -19,7 +19,8 @@ class AppStore {
         this._teachers = teachers;
     };
     @computed get subjectData() {
-        return this._teachers.filter(item => (item.subject === this._subjectName && item.name.includes(this._searchValue) || (item.name === this._searchValue && item.subject.includes(this._subjectName))));
+        /*return this._teachers.filter(item => (item.subject === this._subjectName && item.name.includes(this._searchValue) || (item.name === this._searchValue && item.subject.includes(this._subjectName))));*/
+		return this._teachers.filter(item => item.subject === this._subjectName || item.name === this._searchValue);
     }
     @computed get bestTeachers() {
         let tempTeachersArray = [...this._teachers];
