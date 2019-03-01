@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { observer } from 'mobx-react';
 import s from'./Lavaguynner.module.css';
+import { observer } from 'mobx-react';
 import { Container, Row, Col } from 'reactstrap';
 import {TeacherPage} from '../TeacherPage/TeacherPage'
 import {Link} from 'react-router-dom';
@@ -29,7 +29,7 @@ class Cards extends Component {
     render() {
         const {currentTeachers} = this.context.appStore;
         return(
-            <CardDeck>
+            <CardDeck >
                 {currentTeachers.map((item,i) => {
                     return (
                         <Col sm={6} md={4} lg={3} className="pt-4">

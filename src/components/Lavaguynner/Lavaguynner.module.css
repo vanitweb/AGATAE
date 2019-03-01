@@ -17,3 +17,14 @@ img{
 .white {
 	color: white;
 }
+.center {
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+}
+
+.content {
+
+    justify-content: center;
+    align-items: center;
+}

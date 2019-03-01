@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Cards} from './Cards';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
+import s from'./Lavaguynner.module.css';
+
 import {
     Container,
     Row
@@ -16,7 +18,7 @@ class Lavaguynner extends Component {
         return(
 
             <div className="container">
-                <h1>{subjectName}</h1>
+                <h1 className={s.center}>{subjectName}</h1>
                 <Cards bestTeachers={this.bestTeachers}/>
             </div>
 
