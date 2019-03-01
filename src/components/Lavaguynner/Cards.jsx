@@ -35,11 +35,11 @@ class Cards extends Component {
                         <Col sm={6} md={4} lg={3} className="pt-4">
                             <Card key={i} style={{backgroundColor:'#FFFFD2'}}>
                                 <CardImg top width="100%" src={item.photo}/>
-                                <CardBody >
+                                <CardBody className="text-center">
                                     <CardTitle className={s.font}>{item.name}</CardTitle>
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>
-                                    <Button data-option={i} onClick={this.onClick} color="success" >
-                                        <NavLink to="/teacherPage" tag={Link}>
+                                    <Button data-option={i} onClick={this.onClick} color="success">
+                                        <NavLink to="/teacherPage" tag={Link} className={s.white} >
                                            {item.aboutMe}
                                         </NavLink>
                                     </Button>

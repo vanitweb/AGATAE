@@ -15,7 +15,7 @@ class Lavaguynner extends Component {
         const {subjectName} = this.context.appStore;
         return(
 
-            <div className="containerL">
+            <div className="container">
                 <h1>{subjectName}</h1>
                 <Cards bestTeachers={this.bestTeachers}/>
             </div>
