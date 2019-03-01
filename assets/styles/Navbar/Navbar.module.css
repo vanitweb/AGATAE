@@ -11,12 +11,12 @@
     z-index: 999;
     width: 100%;
     border-bottom: 1px solid rgba(242, 242, 242, 0.5);
-    transition: height 0.3s ease-out;
+   /*  transition: height 0.3s ease-out; */
 
 }
-.main:hover{
-	height: 90px;
-}
+/* .main:hover{
+    height: 90px;
+} */
 
 
 .mainMenu li{
