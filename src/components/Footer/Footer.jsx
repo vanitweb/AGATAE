@@ -15,20 +15,20 @@ class Footer extends Component {
                         <Col className={ftrStyle.logo}md={12}><img src={logo} alt="logo" width="160px" height="50px"/></Col>
                     </Row>
                     <Row>
-                        <Col md={4} sm={2} className="contacts">
+                        <Col lg={3} md={4} sm={2} className="contacts">
                             <h6>ԿՈՆՏԱԿՏԱՅԻՆ ՏՎՅԱԼՆԵՐ</h6>
                             <p>Ք. Վանաձոր</p>
                             <p>example@mail.ru</p>
                             <p>(+374)93354565</p>
                         </Col>
-                        <Col md={5} sm={7}>
+                        <Col lg={6} md={5} sm={7}>
                             <h5>ԿԱՅՔԻ ՄԱՍԻՆ</h5>
                            <p>
                                 Կայքը նախատեսված է կրթական համակարգի բարելավման և զարգացման համար, այն նպատակ ունի հավաքագրել բոլոր դասավանդողների տվյալները մեկ հարթակում՝ խնայելով կայքի շահառուների ժամանակը: Բացի այդ հնարավորություն է տալիս այն մարդկանց, ովքեր ունեն բավարար գիտելիքներ և փորձ, գտնել համապատասխան աշխատանք:
                             </p>
                             <FontIcons />
                         </Col>
-                        <Col md={3} sm={7} className={ftrStyle.ftrLi}>
+                        <Col  lg={3} md={3} sm={7} className={ftrStyle.ftrLi}>
                             <h6>ՄԵՐ ՄԱՍԻՆ</h6>
                             <ul>
                                 <li ><a href="https://www.facebook.com/adrine.setaghyan" target="_blanc">Ադրինե Սեթաղյան</a></li>
