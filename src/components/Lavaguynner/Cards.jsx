@@ -29,7 +29,7 @@ class Cards extends Component {
     render() {
         const {currentTeachers} = this.context.appStore;
         return(
-            <CardDeck >
+            <CardDeck inverse className={s.content}>
                 {currentTeachers.map((item,i) => {
                     return (
                         <Col sm={6} md={4} lg={3} className="pt-4">
