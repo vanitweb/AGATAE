@@ -23,6 +23,7 @@ const teachers = [
 		    ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+		hasce: "Ք. Վանաձոր Կ. Դեմիրճյան 15/28",
         raiting: 1,
 		username: 'Karen',
 		password: 'K112233'

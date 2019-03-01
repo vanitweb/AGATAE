@@ -27,6 +27,7 @@ class PersonalPageUsers extends Component {
                                 <td>ուրբաթ</td>
                                 <td>շաբաթ</td>
                                 <td>կիրակի</td>
+                                <td><Button color="success">Հերթագրվել</Button></td>
                             </tr>
                         </table>
                     </Col>
