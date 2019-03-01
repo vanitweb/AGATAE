@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { observer } from 'mobx-react';
 import s from'./Lavaguynner.module.css';
+import { observer } from 'mobx-react';
 import { Container, Row, Col } from 'reactstrap';
 import {TeacherPage} from '../TeacherPage/TeacherPage'
 import {Link} from 'react-router-dom';
@@ -29,17 +29,17 @@ class Cards extends Component {
     render() {
         const {currentTeachers} = this.context.appStore;
         return(
-            <CardDeck>
+            <CardDeck inverse className={s.content}>
                 {currentTeachers.map((item,i) => {
                     return (
                         <Col sm={6} md={4} lg={3} className="pt-4">
                             <Card key={i} style={{backgroundColor:'#FFFFD2'}}>
-                                <CardImg top width="100%" src={item.photo}/>
-                                <CardBody >
+                                <CardImg top width="100%" height="130px" src={item.photo}/>
+                                <CardBody className="text-center">
                                     <CardTitle className={s.font}>{item.name}</CardTitle>
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>
-                                    <Button data-option={i} onClick={this.onClick} color="success" >
-                                        <NavLink to="/teacherPage" tag={Link}>
+                                    <Button data-option={i} onClick={this.onClick} color="success">
+                                        <NavLink to="/teacherPage" tag={Link} className={s.white} >
                                            {item.aboutMe}
                                         </NavLink>
                                     </Button>

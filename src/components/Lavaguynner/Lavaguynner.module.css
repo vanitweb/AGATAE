@@ -11,5 +11,20 @@ img{
 	margin: 80px 60px 30px 60px;
 }
 .font{
-	color:black;
+	color: black;
+}
+
+.white {
+	color: white;
+}
+.center {
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+}
+
+.content {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
 }
