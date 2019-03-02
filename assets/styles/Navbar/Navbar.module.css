@@ -1,0 +1,51 @@
+
+.inputSrch {
+    max-width: 250px;
+    float: left;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.main {
+    height: 70px;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.5);
+   /*  transition: height 0.3s ease-out; */
+
+}
+/* .main:hover{
+    height: 90px;
+} */
+
+
+.mainMenu li{
+	padding: 24px 20px;
+	list-style: none;
+}
+.mainMenu {
+    justify-content: flex-end;
+}
+.navbar-collapse{
+    background: #222;
+}
+.nav-link a {
+    color: #f2f2f2;
+}
+.brand{
+	margin-left: 30px;
+}
+
+@media (min-width: 425px){
+	.img{
+	position: relative;
+	right: 30%
+}
+}
+.btn {
+    margin-left: 8px;
+    margin-top: 0px;
+    padding:  0px 10px 0px 10px;
+    background: #17A2B8;
+    color: #f2f2f2;
+}

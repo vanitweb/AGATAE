@@ -1,0 +1,78 @@
+
+.img{
+	width: 250px;
+}
+
+.mainDiv{
+	padding: 30px 50px;
+	bottom: 0;
+	color: #f2f2f2;
+	background-image: url(../../../assets/images/Footer/footer.jpg);
+	background-size: cover; 
+	background-color: ;
+	max-width:100%;
+    min-width:998px;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+}
+
+.mainDiv p{
+	text-align: justify;
+}
+
+.ftrLi a{
+	color:#f2f2f2;
+	line-height: 2em;
+	font-style: italic;
+	font-size: 14px;
+	transition:  0.5s;
+	list-style-type: none;
+}
+
+h6 {
+    padding: 0px 36px;
+}
+h5{
+	text-align: center;
+}
+
+.ftrLi{
+	padding-left: 20px;
+}
+.ftrLi a:hover{
+	color: #4d88ff;
+}
+.logo {
+	text-align: center;
+}
+@media (max-width: 576px){
+	.mainDiv {
+		min-width: 100%;
+		text-align: center;
+	}
+}
+
+
+.aboutUs h2 {
+	display: block;
+}
+.aboutUs p {
+	font-size: 8px;
+}
+.copy{
+	
+	text-align: center;
+}
+#copy {
+    background: cadetblue;
+}
+.icons {
+	text-align: center;
+	font-size: 50px;
+
+}
+.item{
+	margin-left: 35px;
+
+ }
