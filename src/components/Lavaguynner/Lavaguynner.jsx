@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Cards} from './Cards';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
-import s from'./Lavaguynner.module.css';
+import s from '../../../assets/styles/Lavaguynner/Lavaguynner.module.css';
 
 import {
     Container,

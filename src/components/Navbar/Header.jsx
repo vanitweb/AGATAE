@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Messages } from '../../Messages';
 import logo from '../../../assets/images/newProject4.png';
 import { Container, Row, Col } from 'reactstrap';
-import './Header.css';
+import '.../../../assets/styles/Header/Header.css';
 
 class Header extends Component {
     state = {
