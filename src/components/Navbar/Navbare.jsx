@@ -87,7 +87,7 @@ class Navbare extends React.Component {
                         </NavbarBrand>
                     </NavLink>
                         <NavbarToggler onClick={this.toggle} />
-                            <Collapse isOpen={this.state.isOpen} navbar className={navCss.mainMenu}>
+                            <Collapse isOpen={this.state.isOpen} navbar className={navCss.mainMenu} >
                                 <Nav className="mr-auto" navbar className={navCss.nav}>
                                     {navs.map((nav) => (
                                         <NavbarDropdown nav={nav} />

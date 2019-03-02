@@ -17,12 +17,8 @@ import {ErrorPage} from './Error';
 import {TeacherPage} from './TeacherPage/TeacherPage';
 import './App.css';
 import '../../assets/styles/App.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import  fab  from '@fortawesome/fontawesome-free-brands';
+import { Icons } from '../components/Navbar/Icons/Icons';
 
-library.add(fas, fab);
 
 const routes = [{
     path: '/',

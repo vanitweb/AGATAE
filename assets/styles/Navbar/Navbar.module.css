@@ -1,9 +1,8 @@
 
 .inputSrch {
     max-width: 250px;
-    float: left;
-    margin-top: 15px;
-    padding: 15px;
+    margin-top: 30px;
+    padding: 5px;
 }
 
 .main {
@@ -26,9 +25,11 @@
 .mainMenu {
     justify-content: flex-end;
 }
+
 .navbar-collapse{
     background: #222;
 }
+
 .nav-link a {
     color: #f2f2f2;
 }
@@ -43,9 +44,12 @@
 }
 }
 .btn {
-    margin-left: 8px;
-    margin-top: 0px;
-    padding:  0px 10px 0px 10px;
-    background: #17A2B8;
+    height: 38px;
+    width: 100%;
+    font-size: 20px;
+    margin-left: 3px;
+    margin-top: -8px;
+    padding:  0px 5px 0px 5px;
     color: #f2f2f2;
 }
+
