@@ -1,19 +1,21 @@
 import {teachers} from '../../data/data'
 import React, { Component } from 'react';
 import cookie from 'react-cookies'
+
+
 //inchpes nshem vor loginn u parol@ berem data.jsx-ic u formic havaqn
-function setCookie(cname, cvalue, exdays) {
-  var d = new Date();
+function setCookie(username, password, exdays) {
+  let d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  var expires = "expires="+d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  let expires = "expires="+d.toUTCString();
+  document.cookie = username + "=" + password + ";" + expires + ";path=/{username}";
 }
 
-function getCookie(cname) {
-  var name = cname + "=";
-  var ca = document.cookie.split(';');
-  for(var i = 0; i < ca.length; i++) {
-    var c = ca[i];
+function getCookie(username) {
+  let name = username + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
     while (c.charAt(0) == ' ') {
       c = c.substring(1);
     }
@@ -25,7 +27,7 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  var user = getCookie("username");
+  let user = getCookie("username");
   if (user != "") {
     alert("Welcome again " + user + );
   } else {

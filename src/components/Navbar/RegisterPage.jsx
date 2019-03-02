@@ -6,7 +6,7 @@ import {
     Col
 } from 'reactstrap';
 import {Form} from 'react-bootstrap';
-import classes from './RegisterPage.module.css';
+import classes from '../../../assets/styles/RegisterPage/RegisterPage.module.css';
 import { Header } from './Header';
 
 class RegisterPage extends Component {

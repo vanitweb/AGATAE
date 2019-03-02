@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import Modal from 'react-bootstrap/Modal';
 import {LoginForm} from './LoginForm';
-import './ModalContent.css';
+import '../../../assets/styles/ModalContent/ModalContent.css';
 import logo from '../../../assets/images/newProject4.png';
 
 class SignIn extends Component {
