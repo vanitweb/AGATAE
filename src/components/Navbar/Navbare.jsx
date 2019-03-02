@@ -31,6 +31,7 @@ import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
 import {RegisterPage} from './RegisterPage';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
+import {LogOut} from './LogOut';
 
 @observer
 class Navbare extends React.Component {
@@ -104,6 +105,7 @@ class Navbare extends React.Component {
                                 </Nav>
                                 <SighInButton/>
                                 <SignUp/>
+								<LogOut/>
                             </Collapse>
                         </Navbar>
             </div>
