@@ -19,10 +19,10 @@ import './App.css';
 import '../../assets/styles/App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faIgloo } from '@fortawesome/free-solid-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import  fab  from '@fortawesome/fontawesome-free-brands';
 
-library.add(faIgloo,fas);
+library.add(fas, fab);
 
 const routes = [{
     path: '/',

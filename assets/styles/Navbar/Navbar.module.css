@@ -25,9 +25,10 @@
 }
 .mainMenu {
     justify-content: flex-end;
-   
 }
-
+.navbar-collapse{
+    background: #222;
+}
 .nav-link a {
     color: #f2f2f2;
 }

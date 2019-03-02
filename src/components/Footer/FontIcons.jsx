@@ -7,13 +7,12 @@ class FontIcons extends Component {
     render() {
         return (
         	<Container>
-        		<Row>
+        		 <Row className="justify-content-md-center">
         			<Col className={ftrStyle.icons}>
-        				 <FontAwesomeIcon icon="igloo" className={ftrStyle.item} />
-        				 <FontAwesomeIcon icon="anchor" className={ftrStyle.item} />
-        				 <FontAwesomeIcon icon="plane" className={ftrStyle.item} />
-        				 <FontAwesomeIcon icon="ad" className={ftrStyle.item} />
-        				 <FontAwesomeIcon icon="feather-alt" className={ftrStyle.item} />
+                         <FontAwesomeIcon icon={['fab', 'facebook-square']} className={ftrStyle.item} />
+                         <FontAwesomeIcon icon={['fab', 'instagram']} className={ftrStyle.item} />
+                         <FontAwesomeIcon icon={['fab', 'vk']} className={ftrStyle.item} />
+                         <FontAwesomeIcon icon={['fab', 'youtube']} className={ftrStyle.item} />
         			</Col>
         		</Row>
         	</Container>
