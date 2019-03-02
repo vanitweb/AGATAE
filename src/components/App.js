@@ -102,6 +102,7 @@ class App extends Component {
                             {routeComponents}
                         </Switch>
                     </div>
+                    <TeacherPage/>
                     <Footer />
                 </div>
             </BrowserRouter>

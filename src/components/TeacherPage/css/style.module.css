@@ -34,38 +34,7 @@ body {
 }
 
  li{
-    font-size: 18px;
+    font-size: 20px;
+    margin-top: 5px;
     list-style: none;
-    color: #222;
-}
-._liitem li:nth-child(1):before{
-    content: "";
-    display: inline-block;
-    background: url("../images/address-book-solid.svg") no-repeat;
-    width: 20px;
-    height: 20px;
-    margin: 0 8px 0 0;
-    margin-top: 5px;
-    margin-left: 15px;
-}
-._liitem li:nth-of-type(2):before{
-    content: "";
-    display: inline-block;
-    background: url("../images/for_tel.svg") no-repeat;
-    width: 20px;
-    height: 20px;
-    margin: 0 8px 0 0;
-    margin-top: 5px;
-    margin-left: 15px;
-   
-}
-._liitem li:nth-last-child(1):before{
-    content: "";
-    display: inline-block;
-    background: url("../images/for_address.svg") no-repeat;
-    width: 20px;
-    height: 20px;
-    margin: 0 8px 0 0;
-    margin-top: 5px;
-    margin-left: 15px;
 }
