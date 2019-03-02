@@ -8,7 +8,7 @@ import {
 } from 'reactstrap';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
-import tStyle from './css/style.module.css';
+import tStyle from '../../../assets/styles/TeacherPage/TeacherPage.module.css';
 import {MainTabs} from './MainTabs';
 
 @observer

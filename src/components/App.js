@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-
 import {observer} from 'mobx-react';
 import PropTypes from 'prop-types';
-
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-
 import {UIStore} from '../stores/UIStore';
 import {AppStore} from '../stores/AppStore';
 import {UserSrore} from '../stores/UserSrore';
@@ -15,7 +12,6 @@ import {RegisterPage} from './Navbar/RegisterPage';
 import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import {ErrorPage} from './Error';
 import {TeacherPage} from './TeacherPage/TeacherPage';
-import './App.css';
 import '../../assets/styles/App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -42,8 +38,6 @@ const routes = [{
 {
     component: ErrorPage
 }];
-
-//const-@ routern em tnelu
 
 @observer
 class App extends Component {
