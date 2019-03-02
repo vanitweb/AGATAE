@@ -27,12 +27,12 @@ class TeacherPage extends Component {
                         <p>Սեռը՝ {teacher.sex}</p>
                         <p>Տարիքը՝ {teacher.age}</p>
                         <p>Կազմակերպությունը՝ {teacher.company}</p>
-                        <p>Անձնական ինֆորմացիա՝ {teacher.aboutMe}</p>                       
+                        <p>Անձնական ինֆորմացիա՝ {teacher.aboutMe}</p>
+                        <PersonalPageUsers />
                     </Col>
-                    <Col lg={true}><img className={tStyle.teacherImage} src={teacher.photo} width="250" height="300" alt="Your Teacher"/></Col>
-                    <MainTabs/>
-                    <PersonalPageUsers />
-                    <Col>
+                    <Col lg={true}>
+                    	<img className={tStyle.teacherImage} src={teacher.photo} width="250" height="300" alt="Your Teacher"/>
+                    	<MainTabs/>
                     </Col>
                 </Row>
             </Container>

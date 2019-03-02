@@ -24,8 +24,7 @@ class Cards extends Component {
     
     onClick = (event) => {
         this.context.appStore.teacher = this.context.appStore.currentTeachers[event.currentTarget.getAttribute('data-option')];
-    }
-    
+    }    
     render() {
         const {currentTeachers} = this.context.appStore;
         return(
@@ -40,7 +39,7 @@ class Cards extends Component {
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>
                                     <Button data-option={i} onClick={this.onClick} color="success">
                                         <NavLink to="/teacherPage" tag={Link} className={s.white} >
-                                           {item.aboutMe}
+                                        	Անձնական ինֆորմացիա
                                         </NavLink>
                                     </Button>
                                 </CardBody>

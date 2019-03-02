@@ -18,9 +18,9 @@ class MainTabs extends Component {
                     <Col md={7}></Col>
                     <Col>
                         <ul>
-                            <li><FontAwesomeIcon icon="address-book" /></li>
-                            <li><FontAwesomeIcon icon="phone" /></li>
-                            <li><FontAwesomeIcon icon="map-marker-alt"/></li>
+                            <li><FontAwesomeIcon icon="address-book" /> {teacher.email}</li>
+                            <li><FontAwesomeIcon icon="phone" /> {teacher.phone}</li>
+                            <li><FontAwesomeIcon icon="map-marker-alt"/> {teacher.hasce}</li>
                         </ul>
                     </Col>
                 </Row>

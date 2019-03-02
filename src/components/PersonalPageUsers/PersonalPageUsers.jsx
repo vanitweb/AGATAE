@@ -1,35 +1,50 @@
 import React, { Component } from 'react';
+import { observer } from 'mobx-react';
+import PropTypes from 'prop-types';
 import {
     Button,
     Container,
     Row, 
-    Col
+    Col,
+    Table 
 } from 'reactstrap';
 
-
-
+@observer
 class PersonalPageUsers extends Component {
+    static contextTypes = {
+        appStore: PropTypes.object.isRequired
+    };
     render() {
+        const {teacher} = this.context.appStore;
         return (
             <Container>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
-                        <h1>User 1</h1>
-                        <h6>im andznakan ej</h6>
+                        <h5>Պարապունքների գրաֆիկ</h5>
                     </Col>
                     <Col>
-                        <table>
-                            <tr>
-                                <td>երկուշաբթի</td>
-                                <td>երեքշաբթի</td>
-                                <td>չորեքշաբթի</td>
-                                <td>հինգշաբթի</td>
-                                <td>ուրբաթ</td>
-                                <td>շաբաթ</td>
-                                <td>կիրակի</td>
-                                <td><Button color="success">Հերթագրվել</Button></td>
-                            </tr>
-                        </table>
+                        <Table hover size="մդ">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>ՕՐ</th>
+                                    <th>Ժամ</th>
+                                    <th>Հերթագրվել</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {teacher.graphic.map((item, i) => {
+                                    return(
+                                        <tr>
+                                            <th scope="row">{i + 1}</th>
+                                            <td>{item.day}</td>
+                                            <td>{item.time}</td>
+                                            <td><Button color="success">Հերթագրվել</Button></td>
+                                        </tr>
+                                    );
+                                })}
+                            </tbody>
+                        </Table>
                     </Col>
                 </Row>
             </Container>
