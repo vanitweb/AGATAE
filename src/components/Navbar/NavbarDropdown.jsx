@@ -34,7 +34,7 @@ class NavbarDropdown extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu >
                     {nav.options.map((option) => (
-                        <NavLink onClick={this.onClick} data-option={option} data-link='/lavaguynner' to='/lavaguynner' tag={Link}>{option}</NavLink>
+                        <NavLink onClick={this.onClick} data-option={option} data-link='/lavaguynner' to={`/lavaguynner/${option} `} tag={Link}>{option}</NavLink>
                     ))}
                 </DropdownMenu>
             </Dropdown> 

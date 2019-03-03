@@ -1,9 +1,10 @@
-import {teachers} from '../../data/data'
+import {teachers} from '../../bn /data'
 import React, { Component } from 'react';
 import cookie from 'react-cookies'
 
 
 //inchpes nshem vor loginn u parol@ berem data.jsx-ic u formic havaqn
+const Cookies  = {
 function setCookie(username, password, exdays) {
   let d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -37,4 +38,5 @@ function checkCookie() {
     }
   }
 }
+};
 export {Cookies}
