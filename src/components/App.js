@@ -25,7 +25,7 @@ const routes = [{
     component: Lavaguynner
 },
 {
-    path: '/lavaguynner/:category',
+    path: '/:navName/:category',
     component: Lavaguynner
 },
 {
