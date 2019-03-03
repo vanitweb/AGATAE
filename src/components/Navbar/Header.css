@@ -1,0 +1,15 @@
+.header {
+	text-align: center;
+	color:#f2f2f2;
+}
+.searchGroup {
+	align-items: baseline;
+	width: 30%;
+}
+.search {
+	max-width: 80%;
+}
+.collapseGroup {
+	align-items: baseline;
+}
+

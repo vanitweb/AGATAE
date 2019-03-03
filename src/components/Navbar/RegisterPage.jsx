@@ -8,6 +8,7 @@ import {
 import {Form} from 'react-bootstrap';
 import classes from '../../../assets/styles/RegisterPage/RegisterPage.module.css';
 import { Header } from './Header';
+import { Messages } from '../../Messages';
 
 class RegisterPage extends Component {
     render() {
@@ -19,44 +20,44 @@ class RegisterPage extends Component {
                         <Header/>
                         <Form className={classes.mainForm}>
                             <Form.Group controlId="formBasicName">
-                                <Form.Label>Անուն</Form.Label>
-                                <Form.Control type="text" placeholder="Մուտքագրել անունը" />
+                                <Form.Label>{Messages.name}</Form.Label>
+                                <Form.Control type="text" placeholder={Messages.mutqName} />
                             </Form.Group>
                             <Form.Group controlId="formBasicSurname">
-                                <Form.Label>Ազգանուն</Form.Label>
-                                <Form.Control type="text" placeholder="Մուտքագրել ազգանունը" />
+                                <Form.Label>{Messages.surname}</Form.Label>
+                                <Form.Control type="text" placeholder={Messages.mutqSurname} />
                             </Form.Group>
                             <Form.Group controlId="formBasicEmail">
-                                <Form.Label>Էլեկտրոնային հասցե</Form.Label>
-                                <Form.Control type="email" placeholder="Մուտքագրել էլ.հասցեն " />
+                                <Form.Label>{Messages.emailaddress}</Form.Label>
+                                <Form.Control type="email" placeholder={Messages.mutqEladdress} />
                             </Form.Group>
                             <Form.Group controlId="formBasicTel">
-                                <Form.Label>Հեռախոսահամար</Form.Label>
-                                <Form.Control type="text" placeholder="Մուտքագրել հեռախոսահամարը " />
+                                <Form.Label>{Messages.phoneNum}</Form.Label>
+                                <Form.Control type="text" placeholder={Messages.mutqPhone} />
                                 <Form.Text className={classes.text_muted}>
-                                    Օրինակ: +37499.....
+                                    {Messages.example}
                                 </Form.Text>
                             </Form.Group>
                             <Form.Group controlId="formBasicCreatePassword">
-                                <Form.Label>Գաղտնաբառ</Form.Label>
-                                <Form.Control type="password" placeholder="Մուտքագրել գաղտնաբառը" />
+                                <Form.Label>{Messages.password}</Form.Label>
+                                <Form.Control type="password" placeholder={Messages.mutqPass} />
                                 <Form.Text className={classes.text_muted}>
-                                    Գաղտնաբառը պետք է բաղկացած լինի 9 և ավելի սիմվոլներից: 
+                                    {Messages.text2} 
                                 </Form.Text>
                             </Form.Group>
                             <Form.Group controlId="formRepeatPassword">
-                                <Form.Label>Կրկնել գաղտնաբառը</Form.Label>
+                                <Form.Label>{Messages.password2}</Form.Label>
                                 <Form.Control type="password" placeholder="" />
                             </Form.Group>
                             <Form.Group controlId="formBasicChecbox">
-                                <Form.Check type="checkbox" label="Աշակերտ" />
+                                <Form.Check type="checkbox" label={Messages.pupil} />
                             </Form.Group>
                             <Form.Group controlId="formBasicChecbox">
-                                <Form.Check type="checkbox" label="Ուսուցիչ" />
+                                <Form.Check type="checkbox" label={Messages.teacher} />
                             </Form.Group>
                             <div>
                                 <Button variant="info" type="submit" ClassName="loginBtn" size="lg" block>
-                                    Ստեղծել հաշիվ
+                                    {Messages.account}
                                 </Button>
                             </div>
                         </Form>
