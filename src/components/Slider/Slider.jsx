@@ -8,6 +8,7 @@ import {
     CarouselCaption
 } from 'reactstrap';
 import {items} from './items';
+import '../../../assets/styles/Slider/Slider.css';
 
 class Slider extends Component {
     constructor(props) {
@@ -54,7 +55,7 @@ class Slider extends Component {
             );
         });
         return (
-            <Container>
+            <Container className="carouselContainer">
                 <Carousel
                     activeIndex={activeIndex}
                     next={this.next}
