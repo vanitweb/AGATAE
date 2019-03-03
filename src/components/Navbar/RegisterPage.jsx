@@ -19,44 +19,44 @@ class RegisterPage extends Component {
                         <Header/>
                         <Form className={classes.mainForm}>
                             <Form.Group controlId="formBasicName">
-                                <Form.Label>Your Name</Form.Label>
-                                <Form.Control type="text" placeholder="Enter name" />
+                                <Form.Label>Անուն</Form.Label>
+                                <Form.Control type="text" placeholder="Մուտքագրել անունը" />
                             </Form.Group>
                             <Form.Group controlId="formBasicSurname">
-                                <Form.Label>Surname</Form.Label>
-                                <Form.Control type="text" placeholder="Enter surname" />
+                                <Form.Label>Ազգանուն</Form.Label>
+                                <Form.Control type="text" placeholder="Մուտքագրել ազգանունը" />
                             </Form.Group>
                             <Form.Group controlId="formBasicEmail">
-                                <Form.Label>Email</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
+                                <Form.Label>Էլեկտրոնային հասցե</Form.Label>
+                                <Form.Control type="email" placeholder="Մուտքագրել էլ.հասցեն " />
                             </Form.Group>
                             <Form.Group controlId="formBasicTel">
-                                <Form.Label>Phone</Form.Label>
-                                <Form.Control type="text" placeholder="Enter tel" />
+                                <Form.Label>Հեռախոսահամար</Form.Label>
+                                <Form.Control type="text" placeholder="Մուտքագրել հեռախոսահամարը " />
                                 <Form.Text className={classes.text_muted}>
-                                    example: +37499.....
+                                    Օրինակ: +37499.....
                                 </Form.Text>
                             </Form.Group>
                             <Form.Group controlId="formBasicCreatePassword">
-                                <Form.Label>Create Password</Form.Label>
-                                <Form.Control type="password" placeholder="Enter Password" />
+                                <Form.Label>Գաղտնաբառ</Form.Label>
+                                <Form.Control type="password" placeholder="Մուտքագրել գաղտնաբառը" />
                                 <Form.Text className={classes.text_muted}>
-                                    Password most by 9 letters or more. 
+                                    Գաղտնաբառը պետք է բաղկացած լինի 9 և ավելի սիմվոլներից: 
                                 </Form.Text>
                             </Form.Group>
                             <Form.Group controlId="formRepeatPassword">
-                                <Form.Label>Repeat Password</Form.Label>
+                                <Form.Label>Կրկնել գաղտնաբառը</Form.Label>
                                 <Form.Control type="password" placeholder="" />
                             </Form.Group>
                             <Form.Group controlId="formBasicChecbox">
-                                <Form.Check type="checkbox" label="I'm a member" />
+                                <Form.Check type="checkbox" label="Աշակերտ" />
                             </Form.Group>
                             <Form.Group controlId="formBasicChecbox">
-                                <Form.Check type="checkbox" label="I'm a teacher" />
+                                <Form.Check type="checkbox" label="Ուսուցիչ" />
                             </Form.Group>
                             <div>
                                 <Button variant="info" type="submit" ClassName="loginBtn" size="lg" block>
-                                    Create Account
+                                    Ստեղծել հաշիվ
                                 </Button>
                             </div>
                         </Form>

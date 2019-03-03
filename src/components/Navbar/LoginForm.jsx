@@ -9,22 +9,21 @@ class LoginForm extends Component {
                 <Row className="justify-content-md-center">
                     <Form>
                         <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Label>Էլ.հասցե</Form.Label>
+                            <Form.Control type="email" placeholder="Էլ.հասցե" />
                             <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
                             </Form.Text>
                         </Form.Group>
                         <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
+                            <Form.Label>Գաղտնաբառ</Form.Label>
+                            <Form.Control type="password" placeholder="Գաղտնաբառ" />
                         </Form.Group>
                         <Form.Group controlId="formBasicChecbox">
-                            <Form.Check type="checkbox" label="Remember me" />
+                            <Form.Check type="checkbox" label="Հիշել" />
                         </Form.Group>
                         <div>
                             <Button variant="dark" type="submit" fullWidth ClassName="loginBtn">
-                                Login
+                                Մուտք
                             </Button>
                         </div>
                     </Form>

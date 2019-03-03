@@ -22,7 +22,7 @@ class SignIn extends Component {
                     <LoginForm/>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={this.props.onHide}>Close</Button>
+                    <Button onClick={this.props.onHide}>Փակել</Button>
                 </Modal.Footer>
             </Modal>
         );

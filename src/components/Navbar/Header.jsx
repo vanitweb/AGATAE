@@ -15,12 +15,12 @@ class Header extends Component {
             <Container className="header">
                 <Row>
                     <Col>
-                        <h1>{messages.CreateAccount}</h1>
+                        <h1>ԳՐԱՆՑՈւՄ</h1>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <p>{messages.title}</p>
+                        <p>Սկսեք սովորել մեզ հետ</p>
                     </Col>
                 </Row>
             </Container>
