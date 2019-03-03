@@ -25,7 +25,7 @@ import {
 import {Link} from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../../assets/images/newProject4.png';
-import navCss from '../../../assets/styles//Navbar/Navbar.module.css';
+import navCss from '../../../assets/styles/Navbar/Navbar.module.css';
 import search from '../../../assets/images/search.png';
 import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
@@ -87,7 +87,7 @@ class Navbare extends React.Component {
                         </NavbarBrand>
                     </NavLink>
                         <NavbarToggler onClick={this.toggle} />
-                            <Collapse isOpen={this.state.isOpen} navbar className={navCss.mainMenu}>
+                            <Collapse isOpen={this.state.isOpen} navbar className={navCss.mainMenu} >
                                 <Nav className="mr-auto" navbar className={navCss.nav}>
                                     {navs.map((nav) => (
                                         <NavbarDropdown nav={nav} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, NavItem, Dropdown, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 import {Lavaguynner} from '../Lavaguynner/Lavaguynner';
-import navData from '../../data/navData';
+import navData from '../../configs/navData';
 
 class Dropdown extends React.Component {
     render (){

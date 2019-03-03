@@ -89,7 +89,7 @@ const teachers = [
     {
         photo: '/static/assets/images/cook2.jpg',
         name: 'Արևիկ Ղարագյոզյան',
-        subject: 'Խոհարարություն',
+        subject: 'Խոհանոց',
         phone: '(+374)-77-75-85-10',
         email: 'arevik-elen@mail.ru',
         sex: 'Իգական',
@@ -118,7 +118,7 @@ const teachers = [
     {
         photo: '/static/assets/images/cook1.jpg',
         name: 'Աննա Հարությունյան',
-        subject: 'Խոհարարություն',
+        subject: 'Խոհանոց',
         phone: '(+374)-94-67-85-35',
         email: 'annaharutyunyan@mail.ru',
         sex: 'Իգական',
@@ -146,7 +146,11 @@ const teachers = [
     },
     {
         photo: '/static/assets/images/cook3.jpg',
+<<<<<<< HEAD
         name: 'Խոհարարություն',
+=======
+        name: 'Խոհանոց',
+>>>>>>> 89fb7be526da7bc0613debe9b338bb250c17859c
         subject: 'Գայանե Մանուկյան',
         phone: '(+374)-77-34-16-45',
         email: 'gayanemanukyan@mail.ru',

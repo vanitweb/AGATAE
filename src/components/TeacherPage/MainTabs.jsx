@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
-import tStyle from '../TeacherPage/css/style.module.css';
+import tStyle from '../../../assets/styles/TeacherPage/TeacherPage.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 @observer
