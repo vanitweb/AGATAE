@@ -146,11 +146,7 @@ const teachers = [
     },
     {
         photo: '/static/assets/images/cook3.jpg',
-<<<<<<< HEAD
         name: 'Խոհարարություն',
-=======
-        name: 'Խոհանոց',
->>>>>>> 89fb7be526da7bc0613debe9b338bb250c17859c
         subject: 'Գայանե Մանուկյան',
         phone: '(+374)-77-34-16-45',
         email: 'gayanemanukyan@mail.ru',
