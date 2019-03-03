@@ -47,7 +47,7 @@ class RegisterPage extends Component {
                             </Form.Group>
                             <Form.Group controlId="formRepeatPassword">
                                 <Form.Label>{Messages.password2}</Form.Label>
-                                <Form.Control type="password" placeholder="" />
+                                <Form.Control type="password" placeholder={Messages.password2} />
                             </Form.Group>
                             <Form.Group controlId="formBasicChecbox">
                                 <Form.Check type="checkbox" label={Messages.pupil} />
