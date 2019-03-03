@@ -16,7 +16,7 @@ class SighInButton extends Component {
                     color="light"
                     onClick={() => this.setState({ modalShow: true })}
                 >
-                    Login
+                    Մուտք
                 </Button>
                 <SignIn
                     show={this.state.modalShow}
