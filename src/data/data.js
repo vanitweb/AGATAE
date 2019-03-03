@@ -8,9 +8,17 @@ const teachers = [
         sex: 'Արական',
         age: 32,
         graphic: [
-            {day: 'Երկուշաբթի-Չորեքշաբթի-Ուրբաթ',
+            {day: 'Երկուշաբթի',
             time: '14:00 - 16:00'},
-            {day: 'Երեքշաբթի-Հինգշաբթի-Շաբաթ',
+            {day: 'Երեքշաբթի',
+            time: '16:00 - 18:00'},
+            {day: 'Չորեքշաբթի',
+            time: '14:00 - 16:00'},
+            {day: 'Հինգշաբթի',
+            time: '16:00 - 18:00'},
+            {day: 'Ուրբաթ',
+            time: '14:00 - 16:00'},
+            {day: 'Շաբաթ',
             time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
@@ -40,10 +48,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Երևանյան խճ. 147/20",
         raiting: 3,
         username: 'Grigor',
         password: 'G112233'
@@ -68,10 +77,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Չուխաջյան 30/15",
         raiting: 4,
         username: 'Aren',
         password: 'K112233'
@@ -96,10 +106,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Զոր. Անդրանիկի 120/41",
         raiting: 5,
         username: 'Arevik',
         password: 'A112233'
@@ -124,10 +135,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Ամիրյան 34/6",
         raiting: 3,
         username: 'Anna',
         password: 'A453423'
@@ -135,7 +147,7 @@ const teachers = [
     {
         photo: '/static/assets/images/cook3.jpg',
         name: 'Խոհարարություն',
-        subject: '????????????',
+        subject: 'Գայանե Մանուկյան',
         phone: '(+374)-77-34-16-45',
         email: 'gayanemanukyan@mail.ru',
         sex: 'Իգական',
@@ -152,10 +164,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Բաթումի 20/1",
         raiting: 4,
         username: 'Gayane',
         password: 'G115233'
@@ -180,10 +193,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Ստ. Զորյան 30/20",
         raiting: 5,
         username: 'Tukhik',
         password: 'T112233'
@@ -208,10 +222,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Վարդանանց 40/2",
         raiting: 4,
         username: 'Mane',
         password: 'M112245'
@@ -236,10 +251,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Տիգրան Մեծի 80/5",
         raiting: 3,
         username: 'Armen',
         password: 'A334456'
@@ -264,10 +280,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Գր.Լուսավորիչի 10/39",
         raiting: 2,
         username: 'Armen',
         password: 'A456789'
@@ -292,10 +309,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Աղայան 12/12",
         raiting: 5,
         username: 'Arusik',
         password: 'A223311'
@@ -320,10 +338,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Մեքենաշինարարների 40բ/20",
         raiting: 3,
         username: 'Anush',
         password: 'A667788'
@@ -348,10 +367,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր  Երևանյան խճ. 2/10",
         raiting: 2,
         username: 'Marina',
         password: 'M765432'
@@ -376,10 +396,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Հալաբյան 18",
         raiting: 5,
         username: 'Adrine',
         password: 'A332211'
@@ -404,10 +425,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Մոսկովյան 50/25",
         raiting: 4,
         username: 'Larisa',
         password: 'L786756'
@@ -432,10 +454,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Բաթումի 100/11",
         raiting: 3,
         username: 'Hasmik',
         password: 'H443322'
@@ -460,10 +483,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Մյասնիկյան 49/23",
         raiting: 5,
         username: 'Gor',
         password: 'G112233'
@@ -488,10 +512,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Բաթումի 28/1",
         raiting: 4,
         username: 'Harut',
         password: 'H890890'
@@ -516,10 +541,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Կ. Աբովյան 12/2",
         raiting: 3,
         username: 'Tatev',
         password: 'T777666'
@@ -544,10 +570,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Կնունյանց 2/8",
         raiting: 5,
         username: 'Edgar',
         password: 'E556655'
@@ -572,10 +599,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Կ. Դեմիրճյան 10/49",
         raiting: 3,
         username: 'Davit',
         password: 'D567765'
@@ -588,9 +616,23 @@ const teachers = [
         email: 'marinedavtyan@gmail.com',
         sex: 'Իգական',
         age: 50,
-        graphic: '16:00-18:00',
+        graphic: [
+            {day: 'Երկուշաբթի',
+            time: '14:00 - 16:00'},
+            {day: 'Երեքշաբթի',
+            time: '16:00 - 18:00'},
+            {day: 'Չորեքշաբթի',
+            time: '14:00 - 16:00'},
+            {day: 'Հինգշաբթի',
+            time: '16:00 - 18:00'},
+            {day: 'Ուրբաթ',
+            time: '14:00 - 16:00'},
+            {day: 'Շաբաթ',
+            time: '16:00 - 18:00'}
+            ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Կ. Իսահակյան 38/37",
         raiting: 3,
         username: 'Marine',
         password: 'M677778'
@@ -615,10 +657,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Կ. Սուխումի 2/2",
         raiting: 3,
         username: 'Karen',
         password: 'K090807'
@@ -643,10 +686,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Չուխաջյան 28/28",
         raiting: 3,
         username: 'Manuk',
         password: 'M555444'
@@ -671,10 +715,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Տիգրան Մեծի 26/1",
         raiting: 3,
         username: 'Ararat',
         password: 'A888765'
@@ -699,10 +744,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Վարդանանց 30/12",
         raiting: 4,
         username: 'Yelena',
         password: 'Y609080'
@@ -727,10 +773,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Աղայան 29/2",
         raiting: 4,
         username: 'Vanuhi',
         password: 'V434544'
@@ -755,10 +802,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Համբարձումյան 16/8",
         raiting: 4,
         username: 'Nane',
         password: 'N770099'
@@ -783,10 +831,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Շինարարների 35/6",
         raiting: 4,
         username: 'Silva',
         password: 'S886789'
@@ -811,10 +860,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Մյասնիկյան 1/25",
         raiting: 4,
         username: 'Karapet',
         password: 'K000777'
@@ -839,10 +889,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Աբովյան 2/45",
         raiting: 4,
         username: 'Margarita',
         password: 'M767676'
@@ -867,10 +918,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Երևանյան խճ. 101/21",
         raiting: 4,
         username: 'Poghos',
         password: 'P838383'
@@ -895,10 +947,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Զոր. Անդրանիկի 34/52",
         raiting: 3,
         username: 'Petros',
         password: 'P030201'
@@ -923,10 +976,11 @@ const teachers = [
             {day: 'Ուրբաթ',
             time: '14:00 - 16:00'},
             {day: 'Շաբաթ',
-            time: '6:00 - 18:00'}
+            time: '16:00 - 18:00'}
             ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
+        hasce: "Ք. Վանաձոր Կ. Դեմիրճյան 1/6",
         raiting: 0,
         username: 'Sahak',
         password: 'S506070'
