@@ -33,12 +33,8 @@ const routes = [{
     component: RegisterPage
 },
 {
-    path: '/teacherPage',
-    component: TeacherPage
-},
-{
     path: '/teacherPage/:username',
-    component: Lavaguynner
+    component: TeacherPage
 },
 {
     component: ErrorPage

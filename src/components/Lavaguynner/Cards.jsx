@@ -40,7 +40,7 @@ class Cards extends Component {
                                     <CardTitle className={s.font}>{item.name}</CardTitle>
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>
                                     <Button data-option={i} onClick={this.onClick} color="info">
-                                        <NavLink to="/teacherPage" tag={Link} className={s.white} >
+                                        <NavLink to={`/teacherPage/${item.username} `}  tag={Link} className={s.white} >
                                         	{Messages.personalInfo}
                                         </NavLink>
                                     </Button>
