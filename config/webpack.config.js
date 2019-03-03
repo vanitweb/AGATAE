@@ -489,12 +489,9 @@ module.exports = function(webpackEnv) {
         },
         plugins: [
 			new CopyWebpackPlugin([{
-              from: 'assets/images/*',
-              to: 'static/assets/images/',
-              flatten: true
-          }],
-            { copyUnmodified: true }
-          ),
+               from: 'assets/images',
+               to: 'static/assets/images'
+           }], {copyUnmodified: true}),
             // Generates an `index.html` file with the <script> injected.
             new HtmlWebpackPlugin(
         Object.assign(

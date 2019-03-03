@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import s from'./Lavaguynner.module.css';
+import './Lavaguynner.css';
 import { observer } from 'mobx-react';
 import { Container, Row, Col } from 'reactstrap';
 import {TeacherPage} from '../TeacherPage/TeacherPage'

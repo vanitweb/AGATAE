@@ -22,27 +22,6 @@ const Messages = {
 	vandak: '#',
 	day: 'ՕՐ',
 	hour: 'Ժամ',
-	submit: 'Հերթագրվել',
-	register: 'ԳՐԱՆՑՈւՄ',
-	text1: 'Սկսեք սովորել մեզ հետ',
-	mail: 'Էլ.հասցե',
-	password: 'Գաղտնաբառ',
-	remember: 'Հիշել',
-	mutq: 'Մուտք',
-	name: 'Անուն',
-	mutqName: 'Մուտքագրել անունը',
-	surname: 'Ազգանուն',
-	mutqSurname: 'Մուտքագրել ազգանունը',
-	emailaddress: 'Էլեկտրոնային հասցե',
-	mutqEladdress: 'Մուտքագրել էլ.հասցեն ',
-	phoneNum: 'Հեռախոսահամար',
-	mutqPhone: 'Մուտքագրել հեռախոսահամարը ',
-	example: 'Օրինակ: +37499.....',
-	mutqPass: 'Մուտքագրել գաղտնաբառը',
-	text2: 'Գաղտնաբառը պետք է բաղկացած լինի 9 և ավելի սիմվոլներից:',
-	password2: 'Կրկնել գաղտնաբառը',
-	pupil: 'Աշակերտ',
-	teacher: 'Ուսուցիչ',
-	account: 'Ստեղծել հաշիվ'
+	submit: 'Հերթագրվել'
 };
 export {Messages};
