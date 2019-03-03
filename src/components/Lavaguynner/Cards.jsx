@@ -33,8 +33,8 @@ class Cards extends Component {
                 {currentTeachers.map((item,i) => {
                     return (
                         <Col sm={6} md={4} lg={3} className="pt-4">
-                            <Card key={i} style={{backgroundColor:'#FFFFD2'}}>
-                                <CardImg top width="100%" height="130px" src={item.photo}/>
+                            <Card key={i} className={s.card}>
+                                <CardImg top  className={s.cardImg} src={item.photo}/>
                                 <CardBody className="text-center">
                                     <CardTitle className={s.font}>{item.name}</CardTitle>
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>

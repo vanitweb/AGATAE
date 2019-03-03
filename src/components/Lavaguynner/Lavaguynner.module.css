@@ -17,6 +17,7 @@ img{
 .white {
 	color: white;
 }
+
 .center {
 	text-align: center;
 	color: white;
@@ -27,4 +28,13 @@ img{
     display: flex;
 	flex-wrap: wrap;
     justify-content: center;
+}
+
+.cardImg {
+	height: 130px;
+	width: 100%;
+}
+
+.card {
+    background-color:'#FFFFD2';
 }

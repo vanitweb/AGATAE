@@ -1,6 +1,6 @@
 const teachers = [
     {
-        photo: '/static/assets/images/football1.jpg',
+        photo: '/static/assets/images/lavaguynner/football1.jpg',
         name: 'Կարեն Սիմոնյան',
         subject: 'Ֆուտբոլ',
         phone: '(+374)-77-67-98-55',
@@ -29,7 +29,7 @@ const teachers = [
         password: 'K112233'
     },
     {
-        photo: '/static/assets/images/football2.jpg',
+        photo: '/static/assets/images/lavaguynner/football2.jpg',
         name: 'Գրիգոր Սահակյան',
         subject: 'Ֆուտբոլ',
         phone: '(+374)-98-72-12-23',
@@ -58,7 +58,7 @@ const teachers = [
         password: 'G112233'
     },
     {
-        photo: '/static/assets/images/football3.jpg',
+        photo: '/static/assets/images/lavaguynner/football3.jpg',
         name: 'Արեն Հովսեփյան',
         subject: 'Ֆուտբոլ',
         phone: '(+374)-99-69-23-44',
@@ -87,7 +87,7 @@ const teachers = [
         password: 'K112233'
     },
     {
-        photo: '/static/assets/images/cook2.jpg',
+        photo: '/static/assets/images/lavaguynner/cook2.jpg',
         name: 'Արևիկ Ղարագյոզյան',
         subject: 'Խոհանոց',
         phone: '(+374)-77-75-85-10',
@@ -116,7 +116,7 @@ const teachers = [
         password: 'A112233'
     },
     {
-        photo: '/static/assets/images/cook1.jpg',
+        photo: '/static/assets/images/lavaguynner/cook1.jpg',
         name: 'Աննա Հարությունյան',
         subject: 'Խոհանոց',
         phone: '(+374)-94-67-85-35',
@@ -145,7 +145,7 @@ const teachers = [
         password: 'A453423'
     },
     {
-        photo: '/static/assets/images/cook3.jpg',
+        photo: '/static/assets/images/lavaguynner/cook3.jpg',
         name: 'Խոհարարություն',
         subject: 'Գայանե Մանուկյան',
         phone: '(+374)-77-34-16-45',
@@ -174,7 +174,7 @@ const teachers = [
         password: 'G115233'
     },
     {
-        photo: '/static/assets/images/lox4.jpg',
+        photo: '/static/assets/images/lavaguynner/lox4.jpg',
         name: 'Թուխիկ Ղարագյոզյան',
         subject: 'Լող',
         phone: '(+374)-43-08-70-15',
@@ -203,7 +203,7 @@ const teachers = [
         password: 'T112233'
     },
     {
-        photo: '/static/assets/images/lox3.jpg',
+        photo: '/static/assets/images/lavaguynner/lox3.jpg',
         name: 'Մանե Դավթյան',
         subject: 'Լող',
         phone: '(+374)-43-44-54-12',
@@ -232,7 +232,7 @@ const teachers = [
         password: 'M112245'
     },
     {
-        photo: '/static/assets/images/lox1.jpg',
+        photo: '/static/assets/images/lavaguynner/lox1.jpg',
         name: 'Արմեն Կարապետյան',
         subject: 'Լող',
         phone: '(+374)-43-33-43-12',
@@ -261,7 +261,7 @@ const teachers = [
         password: 'A334456'
     },
         {
-        photo: '/static/assets/images/lox2.jpg',
+        photo: '/static/assets/images/lavaguynner/lox2.jpg',
         name: 'Արտակ Վարդանյան',
         subject: 'Լող',
         phone: '(+374)-43-55-76-43',
@@ -290,7 +290,7 @@ const teachers = [
         password: 'A456789'
     },
     {
-        photo: '/static/assets/images/art1.jpg',
+        photo: '/static/assets/images/lavaguynner/art1.jpg',
         name: 'Արուսիկ Ափինյան',
         subject: 'Նկարչություն',
         phone: '(+374)-99-42-55-85',
@@ -319,7 +319,7 @@ const teachers = [
         password: 'A223311'
     },
         {
-        photo: '/static/assets/images/art2.jpg',
+        photo: '/static/assets/images/lavaguynner/art2.jpg',
         name: 'Անուշ Ղարագյոզյան',
         subject: 'Նկարչություն',
         phone: '(+374)-99-45-23-11',
@@ -348,7 +348,7 @@ const teachers = [
         password: 'A667788'
     },
         {
-        photo: '/static/assets/images/art3.jpg',
+        photo: '/static/assets/images/lavaguynner/art3.jpg',
         name: 'Մարինա Գրիգորյան',
         subject: 'Նկարչություն',
         phone: '(+374)-99-09-08-06',
@@ -377,7 +377,7 @@ const teachers = [
         password: 'M765432'
     },
     {
-        photo: '/static/assets/images/angleren1.jpg',
+        photo: '/static/assets/images/lavaguynner/angleren1.jpg',
         name: 'Ադրինե Սեթաղյան',
         subject: 'Անգլերեն',
         phone: '(+374)-77-85-37-88',
@@ -406,7 +406,7 @@ const teachers = [
         password: 'A332211'
     },
         {
-        photo: '/static/assets/images/angleren2.jpg',
+        photo: '/static/assets/images/lavaguynner/angleren2.jpg',
         name: 'Լարիսա Սարգսյան',
         subject: 'Անգլերեն',
         phone: '(+374)-77-33-54-19',
@@ -435,7 +435,7 @@ const teachers = [
         password: 'L786756'
     },
         {
-        photo: '/static/assets/images/angleren3.jpg',
+        photo: '/static/assets/images/lavaguynner/angleren3.jpg',
         name: 'Հասմիկ Միքայելյան',
         subject: 'Անգլերեն',
         phone: '(+374)-77-98-45-45',
@@ -464,7 +464,7 @@ const teachers = [
         password: 'H443322'
     },
     {
-        photo: '/static/assets/images/matem2.jpg',
+        photo: '/static/assets/images/lavaguynner/matem2.jpg',
         name: 'Գոռ Մանուկյան',
         subject: 'Մաթեմատիկա',
         phone: '(+374)-94-16-19-90',
@@ -493,7 +493,7 @@ const teachers = [
         password: 'G112233'
     },
         {
-        photo: '/static/assets/images/matem3.jpg',
+        photo: '/static/assets/images/lavaguynner/matem3.jpg',
         name: 'Հարութ Կիրակոսյան',
         subject: 'Մաթեմատիկա',
         phone: '(+374)-94-11-12-13',
@@ -522,7 +522,7 @@ const teachers = [
         password: 'H890890'
     },
         {
-        photo: '/static/assets/images/matem1.jpg',
+        photo: '/static/assets/images/lavaguynner/matem1.jpg',
         name: 'Տաթև Հակոբյան',
         subject: 'Մաթեմատիկա',
         phone: '(+374)-94-55-45-25',
@@ -551,7 +551,7 @@ const teachers = [
         password: 'T777666'
     },
     {
-        photo: '/static/assets/images/fizika1.jpg',
+        photo: '/static/assets/images/lavaguynner/fizika1.jpg',
         name: 'Էդգար Նիկողոսյան',
         subject: 'Ֆիզիկա',
         phone: '(+374)-77-33-36-96',
@@ -580,7 +580,7 @@ const teachers = [
         password: 'E556655'
     },
     {
-        photo: '/static/assets/images/fizika2.jpg',
+        photo: '/static/assets/images/lavaguynner/fizika2.jpg',
         name: 'Դավիթ Այվազյան',
         subject: 'Ֆիզիկա',
         phone: '(+374)-77-54-45-54',
@@ -609,7 +609,7 @@ const teachers = [
         password: 'D567765'
     },
     {
-        photo: '/static/assets/images/fizika3.jpg',
+        photo: '/static/assets/images/lavaguynner/fizika3.jpg',
         name: 'Մարինե Դավթյան',
         subject: 'Ֆիզիկա',
         phone: '(+374)-77-76-36-56',
@@ -638,7 +638,7 @@ const teachers = [
         password: 'M677778'
     },
     {
-        photo: '/static/assets/images/shakhmat1.jpg',
+        photo: '/static/assets/images/lavaguynner/shakhmat1.jpg',
         name: 'Կարեն Միրզոյան',
         subject: 'Շախմատ',
         phone: '(+374)-98-66-65-56',
@@ -667,7 +667,7 @@ const teachers = [
         password: 'K090807'
     },
     {
-        photo: '/static/assets/images/shakhmat2.jpg',
+        photo: '/static/assets/images/lavaguynner/shakhmat2.jpg',
         name: 'Մանուկ Մանուկյան',
         subject: 'Շախմատ',
         phone: '(+374)-98-44-55-66',
@@ -696,7 +696,7 @@ const teachers = [
         password: 'M555444'
     },
     {
-        photo: '/static/assets/images/shakhmat3.jpg',
+        photo: '/static/assets/images/lavaguynner/shakhmat3.jpg',
         name: 'Արարատ Անանյան',
         subject: 'Շախմատ',
         phone: '(+374)-98-23-33-62',
@@ -725,7 +725,7 @@ const teachers = [
         password: 'A888765'
     },
     {
-        photo: '/static/assets/images/dance1.jpg',
+        photo: '/static/assets/images/lavaguynner/dance1.jpg',
         name: 'Ելենա Մխիթարյան',
         subject: 'Պար',
         phone: '(+374)-98-78-33-11',
@@ -754,7 +754,7 @@ const teachers = [
         password: 'Y609080'
     },
         {
-        photo: '/static/assets/images/dance2.jpg',
+        photo: '/static/assets/images/lavaguynner/dance2.jpg',
         name: 'Վանուհի Խաչիկյան',
         subject: 'Պար',
         phone: '(+374)-98-33-33-11',
@@ -783,7 +783,7 @@ const teachers = [
         password: 'V434544'
     },
     {
-        photo: '/static/assets/images/dance3.jpg',
+        photo: '/static/assets/images/lavaguynner/dance3.jpg',
         name: 'Նանե Հարությունյան',
         subject: 'Պար',
         phone: '(+374)-77-21-22-22',
@@ -812,7 +812,7 @@ const teachers = [
         password: 'N770099'
     },
     {
-        photo: '/static/assets/images/gorg1.jpg',
+        photo: '/static/assets/images/lavaguynner/gorg1.jpg',
         name: 'Սիլվա Սիրունյան',
         subject: 'Գորգագործություն',
         phone: '(+374)-91-15-55-35',
@@ -841,7 +841,7 @@ const teachers = [
         password: 'S886789'
     },
     {
-        photo: '/static/assets/images/gorg2.jpg',
+        photo: '/static/assets/images/lavaguynner/gorg2.jpg',
         name: 'Կարապետ Կարապետյան',
         subject: 'Գորգագործություն',
         phone: '(+374)-43-73-34-13',
@@ -870,7 +870,7 @@ const teachers = [
         password: 'K000777'
     },
     {
-        photo: '/static/assets/images/gorg3.jpg',
+        photo: '/static/assets/images/lavaguynner/gorg3.jpg',
         name: 'Մարգարիտա Առաքելյան',
         subject: 'Գորգագործություն',
         phone: '(+374)-91-22-23-22',
@@ -899,7 +899,7 @@ const teachers = [
         password: 'M767676'
     },
     {
-        photo: '/static/assets/images/wood1.jpg',
+        photo: '/static/assets/images/lavaguynner/wood1.jpg',
         name: 'Պողոս Պողոսյան',
         subject: 'Փայտամշակում',
         phone: '(+374)-77-66-97-36',
@@ -928,7 +928,7 @@ const teachers = [
         password: 'P838383'
     },
     {
-        photo: '/static/assets/images/wood2.jpg',
+        photo: '/static/assets/images/lavaguynner/wood2.jpg',
         name: 'Պետրոս Պետրոսյան',
         subject: 'Փայտամշակում',
         phone: '(+374)-77-38-16-20',
@@ -957,7 +957,7 @@ const teachers = [
         password: 'P030201'
     },
     {
-        photo: '/static/assets/images/wood3.jpg',
+        photo: '/static/assets/images/lavaguynner/wood3.jpg',
         name: 'Սահակ Սահակյան',
         subject: 'Փայտամշակում',
         phone: '(+374)-77-91-97-67',
