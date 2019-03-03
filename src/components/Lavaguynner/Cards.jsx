@@ -23,7 +23,9 @@ class Cards extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
-    
+	/*componentDidMount() {
+		this.context.appStore.teacherId = this.props.match.params.category;
+    }  */  
     onClick = (event) => {
         this.context.appStore.teacher = this.context.appStore.currentTeachers[event.currentTarget.getAttribute('data-option')];
     }    
@@ -40,7 +42,7 @@ class Cards extends Component {
                                     <CardTitle className={s.font}>{item.name}</CardTitle>
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>
                                     <Button data-option={i} onClick={this.onClick} color="info">
-                                        <NavLink to={`/teacherPage/${item.username} `}  tag={Link} className={s.white} >
+                                        <NavLink to={`/teacherPage/${item.username}`}  tag={Link} className={s.white} >
                                         	{Messages.personalInfo}
                                         </NavLink>
                                     </Button>
