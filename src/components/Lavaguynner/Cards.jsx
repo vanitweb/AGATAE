@@ -5,6 +5,7 @@ import { observer } from 'mobx-react';
 import { Container, Row, Col } from 'reactstrap';
 import {TeacherPage} from '../TeacherPage/TeacherPage'
 import {Link} from 'react-router-dom';
+import {Messages} from '../../Messages';
 import { 
     Card,
     Button,
@@ -39,7 +40,7 @@ class Cards extends Component {
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>
                                     <Button data-option={i} onClick={this.onClick} color="success">
                                         <NavLink to="/teacherPage" tag={Link} className={s.white} >
-                                        	Անձնական ինֆորմացիա
+                                        	{Messages.personalInfo}
                                         </NavLink>
                                     </Button>
                                 </CardBody>

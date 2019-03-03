@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
+import {Messages} from '../../Messages';
 import {
     Button,
     Container,
@@ -20,16 +21,16 @@ class PersonalPageUsers extends Component {
             <Container>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
-                        <h5>Պարապունքների գրաֆիկ</h5>
+                        <h5>{Messages.grafik}</h5>
                     </Col>
                     <Col>
-                        <Table hover size="մդ">
+                        <Table hover size="md">
                             <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>ՕՐ</th>
-                                    <th>Ժամ</th>
-                                    <th>Հերթագրվել</th>
+                                    <th>{Messages.vandak}</th>
+                                    <th>{Messages.day}</th>
+                                    <th>{Messages.hour}</th>
+                                    <th>{Messages.submit}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -39,7 +40,7 @@ class PersonalPageUsers extends Component {
                                             <th scope="row">{i + 1}</th>
                                             <td>{item.day}</td>
                                             <td>{item.time}</td>
-                                            <td><Button color="success">Հերթագրվել</Button></td>
+                                            <td><Button color="success">{Messages.submit}</Button></td>
                                         </tr>
                                     );
                                 })}
