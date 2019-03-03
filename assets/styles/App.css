@@ -63,12 +63,12 @@ a.dropdown-toggle.nav-link:hover{
 
  @media (max-width:990px){
 .Navbar_mainMenu__14j7n.collapse.show.navbar-collapse {
-  border-top: 1px solid rgba(242, 242, 242, 0.5);
   background: #343A40;
   position: fixed;
-  width: 300px;
-  top: 69px;
+  width: 100%;
+  top: 83px;
   left:0px;
+  padding: 10px;
   
 }
 }

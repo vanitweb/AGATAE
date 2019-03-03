@@ -16,6 +16,7 @@ import '../../assets/styles/App.css';
 import { Icons } from '../components/Navbar/Icons/Icons';
 
 
+
 const routes = [{
     path: '/',
     component: Content

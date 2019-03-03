@@ -7,7 +7,7 @@ class LogOut extends Component {
         return (
             <div>
                 <NavLink to="/" tag={Link}>
-                    <Button variant="success">Logout</Button>
+                    <Button color="light">Logout</Button>
                 </NavLink>
             </div>
         );

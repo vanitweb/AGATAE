@@ -17,6 +17,7 @@ import {
     Input,
     Collapse,
     Container,
+    Row,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
@@ -32,6 +33,7 @@ import {SighInButton} from './SighInButton';
 import {RegisterPage} from './RegisterPage';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import {LogOut} from './LogOut';
+import {ColappseUserIcon} from './CollapseUserButton/ColappseUserIcon';
 
 @observer
 class Navbare extends React.Component {
@@ -79,7 +81,8 @@ class Navbare extends React.Component {
     render() {
     const {drawClick} = this.props;
         return (
-            <div>
+            <Container>
+            <Row>
                 <Navbar expand="lg" fixed="top"  bg="dark" variant="light" className={navCss.main}>
                     <NavLink onClick={this.onclick} data-option="ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ" data-link="/" to='/' tag={Link}>
                         <NavbarBrand>
@@ -96,19 +99,25 @@ class Navbare extends React.Component {
                                 <Input placeholder="Search..." onChange={this.onchangeSearch} className="search"/>
                                     <InputGroupAddon addonType="append">
                                         <NavLink onClick={this.onclicSearch} data-link="/lavaguynner" to='/lavaguynner' tag={Link}>
-                                            <Button color="secondary" className={navCss.btn}>
+                                            <Button color="light" className={navCss.btn}>
                                                 <img  src={search} width="25" height="25" alt=""/>
                                             </Button>
                                         </NavLink>
                                     </InputGroupAddon>
                             </InputGroup>
                                 </Nav>
-                                <SighInButton/>
-                                <SignUp/>
-								<LogOut/>
+                                    <div className={navCss.dropUser}>
+                                        <ColappseUserIcon/>
+                                    </div>
+                                    <div className={navCss.dropButtons}>
+                                        <SighInButton/>
+                                        <SignUp/>
+                                        <LogOut/>
+                                    </div>
                             </Collapse>
                         </Navbar>
-            </div>
+                    </Row>
+            </Container>
         );
     }
 }

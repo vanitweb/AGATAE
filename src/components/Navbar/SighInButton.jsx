@@ -1,6 +1,7 @@
 import {SignIn} from './SignIn';
 import React, { Component } from 'react';
 import { ButtonToolbar, Button } from 'reactstrap';
+import signInCss from'../../../assets/styles/SighInButton/SighInButton.module.css';
 
 class SighInButton extends Component {
     constructor(...args) {
@@ -10,9 +11,9 @@ class SighInButton extends Component {
     render() {
         let modalClose = () => this.setState({ modalShow: false });
         return (
-            <ButtonToolbar>
-                <Button
-                    variant="dark"
+            <div>
+                <Button className={signInCss.loginBtn}
+                    color="light"
                     onClick={() => this.setState({ modalShow: true })}
                 >
                     Login
@@ -21,7 +22,7 @@ class SighInButton extends Component {
                     show={this.state.modalShow}
                     onHide={modalClose}
                 />
-            </ButtonToolbar>
+           </div>
         );
     }
 }

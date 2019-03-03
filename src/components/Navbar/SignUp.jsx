@@ -7,7 +7,7 @@ class SignUp extends Component {
         return (
             <div>
                 <NavLink to="/register" tag={Link}>
-                    <Button variant="success">Register</Button>
+                    <Button color="light">Register</Button>
                 </NavLink>
             </div>
         );

@@ -1,25 +1,19 @@
 
 .inputSrch {
-    max-width: 250px;
-    margin-top: 30px;
+    min-width: 150px;
+    margin-top: 17px;
     padding: 5px;
 }
 
 .main {
-    height: 70px;
-    z-index: 999;
     width: 100%;
     border-bottom: 1px solid rgba(242, 242, 242, 0.5);
-   /*  transition: height 0.3s ease-out; */
-
 }
-/* .main:hover{
-    height: 90px;
-} */
+
 
 
 .mainMenu li{
-	padding: 24px 20px;
+	padding: 5px 20px;
 	list-style: none;
 }
 .mainMenu {
@@ -52,4 +46,23 @@
     padding:  0px 5px 0px 6px;
     color: #f2f2f2;
 }
+.dropUser{
+    display: none;
+}
+.dropButtons{
+    display: flex;
+}
+@media (min-width: 992px) and (max-width: 1240px){
 
+.dropUser{
+    display:block;
+}
+.dropButtons{
+    display: none;
+}
+}
+@media (max-width: 1350px){
+    .mainMenu li{
+    padding: 5px ;
+}
+}
