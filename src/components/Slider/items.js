@@ -17,21 +17,21 @@ const items = [
         caption: 'Արվեստ'
     },
     {
-        src: knitting,
-        altText: 'Այլ',
-        caption: 'Այլ'
-    },
-    {
         src: painting,
-        altText: 'Արվեստ',
-        caption: 'Արվեստ'
+        altText: 'Արհեստ',
+        caption: 'Արհեստ'
     },
     {
         src: sport,
         altText: 'Սպորտ',
         caption: 'Սպորտ'
 
-    }
+    },
+	    {
+        src: knitting,
+        altText: 'Արվեստ',
+        caption: 'Արվեստ'
+    },
 ];
 
 export {items};
