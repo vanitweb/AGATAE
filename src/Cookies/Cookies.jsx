@@ -27,6 +27,7 @@ function getCookie(username) {
   return "";
 }
 
+
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
