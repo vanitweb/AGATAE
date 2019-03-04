@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {UIStore} from '../stores/UIStore';
 import {AppStore} from '../stores/AppStore';
-import {UserSrore} from '../stores/UserSrore';
+import {UserStore} from '../stores/UserStore';
 import {Navbare} from './Navbar/Navbare';
 import {Content} from './Content/Content';
 import {Footer} from './Footer/Footer';
@@ -49,18 +49,18 @@ class App extends Component {
         super();
         this.appStore = new AppStore();
         this.uiStore = new UIStore();
-		/*this.userStore = new UserSrore();*/
+		this.userStore = new UserStore();
     }	
     static childContextTypes = {
         uiStore: PropTypes.object,
         appStore: PropTypes.object,
-		/*userStore: PropTypes.object*/
+		userStore: PropTypes.object
     };
     getChildContext() {
         return {
             uiStore: this.uiStore,
             appStore: this.appStore,
-			/*userStore: this.userStore*/
+			userStore: this.userStore
         };
     }
     componentDidMount() {
