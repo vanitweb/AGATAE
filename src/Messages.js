@@ -1,5 +1,5 @@
 const Messages = {
-    personalInfo: 'Անձնական ինֆորմացիա',
+    personalInfo: 'Ավելին...',
     contactData: 'ԿՈՆՏԱԿՏԱՅԻՆ ՏՎՅԱԼՆԵՐ',
 	vanadzor: 'Ք. Վանաձոր',
 	email: 'example@mail.ru',
