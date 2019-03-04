@@ -24,7 +24,7 @@ class AppStore {
     }
     @computed get bestTeachers() {
         let tempTeachersArray = [...this._teachers];
-        return (tempTeachersArray.sort((a,b) => (a.raiting > b.raiting) ? 1 : ((b.raiting > a.raiting) ? -1 : 0)).slice(0, 8));
+        return (tempTeachersArray.sort((a,b) => (a.raiting < b.raiting) ? 1 : ((b.raiting < a.raiting) ? -1 : 0)).slice(0, 8));
     }
     @computed get currentTeachers() {
         if(this._currentLink === '/') {
@@ -51,6 +51,9 @@ class AppStore {
     set currentLink(link) {
         this._currentLink = link;
     }
+	set teacherId(id) {
+		this._teacher = this._teachers.filter(item => item.username === id)[0];
+	}
 }
 
 export {AppStore};

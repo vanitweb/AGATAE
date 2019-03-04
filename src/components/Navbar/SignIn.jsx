@@ -4,6 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import {LoginForm} from './LoginForm';
 import '../../../assets/styles/ModalContent/ModalContent.css';
 import logo from '../../../assets/images/newProject4.png';
+import { Messages } from '../../Messages';
 
 class SignIn extends Component {
     render() {
@@ -22,7 +23,7 @@ class SignIn extends Component {
                     <LoginForm/>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={this.props.onHide}>Փակել</Button>
+                    <Button onClick={this.props.onHide}>{Messages.close}</Button>
                 </Modal.Footer>
             </Modal>
         );

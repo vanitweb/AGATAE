@@ -2,6 +2,7 @@ import {SignIn} from './SignIn';
 import React, { Component } from 'react';
 import { ButtonToolbar, Button } from 'reactstrap';
 import signInCss from'../../../assets/styles/SighInButton/SighInButton.module.css';
+import { Messages } from '../../Messages';
 
 class SighInButton extends Component {
     constructor(...args) {
@@ -16,7 +17,7 @@ class SighInButton extends Component {
                     color="light"
                     onClick={() => this.setState({ modalShow: true })}
                 >
-                    Մուտք
+				{Messages.mutq}
                 </Button>
                 <SignIn
                     show={this.state.modalShow}

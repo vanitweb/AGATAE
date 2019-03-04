@@ -19,7 +19,7 @@ class Lavaguynner extends Component {
 
             <div className="container">
                 <h1 className={s.center}>{subjectName}</h1>
-                <Cards bestTeachers={this.bestTeachers}/>
+                <Cards/>
             </div>
 
         );

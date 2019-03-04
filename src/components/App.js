@@ -25,11 +25,15 @@ const routes = [{
     component: Lavaguynner
 },
 {
+    path: '/teachers/:category',
+    component: Lavaguynner
+},
+{
     path: '/register',
     component: RegisterPage
 },
 {
-    path: '/teacherPage',
+    path: '/teacherPage/:username',
     component: TeacherPage
 },
 {

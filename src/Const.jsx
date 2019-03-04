@@ -1,4 +1,0 @@
-const Const = {
-    
-};
-export {Const};

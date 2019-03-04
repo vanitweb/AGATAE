@@ -3,6 +3,7 @@ import {observer} from 'mobx-react';
 import {DropdownToggle, Dropdown, NavLink, DropdownMenu} from 'reactstrap';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
+import {Const} from '../../Const';
 
 @observer
 class NavbarDropdown extends React.Component {
@@ -34,7 +35,7 @@ class NavbarDropdown extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu >
                     {nav.options.map((option) => (
-                        <NavLink onClick={this.onClick} data-option={option} data-link='/lavaguynner' to='/lavaguynner' tag={Link}>{option}</NavLink>
+                        <NavLink onClick={this.onClick} data-option={option} data-link='/lavaguynner' to={`/teachers/${Const[option]}`} tag={Link}>{option}</NavLink>
                     ))}
                 </DropdownMenu>
             </Dropdown> 
