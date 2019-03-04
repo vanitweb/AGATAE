@@ -146,8 +146,8 @@ const teachers = [
     },
     {
         photo: '/static/assets/images/lavaguynner/cook3.jpg',
-        name: 'Խոհարարություն',
-        subject: 'Գայանե Մանուկյան',
+        name: 'Գայանե Մանուկյան',
+        subject: 'Խոհարարություն',
         phone: '(+374)-77-34-16-45',
         email: 'gayanemanukyan@mail.ru',
         sex: 'Իգական',
