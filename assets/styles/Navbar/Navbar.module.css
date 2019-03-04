@@ -5,12 +5,28 @@
     padding: 5px;
 }
 
+.btn {
+    position: relative;
+    right: 11px;
+    height: 38px;
+    width: 100%;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: -8px;
+    padding:  0px 6px 0px 6px;
+    color: #f2f2f2;  
+}
+ 
+
+/* .search{
+    position: relative;
+    right: 5px;
+}  */
+
 .main {
     width: 100%;
     border-bottom: 0px solid rgba(242, 242, 242, 0.5);
 }
-
-
 
 .mainMenu li{
 	padding: 5px 20px;
@@ -37,15 +53,7 @@
 	right: 30%
 }
 }
-.btn {
-    height: 38px;
-    width: 100%;
-    font-size: 20px;
-    margin-left: 3px;
-    margin-top: -8px;
-    padding:  0px 5px 0px 6px;
-    color: #f2f2f2;
-}
+
 .dropUser{
     display: none;
 }

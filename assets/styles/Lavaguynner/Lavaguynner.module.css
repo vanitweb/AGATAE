@@ -9,6 +9,7 @@ img{
 .container{
 	display: flex;
 	margin: 80px 60px 30px 60px;
+
 }
 .font{
 	color: black;

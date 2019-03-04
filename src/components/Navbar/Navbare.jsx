@@ -96,7 +96,7 @@ class Navbare extends React.Component {
                                         <NavbarDropdown nav={nav} />
                                     ))}                         
                             <InputGroup className={navCss.inputSrch}>
-                                <Input placeholder="Search..." onChange={this.onchangeSearch} className="search"/>
+                                <Input placeholder="Search..." onChange={this.onchangeSearch} className={navCss.search}/>
                                     <InputGroupAddon addonType="append">
                                         <NavLink onClick={this.onclicSearch} data-link="/lavaguynner" to='/lavaguynner' tag={Link}>
                                             <Button color="light" className={navCss.btn}>
