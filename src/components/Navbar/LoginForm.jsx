@@ -1,9 +1,28 @@
 import React, { Component } from 'react';
 import {Button, Container, Row} from 'reactstrap';
 import Form from 'react-bootstrap/Form';
+import PropTypes from 'prop-types';
 import { Messages } from '../../Messages';
 
 class LoginForm extends Component {
+	static contextTypes = {
+		UserStore: PropTypes.object		
+	}
+
+    onChange = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        this.context.UserStore.setAuthField(name, value);
+    }
+
+    validateForm() {
+        this.context.UserStore.validateAuthForm();
+    }
+
+   /* errorClass(error) {
+        return(error.length === 0 ? '' : 'has-error');
+    }*/
+
     render() {
         return (
             <Container>
@@ -23,7 +42,7 @@ class LoginForm extends Component {
                             <Form.Check type="checkbox" label={Messages.remember} />
                         </Form.Group>
                         <div>
-                            <Button variant="dark" type="submit" fullWidth ClassName="loginBtn">
+                            <Button variant="dark" type="submit" fullWidth ClassName="loginBtn" onClick={this.validateForm}>
                                 {Messages.mutq}
                             </Button>
                         </div>
