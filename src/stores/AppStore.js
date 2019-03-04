@@ -9,7 +9,8 @@ class AppStore {
         _subjectName: 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ',
         _searchValue: '',
         _currentLink: '/',
-        _teacher: {}
+        _teacher: {},
+		 isDataInitialized: false
     };	
     constructor() {
         extendObservable(this, this.storeValues);
@@ -17,6 +18,7 @@ class AppStore {
     @action
     initData = () => {
         this._teachers = teachers;
+		this.isDataInitialized = true;
     };
     @computed get subjectData() {
         /*return this._teachers.filter(item => (item.subject === this._subjectName && item.name.includes(this._searchValue) || (item.name === this._searchValue && item.subject.includes(this._subjectName))));*/

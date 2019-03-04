@@ -90,7 +90,7 @@ class App extends Component {
         return (
 
             <BrowserRouter>
-                <div className="App">
+                {this.appStore.isDataInitialized && <div className="App">
                     <Navbare drawClick={this.drawClickHandler} />
                     <div>
                         <Switch>
@@ -99,6 +99,7 @@ class App extends Component {
                     </div>
                     <Footer />
                 </div>
+				}
             </BrowserRouter>
               
         );
