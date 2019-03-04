@@ -32,11 +32,11 @@ class TeacherPage extends Component {
                         <p>{Messages.age} {teacher.age}</p>
                         <p>{Messages.company} {teacher.company}</p>
                         <p>{Messages.aboutMe} {teacher.aboutMe}</p>
-                        <PersonalPageUsers />
+                        <PersonalPageUsers teacher={teacher}/>
                     </Col>
                     <Col lg={true}>
                     	<img className={tStyle.teacherImage} src={teacher.photo} width="250" height="300" alt="Your Teacher"/>
-                    	<MainTabs/>
+                    	<MainTabs teacher={teacher}/>
                     </Col>
                 </Row>
             </Container>

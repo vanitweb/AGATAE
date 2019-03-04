@@ -45,9 +45,6 @@ class AppStore {
     set subjectName(subject) {
         this._subjectName = subject;
     }
-    set teacher(teacherObject) {
-        this._teacher = teacherObject;
-    }
     set currentLink(link) {
         this._currentLink = link;
     }
