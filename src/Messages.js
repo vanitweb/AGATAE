@@ -43,6 +43,9 @@ const Messages = {
 	password2: 'Կրկնել գաղտնաբառը',
 	pupil: 'Աշակերտ',
 	teacher: 'Ուսուցիչ',
-	account: 'Ստեղծել հաշիվ'
+	account: 'Ստեղծել հաշիվ',
+    close: 'Փակել',
+	register: 'Գրանցվել',
+	out: 'Ելք'
 };
 export {Messages};
