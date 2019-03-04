@@ -56,10 +56,19 @@ a.dropdown-toggle.nav-link:hover{
   color: #f2f2f2 !important;
 
 } 
+ .dropdown-menu.show a:hover{
+  background:#f2f2f2;
+  color: #394046 !important;
+  transform: translateX(0);
+  transition-duration: .5s;
+
+} 
  .dropdown-menu.show{
-    margin-top: 10px;
+    padding: 5px;
+    margin-top: 29px;
     background:#394046;
  }
+
 
  @media (max-width:990px){
 .Navbar_mainMenu__14j7n.collapse.show.navbar-collapse {
@@ -69,6 +78,13 @@ a.dropdown-toggle.nav-link:hover{
   top: 83px;
   left:0px;
   padding: 10px;
-  
 }
+ .dropdown-menu.show{
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 130px;
+    margin-top: -30px;
+    width: auto;
+
+ }
 }
