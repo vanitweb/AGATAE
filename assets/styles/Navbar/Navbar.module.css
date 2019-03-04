@@ -30,12 +30,13 @@
 
 .mainMenu li{
     font-size: 18px;
-	padding: 5px 20px;
+	padding: 15px 20px;
 	list-style: none;
 }
 .mainMenu {
     justify-content: flex-end;
 }
+
 
 .navbar-collapse{
     background: #222;
@@ -47,6 +48,8 @@
 .brand{
 	margin-left: 30px;
 }
+
+
 
 @media (min-width: 425px){
 	.img{
@@ -72,6 +75,6 @@
 }
 @media (max-width: 1350px){
     .mainMenu li{
-    padding: 5px ;
+    padding: 10px ;
 }
 }

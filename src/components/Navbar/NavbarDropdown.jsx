@@ -25,11 +25,40 @@ class NavbarDropdown extends React.Component {
         this.context.appStore.searchValue = '';
     }
 
+    constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.onMouseEnter = this.onMouseEnter.bind(this);
+    this.onMouseLeave = this.onMouseLeave.bind(this);
+    this.state = {
+      dropdownOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState(prevState => ({
+      dropdownOpen: !prevState.dropdownOpen
+    }));
+  }
+
+  onMouseEnter() {
+    this.setState({dropdownOpen: true});
+  }
+
+  onMouseLeave() {
+    this.setState({dropdownOpen: false});
+  }
+
+
     render() {
         const {nav} = this.props;
         const {uiStore} = this.context;
         return(
-            <Dropdown nav isOpen={uiStore.navbarOpenedDropdown == nav.name} toggle={this.onToggle}>
+            <Dropdown nav isOpen={uiStore.navbarOpenedDropdown == nav.name} toggle={this.onToggle}
+            onMouseOver={this.onMouseEnter} 
+            onMouseLeave={this.onMouseLeave} 
+            isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                 <DropdownToggle nav caret>
                     {nav.name}
                 </DropdownToggle>

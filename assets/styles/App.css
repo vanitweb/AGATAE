@@ -42,7 +42,9 @@ CardDeck {
 li{
   list-style-type: none;
 }
-
+a.dropdown-toggle.nav-link::after  {
+    display: none;
+}
 a.dropdown-toggle.nav-link {
 color: rgba(255,255,255,.8) !important;
 }
@@ -50,7 +52,6 @@ color: rgba(255,255,255,.8) !important;
 a.dropdown-toggle.nav-link:hover{
   color: #fff !important;
 }
-
 
  .dropdown-menu.show a{
   color: #f2f2f2 !important;
@@ -65,7 +66,7 @@ a.dropdown-toggle.nav-link:hover{
 } 
  .dropdown-menu.show{
     padding: 5px;
-    margin-top: 29px;
+    margin-top: 15px;
     background:#394046;
  }
 
