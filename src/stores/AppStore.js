@@ -6,9 +6,9 @@ class AppStore {
     storeValues = {
         _teachers: [],
         _teacherName: '',
-        _subjectName: 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ',
+        _subjectName: '',
         _searchValue: '',
-        _currentLink: '/',
+        _currentLink: '',
         _teacher: {},
 		 isDataInitialized: false
     };	

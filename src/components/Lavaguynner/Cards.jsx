@@ -22,7 +22,7 @@ import {
 class Cards extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
-    };  
+    };
     render() {
         const {currentTeachers} = this.context.appStore;
         return(

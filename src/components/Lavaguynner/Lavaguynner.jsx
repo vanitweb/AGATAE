@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Cards} from './Cards';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
+import {Const} from '../../Const';
 import s from '../../../assets/styles/Lavaguynner/Lavaguynner.module.css';
 
 import {
@@ -13,6 +14,19 @@ class Lavaguynner extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
+	componentWillMount() {
+		if(!this.props.value) {
+			this.context.appStore.subjectName = this.getKeyByValue(Const, this.props.match.params.category);			
+		}
+	}
+	getKeyByValue = (object, value) => {
+		for(let prop in object) {
+			if(object.hasOwnProperty(prop)) {
+				 if(object[prop] === value)
+					 return prop;
+			}
+		}
+	}
     render() {
         const {subjectName} = this.context.appStore;
         return(

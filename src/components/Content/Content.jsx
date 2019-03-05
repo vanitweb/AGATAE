@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
 import {Lavaguynner} from '../Lavaguynner/Lavaguynner';
 import {Slider} from '../Slider/Slider';
+import { observer } from 'mobx-react';
+import PropTypes from 'prop-types';
 
+@observer
 class Content extends Component {
+	static contextTypes = {
+        appStore: PropTypes.object.isRequired
+    };
+	componentDidMount() {
+		this.context.appStore.currentLink = this.props.location.pathname;
+		this.context.appStore.subjectName = 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ';
+	}
     render() {
         return (
             <div className="Content">
                 <Slider />
-                <Lavaguynner />
+                <Lavaguynner value={this.context.appStore.currentTeachers}/>
             </div>
         );
     }
