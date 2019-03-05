@@ -52,11 +52,6 @@ class Navbare extends React.Component {
     onchangeSearch = (event) => {
         this.currentSearch = event.target.value;
     }
-    onclick = (event) => {
-        this.context.appStore.subjectName = event.currentTarget.getAttribute('data-option');
-        this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
-        this.context.appStore.searchValue = '';
-    }
     onclicSearch = (event) => {
         this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
         this.context.appStore.searchValue = this.currentSearch;
@@ -84,7 +79,7 @@ class Navbare extends React.Component {
             <Container>
             <Row>
                 <Navbar expand="lg" fixed="top"  bg="dark" variant="light" className={navCss.main}>
-                    <NavLink onClick={this.onclick} data-option="ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ" data-link="/" to='/' tag={Link}>
+                    <NavLink to='/' tag={Link}>
                         <NavbarBrand>
                             <img src={logo} width="130" height="40" alt=""/>
                         </NavbarBrand>
@@ -98,7 +93,7 @@ class Navbare extends React.Component {
                             <InputGroup className={navCss.inputSrch}>
                                 <Input placeholder="Search..." onChange={this.onchangeSearch} className={navCss.search}/>
                                     <InputGroupAddon addonType="append">
-                                        <NavLink onClick={this.onclicSearch} data-link="/lavaguynner" to='/lavaguynner' tag={Link}>
+                                        <NavLink onClick={this.onclicSearch} data-link="/lavaguynner" to={`/teachers/${this.context.appStore.searchValue}`} tag={Link}>
                                             <Button color="light" className={navCss.btn}>
                                                 <img  src={search} width="25" height="25" alt=""/>
                                             </Button>

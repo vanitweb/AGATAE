@@ -41,6 +41,9 @@ class AppStore {
     @computed get subjectName() {
         return this._subjectName;
     }
+	@computed get searchValue() {
+        return this._searchValue;
+    }
     set searchValue(search) {
         this._searchValue = search;
     }

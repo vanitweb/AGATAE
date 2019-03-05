@@ -22,7 +22,6 @@ class NavbarDropdown extends React.Component {
     onClick = (event) => {
         this.context.appStore.subjectName = event.currentTarget.getAttribute('data-option');
         this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
-        this.context.appStore.searchValue = '';
     }
 
     constructor(props) {
