@@ -36,7 +36,7 @@ class AppStore {
         }
     }
     @computed get teacher() {
-        return this._teachers.filter(item => item.username === id)[0];
+        return this._teachers.filter(item => item.username === this._teacherID)[0];
     }
     @computed get subjectName() {
         return this._subjectName;

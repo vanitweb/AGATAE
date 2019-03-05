@@ -18,13 +18,13 @@ class TeacherPage extends Component {
 	static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
-	componentWillMount() {
-		this.context.appStore.teacherId = this.props.match.params.username;
+	componentDidMount() {
+		this.context.appStore.teacherID = this.props.match.params.username;
     }
     render() {
 		const {teacher, teacherID} = this.context.appStore;
         return (
-            !!{teacherID} && <Container className={tStyle.main}>
+            !!teacherID && <Container className={tStyle.main}>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
                         <h1>{teacher.name}</h1>
