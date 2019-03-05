@@ -46,6 +46,7 @@ const Messages = {
     close: 'Փակել',
 	register: 'Գրանցվել',
 	out: 'Ելք',
-	forErrPage:"Page not faund!!! Error 404"
+	forErrPage:"Page not found!!!",
+	forErrPage404:"Error 404"
 };
 export {Messages};
