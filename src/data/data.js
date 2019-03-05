@@ -1026,9 +1026,36 @@ const teachers = [
         email: 'davitdavtyan@gmail.com',
         sex: 'Արական',
         age: 12,
+        currentGraphic: [],
         hasce: "Ք. Վանաձոր Կ. Դեմիրճյան 1/1",
         username: 'Davitik',
         password: 'D121212',
+		isTeacher: false
+    },
+	{
+        photo: '/static/assets/images/lavaguynner/wood3.jpg',
+        name: 'Անի Մկրտչյան',
+        phone: '(+374)-77-67-45-13',
+        email: 'animkrtchyan@gmail.com',
+        sex: 'Իգական',
+        age: 10,
+        currentGraphic: [],
+        hasce: "Ք. Վանաձոր Ամիրյան 34/5",
+        username: 'Anulik',
+        password: 'A876876',
+		isTeacher: false
+    },
+	{
+        photo: '/static/assets/images/lavaguynner/wood3.jpg',
+        name: 'Գոհար Կարապետյան',
+        phone: '(+374)-77-12-23-12',
+        email: 'goharkarapetyan@gmail.com',
+        sex: 'Իգական',
+        age: 14,
+		currentGraphic: [],
+        hasce: "Ք. Վանաձոր Մյասնիկյան 23/51",
+        username: 'Goharik',
+        password: 'G767876',
 		isTeacher: false
     }
 ];

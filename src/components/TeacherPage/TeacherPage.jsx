@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {PersonalPageUsers} from '../PersonalPageUsers/PersonalPageUsers'
+import {PersonalPageUsers} from'../PersonalPageUsers/PersonalPageUsers';
+
 import {
     Button,
     Container,

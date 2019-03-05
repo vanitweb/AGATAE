@@ -46,6 +46,8 @@ const Messages = {
     close: 'Փակել',
 	register: 'Գրանցվել',
 	out: 'Ելք',
-	forErrPage:"ԷՋԸ ՉԻ ԳՏՆՎԵԼ"
+	forErrPage:"ԷՋԸ ՉԻ ԳՏՆՎԵԼ",
+	pupilsName: 'Աշակերտի անուն, ազգանուն',
+	toRegister: 'Հերթագրել'
 };
 export {Messages};
