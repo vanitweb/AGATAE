@@ -9,7 +9,7 @@ const validators = {
 		return value === pass;
 	},
 	/*isCorrectNumber: function(value) {
-		return value.match(^\+[1-9]{1}[0-9]{7,11}$);
+		return value.match(/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/);
 	},*/
 };
 
