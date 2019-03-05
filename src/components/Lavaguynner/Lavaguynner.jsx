@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Cards} from './Cards';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
-import {Const} from '../../Const';
+import {Constants} from '../../Constants';
 import s from '../../../assets/styles/Lavaguynner/Lavaguynner.module.css';
 
 import {
@@ -16,7 +16,7 @@ class Lavaguynner extends Component {
     };
 	componentWillMount() {
 		if(!this.props.value) {
-			this.context.appStore.subjectName = this.getKeyByValue(Const, this.props.match.params.category);			
+			this.context.appStore.subjectName = this.getKeyByValue(Constants, this.props.match.params.category);			
 		}
 	}
 	getKeyByValue = (object, value) => {
