@@ -9,7 +9,7 @@ class AppStore {
         _subjectName: '',
         _searchValue: '',
         _currentLink: '',
-        _teacher: {},
+		_teacherID: '',
 		 isDataInitialized: false
     };	
     constructor() {
@@ -36,7 +36,7 @@ class AppStore {
         }
     }
     @computed get teacher() {
-        return this._teacher;
+        return this._teachers.filter(item => item.username === this._teacherID)[0];
     }
     @computed get subjectName() {
         return this._subjectName;
@@ -53,8 +53,11 @@ class AppStore {
     set currentLink(link) {
         this._currentLink = link;
     }
-	set teacherId(id) {
-		this._teacher = this._teachers.filter(item => item.username === id)[0];
+	set teacherID(id) {
+		this._teacherID = id;
+	}
+	get teacherID() {
+		return this._teacherID;
 	}
 }
 

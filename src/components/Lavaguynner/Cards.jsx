@@ -36,7 +36,7 @@ class Cards extends Component {
                                 <CardBody className="text-center">
                                     <CardTitle className={s.font}>{item.name}</CardTitle>
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>
-                                    <Button data-option={item.username} color="muted">
+                                    <Button color="muted">
                                         <NavLink to={`/teacherPage/${item.username}`}  tag={Link} className={s.white} >
                                         	{Messages.personalInfo}
                                         </NavLink>
