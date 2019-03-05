@@ -92,7 +92,7 @@ class App extends Component {
             <BrowserRouter>
                 {this.appStore.isDataInitialized && <div className="App">
                     <Navbare drawClick={this.drawClickHandler} />
-                    <div>
+                    <div className="appContent">
                         <Switch>
                             {routeComponents}
                         </Switch>

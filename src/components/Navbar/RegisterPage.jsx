@@ -13,7 +13,7 @@ import { Messages } from '../../Messages';
 class RegisterPage extends Component {
     render() {
         return (
-            <Container className='Reg_Page_Bg'>
+            <Container className={classes.Reg_Page_Bg}>
                 <Row>
                     <Col md={7}></Col>
                     <Col md={5}>

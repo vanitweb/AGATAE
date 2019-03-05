@@ -10,7 +10,6 @@ class ErrorPage extends Component {
             <Row className="justify-content-md-center">
             <Col>
                 {<h1>{Messages.forErrPage}</h1>}
-                {<h1>{Messages.forErrPage404}</h1>}
             </Col>
                 </Row>
             </Container>

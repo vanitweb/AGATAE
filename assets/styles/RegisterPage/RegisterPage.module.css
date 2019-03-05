@@ -3,15 +3,18 @@ body  {
    background-image: url(../../../assets/images/Books3.jpg);
    color:rgba(168, 168, 168, 1);
    background-size: cover;
-   margin-top: 100px;
 }
 
   .text_muted{
     color: rgba(168, 168, 168, 1) !important;
-    
   }
+
   .mainForm{
     color: rgba(168, 168, 168, 1);
     line-height: 15px;
     margin-bottom: 40px;
+
+  }
+  .Reg_Page_Bg{
+     margin-top: 100px;
   }

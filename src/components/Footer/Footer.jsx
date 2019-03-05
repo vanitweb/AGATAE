@@ -32,7 +32,7 @@ class Footer extends Component {
                                 <li ><a href="https://www.facebook.com/adrine.setaghyan" target="_blanc">{Messages.adrine}</a></li>
                                 <li><a href="https://www.facebook.com/gor.manukyan.545" target="_blanc">{Messages.gor}</a></li>
                                 <li><a href="https://www.facebook.com/profile.php?id=100011127284436" target="_blanc">{Messages.arevik}</a></li>
-                                <li><a href="https://www.facebook.com/tukhik.gharagyozyan" target="_blanc">{Messages.tukhik}</a></li>
+                                <li className={ftrStyle.ftrLi2}><a href="https://www.facebook.com/tukhik.gharagyozyan" target="_blanc">{Messages.tukhik}</a></li>
                                 <li><a href="https://www.facebook.com/arusik.apinyan" target="_blanc">{Messages.arusik}</a></li>
                                 <li><a href="https://www.facebook.com/Edgar.nikoghosyan.Sebo" target="_blanc">{Messages.edgar}</a></li>
                             </ul>
