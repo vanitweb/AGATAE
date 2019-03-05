@@ -16,28 +16,14 @@
 }
 .card1 {
 	background-color: rgba(242, 243, 242, 1);
-	border-top: 4px solid lightgreen;
-}
-.card2 {
-	background-color: rgba(242, 243, 242, 1);
 	border-top: 4px solid lightblue;
 }
-.card3 {
-	background-color: rgba(242, 243, 242, 1);
-	border-top: 4px solid rgba(234, 243, 109, 1);
+
+.card .card-title {
+	color: rgba(168, 168, 168, 1);
 }
-.card0 .card-title {
-	color: lightpink;
-}
-.card1 .card-title {
-	color: lightgreen;
-}
-.card2 .card-title {
-	color: lightblue;
-}
-.card3 .card-title {
-	color: rgba(234, 243, 109, 1);
-}
+
+
 .card .btn {
 	border: 2px solid rgba(168, 168, 168, 1);
 	background: rgba(168, 168, 168, 1);
@@ -57,11 +43,5 @@
 	color: lightpink;
 }
 .card1 a:hover {
-	color: lightgreen;
-}
-.card2 a:hover {
 	color: lightblue;
-}
-.card3 a:hover {
-	color: rgba(234, 243, 109, 1);
 }
