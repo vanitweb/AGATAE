@@ -1,4 +1,4 @@
-const Const = {
+const Constants = {
     Մաթեմատիկա: 'matemathiks',
 	Անգլերեն: 'angleren',
 	Ֆիզիկա: 'fizika',
@@ -15,4 +15,4 @@ const Const = {
 	Գորգագործություն: 'gorgagorcutyun',
 };
 
-export {Const};
+export {Constants};
