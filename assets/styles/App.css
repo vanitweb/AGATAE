@@ -60,10 +60,10 @@ a.dropdown-toggle.nav-link:hover{
  .dropdown-menu.show a:hover{
   background:#f2f2f2;
   color: #394046 !important;
-  transform: translateX(0);
   transition-duration: .5s;
-
+   box-shadow: 100px 0 0 0 #f2f2f2 inset;
 } 
+
  .dropdown-menu.show{
     padding: 5px;
     margin-top: 15px;

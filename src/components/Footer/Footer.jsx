@@ -12,8 +12,8 @@ class Footer extends Component {
         return (
             <footer>
                 <Container className={ftrStyle.mainDiv}>
-                    <Row className="aboutUs py-4 justify-content-center">
-                        <Col className={ftrStyle.logo}md={12}><img src={logo} alt="logo" width="160px" height="50px"/></Col>
+                    <Row className="aboutUs  justify-content-center">
+                        <Col className={ftrStyle.logo} md={12}><img src={logo} alt="logo" width="160px" height="50px"/></Col>
                     </Row>
                     <Row>
                         <Col lg={3} md={4} sm={2} className="contacts">
@@ -22,11 +22,8 @@ class Footer extends Component {
                             <p>{Messages.email}</p>
                             <p>{Messages.phone}</p>
                         </Col>
-                        <Col lg={6} md={5} sm={7}>
+                        <Col lg={6} md={5} sm={7} className={ftrStyle.aboutSite}>
                             <h5>{Messages.aboutSite}</h5>
-                           <p>
-                                {Messages.text}
-                            </p>
                             <FontIcons />
                         </Col>
                         <Col  lg={3} md={3} sm={7} className={ftrStyle.ftrLi}>

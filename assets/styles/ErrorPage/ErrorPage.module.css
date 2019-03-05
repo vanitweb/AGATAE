@@ -1,6 +1,6 @@
-.div1{
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.errMessages{
+ color: #f2f2f2;
+ display: flex;
+ align-items: center;
+ height: 300px;
 }

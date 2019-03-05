@@ -4,7 +4,7 @@
 }
 
 .mainDiv{
-	padding: 20px 30px 0px 30px;
+	padding: 0px 30px 0px 30px;
 	bottom: 0;
 	color: #f2f2f2;
 	background-image: url(../../../assets/images/Footer/footer.jpg);
@@ -31,33 +31,29 @@
 }
 
 h6 {
-    padding: 0px 36px;
+    padding: 5px 0px;
 }
-h5{
-	text-align: center;
-}
+
 
 .ftrLi{
 	padding-left: 20px;
 }
+.ftrLi h6{
+	margin-right: 60px;
+	text-align: center;
+}
+
 .ftrLi a:hover{
 	color: #4d88ff;
 }
 .logo {
 	text-align: center;
+	position: relative;
+	top: 60px;
 }
-@media (max-width: 576px){
-	.mainDiv {
-		
-	}
-}
-
 
 .aboutUs h2 {
 	display: block;
-}
-.aboutUs p {
-	font-size: 8px;
 }
 
 .copy {
@@ -75,3 +71,20 @@ h5{
 	margin-left: 35px;
 
  }
+
+
+ .aboutSite{
+ 	margin-top: auto;
+	margin-bottom: 30px;
+ }
+  .aboutSite h5{
+  	margin-left: 25px;
+	letter-spacing:8px;
+	text-align: center;
+ }
+
+@media (max-width: 576px){
+	.mainDiv {
+		
+	}
+}
