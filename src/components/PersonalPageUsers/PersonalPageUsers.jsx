@@ -16,7 +16,7 @@ class PersonalPageUsers extends Component {
         appStore: PropTypes.object.isRequired
     };
     render() {
-        const {teacher} = this.props;
+        const {teacher} = this.context.appStore;
         return (
             <Container>
                 <Row className="justify-content-lg-left">    

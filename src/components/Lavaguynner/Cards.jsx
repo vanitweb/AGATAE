@@ -23,9 +23,6 @@ class Cards extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };  
-    onClick = (event) => {
-        this.context.appStore.teacherId = event.currentTarget.getAttribute('data-option');
-    }    
     render() {
         const {currentTeachers} = this.context.appStore;
         return(
@@ -33,12 +30,12 @@ class Cards extends Component {
                 {currentTeachers.map((item,i) => {
                     return (
                         <Col sm={6} md={4} lg={3} className="pt-4">
-                            <Card key={i} className={`card${i%4}`}>
+                            <Card key={i} className={`card${i % 4}`}>
                                 <CardImg top  className="cardImg" src={item.photo}/>
                                 <CardBody className="text-center">
                                     <CardTitle className={s.font}>{item.name}</CardTitle>
                                     <CardSubtitle className={s.font}>{item.subject}</CardSubtitle>
-                                    <Button data-option={item.username} onClick={this.onClick} color="muted">
+                                    <Button data-option={item.username} color="muted">
                                         <NavLink to={`/teacherPage/${item.username}`}  tag={Link} className={s.white} >
                                         	{Messages.personalInfo}
                                         </NavLink>

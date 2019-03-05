@@ -17,7 +17,7 @@ class TeacherPage extends Component {
 	static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
-	componentDidMount() {
+	componentWillMount() {
 		this.context.appStore.teacherId = this.props.match.params.username;
     }
     render() {

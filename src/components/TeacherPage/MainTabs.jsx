@@ -11,7 +11,7 @@ class MainTabs extends Component {
         appStore: PropTypes.object.isRequired
     };
     render() {
-		const {teacher} = this.props;
+		const {teacher} = this.context.appStore;
         return (
             <Container className="main2">
                 <Row>
