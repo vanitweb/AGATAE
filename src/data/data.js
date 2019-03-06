@@ -26,7 +26,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Կ. Դեմիրճյան 15/28",
         raiting: 1,
         username: 'Karen',
-        password: 'K112233'
+        password: 'K112233',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/football2.jpg',
@@ -55,7 +56,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Երևանյան խճ. 147/20",
         raiting: 3,
         username: 'Grigor',
-        password: 'G112233'
+        password: 'G112233',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/football3.jpg',
@@ -84,7 +86,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Չուխաջյան 30/15",
         raiting: 4,
         username: 'Aren',
-        password: 'K112233'
+        password: 'K112233',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/cook2.jpg',
@@ -113,7 +116,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Զոր. Անդրանիկի 120/41",
         raiting: 5,
         username: 'Arevik',
-        password: 'A112233'
+        password: 'A112233',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/cook1.jpg',
@@ -142,7 +146,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Ամիրյան 34/6",
         raiting: 3,
         username: 'Anna',
-        password: 'A453423'
+        password: 'A453423',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/cook3.jpg',
@@ -171,7 +176,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Բաթումի 20/1",
         raiting: 4,
         username: 'Gayane',
-        password: 'G115233'
+        password: 'G115233',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/lox4.jpg',
@@ -200,7 +206,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Ստ. Զորյան 30/20",
         raiting: 5,
         username: 'Tukhik',
-        password: 'T112233'
+        password: 'T112233',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/lox3.jpg',
@@ -229,7 +236,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Վարդանանց 40/2",
         raiting: 4,
         username: 'Mane',
-        password: 'M112245'
+        password: 'M112245',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/lox1.jpg',
@@ -258,7 +266,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Տիգրան Մեծի 80/5",
         raiting: 3,
         username: 'Armen',
-        password: 'A334456'
+        password: 'A334456',
+		isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/lox2.jpg',
@@ -287,7 +296,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Գր.Լուսավորիչի 10/39",
         raiting: 2,
         username: 'Armen',
-        password: 'A456789'
+        password: 'A456789',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/art1.jpg',
@@ -316,7 +326,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Աղայան 12/12",
         raiting: 5,
         username: 'Arusik',
-        password: 'A223311'
+        password: 'A223311',
+		isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/art2.jpg',
@@ -345,7 +356,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Մեքենաշինարարների 40բ/20",
         raiting: 3,
         username: 'Anush',
-        password: 'A667788'
+        password: 'A667788',
+		isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/art3.jpg',
@@ -374,7 +386,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր  Երևանյան խճ. 2/10",
         raiting: 2,
         username: 'Marina',
-        password: 'M765432'
+        password: 'M765432',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/angleren1.jpg',
@@ -403,7 +416,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Հալաբյան 18",
         raiting: 5,
         username: 'Adrine',
-        password: 'A332211'
+        password: 'A332211',
+		isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/angleren2.jpg',
@@ -432,7 +446,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Մոսկովյան 50/25",
         raiting: 4,
         username: 'Larisa',
-        password: 'L786756'
+        password: 'L786756',
+		isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/angleren3.jpg',
@@ -461,7 +476,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Բաթումի 100/11",
         raiting: 3,
         username: 'Hasmik',
-        password: 'H443322'
+        password: 'H443322',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/matem2.jpg',
@@ -490,7 +506,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Մյասնիկյան 49/23",
         raiting: 5,
         username: 'Gor',
-        password: 'G112233'
+        password: 'G112233',
+		isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/matem3.jpg',
@@ -519,7 +536,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Բաթումի 28/1",
         raiting: 4,
         username: 'Harut',
-        password: 'H890890'
+        password: 'H890890',
+		isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/matem1.jpg',
@@ -548,7 +566,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Կ. Աբովյան 12/2",
         raiting: 3,
         username: 'Tatev',
-        password: 'T777666'
+        password: 'T777666',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/fizika1.jpg',
@@ -577,7 +596,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Կնունյանց 2/8",
         raiting: 5,
         username: 'Edgar',
-        password: 'E556655'
+        password: 'E556655',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/fizika2.jpg',
@@ -606,7 +626,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Կ. Դեմիրճյան 10/49",
         raiting: 3,
         username: 'Davit',
-        password: 'D567765'
+        password: 'D567765',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/fizika3.jpg',
@@ -635,7 +656,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Կ. Իսահակյան 38/37",
         raiting: 3,
         username: 'Marine',
-        password: 'M677778'
+        password: 'M677778',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/shakhmat1.jpg',
@@ -664,7 +686,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Կ. Սուխումի 2/2",
         raiting: 3,
         username: 'Karen',
-        password: 'K090807'
+        password: 'K090807',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/shakhmat2.jpg',
@@ -693,7 +716,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Չուխաջյան 28/28",
         raiting: 3,
         username: 'Manuk',
-        password: 'M555444'
+        password: 'M555444',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/shakhmat3.jpg',
@@ -722,7 +746,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Տիգրան Մեծի 26/1",
         raiting: 3,
         username: 'Ararat',
-        password: 'A888765'
+        password: 'A888765',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/dance1.jpg',
@@ -751,7 +776,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Վարդանանց 30/12",
         raiting: 4,
         username: 'Yelena',
-        password: 'Y609080'
+        password: 'Y609080',
+		isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/dance2.jpg',
@@ -780,7 +806,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Աղայան 29/2",
         raiting: 4,
         username: 'Vanuhi',
-        password: 'V434544'
+        password: 'V434544',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/dance3.jpg',
@@ -809,7 +836,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Համբարձումյան 16/8",
         raiting: 4,
         username: 'Nane',
-        password: 'N770099'
+        password: 'N770099',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/gorg1.jpg',
@@ -838,7 +866,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Շինարարների 35/6",
         raiting: 4,
         username: 'Silva',
-        password: 'S886789'
+        password: 'S886789',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/gorg2.jpg',
@@ -867,7 +896,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Մյասնիկյան 1/25",
         raiting: 4,
         username: 'Karapet',
-        password: 'K000777'
+        password: 'K000777',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/gorg3.jpg',
@@ -896,7 +926,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Աբովյան 2/45",
         raiting: 4,
         username: 'Margarita',
-        password: 'M767676'
+        password: 'M767676',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/wood1.jpg',
@@ -925,7 +956,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Երևանյան խճ. 101/21",
         raiting: 4,
         username: 'Poghos',
-        password: 'P838383'
+        password: 'P838383',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/wood2.jpg',
@@ -954,7 +986,8 @@ const teachers = [
         hasce: "Ք. Վանաձոր Զոր. Անդրանիկի 34/52",
         raiting: 3,
         username: 'Petros',
-        password: 'P030201'
+        password: 'P030201',
+		isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/wood3.jpg',
@@ -983,7 +1016,47 @@ const teachers = [
         hasce: "Ք. Վանաձոր Կ. Դեմիրճյան 1/6",
         raiting: 0,
         username: 'Sahak',
-        password: 'S506070'
+        password: 'S506070',
+		isTeacher: true
+    },
+	{
+        photo: '/static/assets/images/lavaguynner/wood3.jpg',
+        name: 'Դավիթ Դավթյան',
+        phone: '(+374)-77-91-97-67',
+        email: 'davitdavtyan@gmail.com',
+        sex: 'Արական',
+        age: 12,
+        currentGraphic: [],
+        hasce: "Ք. Վանաձոր Կ. Դեմիրճյան 1/1",
+        username: 'Davitik',
+        password: 'D121212',
+		isTeacher: false
+    },
+	{
+        photo: '/static/assets/images/lavaguynner/wood3.jpg',
+        name: 'Անի Մկրտչյան',
+        phone: '(+374)-77-67-45-13',
+        email: 'animkrtchyan@gmail.com',
+        sex: 'Իգական',
+        age: 10,
+        currentGraphic: [],
+        hasce: "Ք. Վանաձոր Ամիրյան 34/5",
+        username: 'Anulik',
+        password: 'A876876',
+		isTeacher: false
+    },
+	{
+        photo: '/static/assets/images/lavaguynner/wood3.jpg',
+        name: 'Գոհար Կարապետյան',
+        phone: '(+374)-77-12-23-12',
+        email: 'goharkarapetyan@gmail.com',
+        sex: 'Իգական',
+        age: 14,
+		currentGraphic: [],
+        hasce: "Ք. Վանաձոր Մյասնիկյան 23/51",
+        username: 'Goharik',
+        password: 'G767876',
+		isTeacher: false
     }
 ];
 

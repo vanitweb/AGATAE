@@ -42,10 +42,12 @@ const Messages = {
 	password2: 'Կրկնել գաղտնաբառը',
 	pupil: 'Աշակերտ',
 	teacher: 'Ուսուցիչ',
-	account: 'Ստեղծել հաշիվ',
+	account: 'Ստեղծել անձնական էջ',
     close: 'Փակել',
-	register: 'Գրանցվել',
+	register: 'ԳՐԱՆՑՈՒՄ',
 	out: 'Ելք',
-	forErrPage:"ԷՋԸ ՉԻ ԳՏՆՎԵԼ"
+	forErrPage:"ԷՋԸ ՉԻ ԳՏՆՎԵԼ",
+	pupilsName: 'Աշակերտի անուն, ազգանուն',
+	toRegister: 'Հերթագրել'
 };
 export {Messages};
