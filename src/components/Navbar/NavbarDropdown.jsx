@@ -52,16 +52,19 @@ class NavbarDropdown extends React.Component {
         const {nav} = this.props;
         const {uiStore} = this.context;
         return(
-            <Dropdown nav isOpen={uiStore.navbarOpenedDropdown == nav.name} toggle={this.onToggle}
-            onMouseOver={this.onMouseEnter} 
-            onMouseLeave={this.onMouseLeave} 
-            isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+            <Dropdown nav
+                isOpen={uiStore.navbarOpenedDropdown === nav.name}
+                toggle={this.onToggle}
+                onMouseOver={this.onMouseEnter} 
+                onMouseLeave={this.onMouseLeave} 
+                isOpen={this.state.dropdownOpen}
+                toggle={this.toggle}>
                 <DropdownToggle nav caret>
                     {nav.name}
                 </DropdownToggle>
                 <DropdownMenu >
                     {nav.options.map((option) => (
-                        <NavLink onClick={this.onClick} data-option={option} to={`/teachers/${Constants[option]}`} tag={Link}>{option}</NavLink>
+                        <NavLink key={option} onClick={this.onClick} data-option={option} to={`/teachers/${Constants[option]}`} tag={Link}>{option}</NavLink>
                     ))}
                 </DropdownMenu>
             </Dropdown> 

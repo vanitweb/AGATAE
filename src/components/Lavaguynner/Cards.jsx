@@ -9,14 +9,11 @@ import {
     CardSubtitle,
     CardBody,
     NavLink,
-    Container,
-    Row,
     Col
 } from 'reactstrap';
 import { observer } from 'mobx-react';
 import {Link} from 'react-router-dom';
 
-import {TeacherPage} from '../TeacherPage/TeacherPage'
 import {Messages} from '../../Messages';
 
 import '../../../assets/styles/Lavaguynner/Lavaguynner.css';
@@ -35,12 +32,12 @@ class Cards extends Component {
                     return (
                         <Col sm={6} md={4} lg={3} className="pt-4">
                             <Card key={i} className={`card${i % 2}`}>
-                                <CardImg top  className="cardImg" src={item.photo}/>
+                                <CardImg top className="cardImg" src={item.photo}/>
                                 <CardBody className="text-center">
                                     <CardTitle>{item.name}</CardTitle>
                                     <CardSubtitle>{item.subject}</CardSubtitle>
                                     <Button color="muted">
-                                        <NavLink to={`/teacherPage/${item.username}`}  tag={Link} >
+                                        <NavLink to={`/teacherPage/${item.username}`} tag={Link} >
                                             {Messages.personalInfo}
                                         </NavLink>
                                     </Button>

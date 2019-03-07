@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {observer} from 'mobx-react';
+import {Container} from 'reactstrap';
 import PropTypes from 'prop-types';
 
 import {Cards} from './Cards';
@@ -8,10 +9,6 @@ import {Constants} from '../../Constants';
 
 import '../../../assets/styles/Lavaguynner/Lavaguynner.css';
 
-import {
-    Container,
-    Row
-} from 'reactstrap';
 @observer
 class Lavaguynner extends Component { 
     static contextTypes = {

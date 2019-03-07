@@ -44,12 +44,11 @@ const Messages = {
     teacher: 'Ուսուցիչ',
     account: 'Ստեղծել անձնական էջ',
     close: 'Փակել',
-    register: 'ԳՐԱՆՑՈՒՄ',
     out: 'ԵԼՔ',
-    forErrPage:"ԷՋԸ ՉԻ ԳՏՆՎԵԼ",
+    forErrPage:'ԷՋԸ ՉԻ ԳՏՆՎԵԼ',
     pupilsName: 'Աշակերտի անուն, ազգանուն',
     toRegister: 'Հերթագրել',
     search: 'ՓՆՏՐԵԼ . . .',
-    arajatar: "ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ"
+    arajatar: 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ'
 };
 export {Messages};

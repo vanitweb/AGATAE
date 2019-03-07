@@ -9,12 +9,12 @@ import {Messages} from '../../Messages';
 
 @observer
 class Content extends Component {
-	static contextTypes = {
+    static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
-	componentDidMount() {
-		this.context.appStore.subjectName = Messages.arajatar;
-	}
+    componentDidMount() {
+        this.context.appStore.subjectName = Messages.arajatar;
+    }
     render() {
         return (
             <div className="Content">

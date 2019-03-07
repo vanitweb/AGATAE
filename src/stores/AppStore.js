@@ -11,7 +11,7 @@ class AppStore {
         _searchValue: '',
         _currentLink: '',
         _teacherID: '',
-         isDataInitialized: false
+        isDataInitialized: false
     };	
     constructor() {
         extendObservable(this, this.storeValues);
@@ -39,8 +39,8 @@ class AppStore {
     getKeyByValue = (object, value) => {
         for(let prop in object) {
             if(object.hasOwnProperty(prop)) {
-                 if(object[prop] === value)
-                     return prop;
+                if(object[prop] === value)
+                {return prop;}
             }
         }
     }
