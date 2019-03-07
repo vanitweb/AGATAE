@@ -50,14 +50,21 @@ h6 {
 	top: 10px;
 }
 
-.aboutUs h2 {
+.abouteUs h2 {
 	display: block;
 }
 
 .copy {
-	width: 100%;
+	width: 110%;
 	justify-content: center;
-    background: cadetblue;
+    background: #141318;
+    margin: 0;
+    opacity: 0.7;
+    padding-top: 8px;
+}
+.copy p{
+	padding-right: 6%;
+	color: #fff;
 }
 
 .icons {
@@ -79,6 +86,10 @@ h6 {
   	margin-left: 25px;
 	letter-spacing:8px;
 	text-align: center;
+ }
+ .aboutSite{
+ 	padding: 2px 80px;
+
  }
 
 @media (max-width: 576px){
