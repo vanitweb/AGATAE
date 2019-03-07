@@ -27,7 +27,7 @@ const teachers = [
         raiting: 1,
         username: 'Karen',
         password: 'K112233',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/football2.jpg',
@@ -57,7 +57,7 @@ const teachers = [
         raiting: 3,
         username: 'Grigor',
         password: 'G112233',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/football3.jpg',
@@ -87,7 +87,7 @@ const teachers = [
         raiting: 4,
         username: 'Aren',
         password: 'K112233',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/cook2.jpg',
@@ -117,7 +117,7 @@ const teachers = [
         raiting: 5,
         username: 'Arevik',
         password: 'A112233',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/cook1.jpg',
@@ -147,7 +147,7 @@ const teachers = [
         raiting: 3,
         username: 'Anna',
         password: 'A453423',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/cook3.jpg',
@@ -177,7 +177,7 @@ const teachers = [
         raiting: 4,
         username: 'Gayane',
         password: 'G115233',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/lox4.jpg',
@@ -207,7 +207,7 @@ const teachers = [
         raiting: 5,
         username: 'Tukhik',
         password: 'T112233',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/lox3.jpg',
@@ -237,7 +237,7 @@ const teachers = [
         raiting: 4,
         username: 'Mane',
         password: 'M112245',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/lox1.jpg',
@@ -267,7 +267,7 @@ const teachers = [
         raiting: 3,
         username: 'Armen',
         password: 'A334456',
-		isTeacher: true
+        isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/lox2.jpg',
@@ -297,7 +297,7 @@ const teachers = [
         raiting: 2,
         username: 'Armen',
         password: 'A456789',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/art1.jpg',
@@ -327,7 +327,7 @@ const teachers = [
         raiting: 5,
         username: 'Arusik',
         password: 'A223311',
-		isTeacher: true
+        isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/art2.jpg',
@@ -357,7 +357,7 @@ const teachers = [
         raiting: 3,
         username: 'Anush',
         password: 'A667788',
-		isTeacher: true
+        isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/art3.jpg',
@@ -387,7 +387,7 @@ const teachers = [
         raiting: 2,
         username: 'Marina',
         password: 'M765432',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/angleren1.jpg',
@@ -417,7 +417,7 @@ const teachers = [
         raiting: 5,
         username: 'Adrine',
         password: 'A332211',
-		isTeacher: true
+        isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/angleren2.jpg',
@@ -447,7 +447,7 @@ const teachers = [
         raiting: 4,
         username: 'Larisa',
         password: 'L786756',
-		isTeacher: true
+        isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/angleren3.jpg',
@@ -477,7 +477,7 @@ const teachers = [
         raiting: 3,
         username: 'Hasmik',
         password: 'H443322',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/matem2.jpg',
@@ -507,7 +507,7 @@ const teachers = [
         raiting: 5,
         username: 'Gor',
         password: 'G112233',
-		isTeacher: true
+        isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/matem3.jpg',
@@ -537,7 +537,7 @@ const teachers = [
         raiting: 4,
         username: 'Harut',
         password: 'H890890',
-		isTeacher: true
+        isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/matem1.jpg',
@@ -567,7 +567,7 @@ const teachers = [
         raiting: 3,
         username: 'Tatev',
         password: 'T777666',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/fizika1.jpg',
@@ -597,7 +597,7 @@ const teachers = [
         raiting: 5,
         username: 'Edgar',
         password: 'E556655',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/fizika2.jpg',
@@ -627,7 +627,7 @@ const teachers = [
         raiting: 3,
         username: 'Davit',
         password: 'D567765',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/fizika3.jpg',
@@ -657,7 +657,7 @@ const teachers = [
         raiting: 3,
         username: 'Marine',
         password: 'M677778',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/shakhmat1.jpg',
@@ -687,7 +687,7 @@ const teachers = [
         raiting: 3,
         username: 'Karen',
         password: 'K090807',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/shakhmat2.jpg',
@@ -717,7 +717,7 @@ const teachers = [
         raiting: 3,
         username: 'Manuk',
         password: 'M555444',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/shakhmat3.jpg',
@@ -747,7 +747,7 @@ const teachers = [
         raiting: 3,
         username: 'Ararat',
         password: 'A888765',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/dance1.jpg',
@@ -777,7 +777,7 @@ const teachers = [
         raiting: 4,
         username: 'Yelena',
         password: 'Y609080',
-		isTeacher: true
+        isTeacher: true
     },
         {
         photo: '/static/assets/images/lavaguynner/dance2.jpg',
@@ -807,7 +807,7 @@ const teachers = [
         raiting: 4,
         username: 'Vanuhi',
         password: 'V434544',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/dance3.jpg',
@@ -837,7 +837,7 @@ const teachers = [
         raiting: 4,
         username: 'Nane',
         password: 'N770099',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/gorg1.jpg',
@@ -867,7 +867,7 @@ const teachers = [
         raiting: 4,
         username: 'Silva',
         password: 'S886789',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/gorg2.jpg',
@@ -897,7 +897,7 @@ const teachers = [
         raiting: 4,
         username: 'Karapet',
         password: 'K000777',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/gorg3.jpg',
@@ -927,7 +927,7 @@ const teachers = [
         raiting: 4,
         username: 'Margarita',
         password: 'M767676',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/wood1.jpg',
@@ -957,7 +957,7 @@ const teachers = [
         raiting: 4,
         username: 'Poghos',
         password: 'P838383',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/wood2.jpg',
@@ -987,7 +987,7 @@ const teachers = [
         raiting: 3,
         username: 'Petros',
         password: 'P030201',
-		isTeacher: true
+        isTeacher: true
     },
     {
         photo: '/static/assets/images/lavaguynner/wood3.jpg',
@@ -1017,9 +1017,9 @@ const teachers = [
         raiting: 0,
         username: 'Sahak',
         password: 'S506070',
-		isTeacher: true
+        isTeacher: true
     },
-	{
+    {
         photo: '/static/assets/images/lavaguynner/wood3.jpg',
         name: 'Դավիթ Դավթյան',
         phone: '(+374)-77-91-97-67',
@@ -1030,9 +1030,9 @@ const teachers = [
         hasce: "Ք. Վանաձոր Կ. Դեմիրճյան 1/1",
         username: 'Davitik',
         password: 'D121212',
-		isTeacher: false
+        isTeacher: false
     },
-	{
+    {
         photo: '/static/assets/images/lavaguynner/wood3.jpg',
         name: 'Անի Մկրտչյան',
         phone: '(+374)-77-67-45-13',
@@ -1043,20 +1043,20 @@ const teachers = [
         hasce: "Ք. Վանաձոր Ամիրյան 34/5",
         username: 'Anulik',
         password: 'A876876',
-		isTeacher: false
+        isTeacher: false
     },
-	{
+    {
         photo: '/static/assets/images/lavaguynner/wood3.jpg',
         name: 'Գոհար Կարապետյան',
         phone: '(+374)-77-12-23-12',
         email: 'goharkarapetyan@gmail.com',
         sex: 'Իգական',
         age: 14,
-		currentGraphic: [],
+        currentGraphic: [],
         hasce: "Ք. Վանաձոր Մյասնիկյան 23/51",
         username: 'Goharik',
         password: 'G767876',
-		isTeacher: false
+        isTeacher: false
     }
 ];
 

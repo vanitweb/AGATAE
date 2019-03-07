@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import {Lavaguynner} from '../Lavaguynner/Lavaguynner';
-import {Slider} from '../Slider/Slider';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
+
+import {Lavaguynner} from '../Lavaguynner/Lavaguynner';
+import {Slider} from '../Slider/Slider';
+
+import {Messages} from '../../Messages';
 
 @observer
 class Content extends Component {
@@ -10,8 +13,7 @@ class Content extends Component {
         appStore: PropTypes.object.isRequired
     };
 	componentDidMount() {
-		this.context.appStore.currentLink = this.props.location.pathname;
-		this.context.appStore.subjectName = 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ';
+		this.context.appStore.subjectName = Messages.arajatar;
 	}
     render() {
         return (

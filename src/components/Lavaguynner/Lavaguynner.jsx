@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
-import {Cards} from './Cards';
+import {observer} from 'mobx-react';
 import PropTypes from 'prop-types';
-import { observer } from 'mobx-react';
+
+import {Cards} from './Cards';
+
 import {Constants} from '../../Constants';
-import s from '../../../assets/styles/Lavaguynner/Lavaguynner.css';
+
+import '../../../assets/styles/Lavaguynner/Lavaguynner.css';
 
 import {
     Container,
@@ -14,28 +17,18 @@ class Lavaguynner extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
-	componentWillMount() {
-		if(!this.props.value) {
-			this.context.appStore.subjectName = this.getKeyByValue(Constants, this.props.match.params.category);			
-		}
-	}
-	getKeyByValue = (object, value) => {
-		for(let prop in object) {
-			if(object.hasOwnProperty(prop)) {
-				 if(object[prop] === value)
-					 return prop;
-			}
-		}
-	}
+    componentDidMount() {
+        if(!this.props.value) {
+            this.context.appStore.subjectName = this.context.appStore.getKeyByValue(Constants, this.props.match.params.category);	
+        }
+    }
     render() {
         const {subjectName} = this.context.appStore;
         return(
-
-            <div className="container">
+            !!subjectName && <div className="container">
                 <h1 className='subject'>{subjectName}</h1>
                 <Cards/>
             </div>
-
         );
     }
 }

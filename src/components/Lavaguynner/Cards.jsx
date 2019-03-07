@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '../../../assets/styles/Lavaguynner/Lavaguynner.css';
-import { observer } from 'mobx-react';
-import { Container, Row, Col } from 'reactstrap';
-import {TeacherPage} from '../TeacherPage/TeacherPage'
-import {Link} from 'react-router-dom';
-import {Messages} from '../../Messages';
 import { 
     Card,
     Button,
@@ -15,7 +9,17 @@ import {
     CardSubtitle,
     CardBody,
     NavLink,
+    Container,
+    Row,
+    Col
 } from 'reactstrap';
+import { observer } from 'mobx-react';
+import {Link} from 'react-router-dom';
+
+import {TeacherPage} from '../TeacherPage/TeacherPage'
+import {Messages} from '../../Messages';
+
+import '../../../assets/styles/Lavaguynner/Lavaguynner.css';
 
 
 @observer
@@ -37,7 +41,7 @@ class Cards extends Component {
                                     <CardSubtitle>{item.subject}</CardSubtitle>
                                     <Button color="muted">
                                         <NavLink to={`/teacherPage/${item.username}`}  tag={Link} >
-                                        	{Messages.personalInfo}
+                                            {Messages.personalInfo}
                                         </NavLink>
                                     </Button>
                                 </CardBody>

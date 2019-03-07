@@ -3,8 +3,11 @@ import {observer} from 'mobx-react';
 import PropTypes from 'prop-types';
 import {observable} from 'mobx';
 import {Form} from 'react-bootstrap';
-import {navs} from '../../configs/navData';
-import {NavbarDropdown} from './NavbarDropdown';
+import {
+    Link,
+    BrowserRouter as Router,
+    Route
+} from 'react-router-dom';
 import {
     Nav,
     NavItem,
@@ -23,18 +26,22 @@ import {
     DropdownMenu,
     DropdownItem 
 } from 'reactstrap';
-import {Link} from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
+import {navs} from '../../configs/navData';
+
 import logo from '../../../assets/images/newProject4.png';
-import navCss from '../../../assets/styles/Navbar/Navbar.module.css';
 import search from '../../../assets/images/search.png';
+
+import {NavbarDropdown} from './NavbarDropdown';
 import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
 import {RegisterPage} from './RegisterPage';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
 import {LogOut} from './LogOut';
 import {ColappseUserIcon} from './CollapseUserButton/ColappseUserIcon';
+
 import {Messages} from '../../Messages';
+
+import navCss from '../../../assets/styles/Navbar/Navbar.module.css';
 
 @observer
 class Navbare extends React.Component {
@@ -53,27 +60,22 @@ class Navbare extends React.Component {
     onchangeSearch = (event) => {
         this.currentSearch = event.target.value;
     }
-    onclicSearch = (event) => {
-        this.context.appStore.currentLink = event.currentTarget.getAttribute('data-link');
-        this.context.appStore.searchValue = this.currentSearch;
-        this.context.appStore.subjectName = '';
-    }
     toggle(e) {
         console.log(e.target.getAttribute('data-name'));
         this.setState({
             dropdownOpen: e.target.getAttribute('data-name')
         });
     }
-     toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-     toggle2() {
-    this.setState({
-      dropdownOpen: !this.state.dropdownOpen
-    });
-  }
+    toggle() {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
+    toggle2() {
+        this.setState({
+            dropdownOpen: !this.state.dropdownOpen
+        });
+    }
     render() {
     const {drawClick} = this.props;
         return (
@@ -92,9 +94,9 @@ class Navbare extends React.Component {
                                         <NavbarDropdown nav={nav} />
                                     ))}                         
                             <InputGroup className={navCss.inputSrch}>
-                                <Input placeholder={Messages.search} type='search' onChange={this.onchangeSearch} className={navCss.search}/>
+                                <Input placeholder={Messages.search} onBlur={this.onchangeSearch} className={navCss.search}/>
                                     <InputGroupAddon addonType="append">
-                                        <NavLink onClick={this.onclicSearch} data-link="/lavaguynner" to={`/teachers/${this.context.appStore.searchValue}`} tag={Link}>
+                                        <NavLink to={`/teachers/${this.currentSearch}`} tag={Link}>
                                             <Button color="light" className={navCss.btn}>
                                                 <img  src={search} width="25" height="25" alt=""/>
                                             </Button>
