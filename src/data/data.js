@@ -2,7 +2,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/football1.jpg',
         name: 'Կարեն Սիմոնյան',
-        subject: 'Ֆուտբոլ',
+        subject: 'ՖՈւՏԲՈԼ',
         phone: '(+374)-77-67-98-55',
         email: 'karensimonyan@gmail.com',
         sex: 'Արական',
@@ -32,7 +32,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/football2.jpg',
         name: 'Գրիգոր Սահակյան',
-        subject: 'Ֆուտբոլ',
+        subject: 'ՖՈւՏԲՈԼ',
         phone: '(+374)-98-72-12-23',
         email: 'grigorsahakyan@gmail.com',
         sex: 'Արական',
@@ -62,7 +62,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/football3.jpg',
         name: 'Արեն Հովսեփյան',
-        subject: 'Ֆուտբոլ',
+        subject: 'ՖՈւՏԲՈԼ',
         phone: '(+374)-99-69-23-44',
         email: 'arenhovsepyan@gmail.com',
         sex: 'Արական',
@@ -92,7 +92,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/cook2.jpg',
         name: 'Արևիկ Ղարագյոզյան',
-        subject: 'Խոհանոց',
+        subject: 'ԽՈՀԱՆՈՑ',
         phone: '(+374)-77-75-85-10',
         email: 'arevik-elen@mail.ru',
         sex: 'Իգական',
@@ -122,7 +122,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/cook1.jpg',
         name: 'Աննա Հարությունյան',
-        subject: 'Խոհանոց',
+        subject: 'ԽՈՀԱՆՈՑ',
         phone: '(+374)-94-67-85-35',
         email: 'annaharutyunyan@mail.ru',
         sex: 'Իգական',
@@ -152,7 +152,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/cook3.jpg',
         name: 'Գայանե Մանուկյան',
-        subject: 'Խոհարարություն',
+        subject: 'ԽՈՀԱՆՈՑ',
         phone: '(+374)-77-34-16-45',
         email: 'gayanemanukyan@mail.ru',
         sex: 'Իգական',
@@ -182,7 +182,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/lox4.jpg',
         name: 'Թուխիկ Ղարագյոզյան',
-        subject: 'Լող',
+        subject: 'ԼՈՂ',
         phone: '(+374)-43-08-70-15',
         email: 'tukhik_k@mail.ru',
         sex: 'Իգական',
@@ -212,7 +212,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/lox3.jpg',
         name: 'Մանե Դավթյան',
-        subject: 'Լող',
+        subject: 'ԼՈՂ',
         phone: '(+374)-43-44-54-12',
         email: 'manedavtyan@mail.ru',
         sex: 'Իգական',
@@ -242,7 +242,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/lox1.jpg',
         name: 'Արմեն Կարապետյան',
-        subject: 'Լող',
+        subject: 'ԼՈՂ',
         phone: '(+374)-43-33-43-12',
         email: 'armenkarapetyan@mail.ru',
         sex: 'Արական',
@@ -272,7 +272,7 @@ const teachers = [
         {
         photo: '/static/assets/images/lavaguynner/lox2.jpg',
         name: 'Արտակ Վարդանյան',
-        subject: 'Լող',
+        subject: 'ԼՈՂ',
         phone: '(+374)-43-55-76-43',
         email: 'artakvardanyan@mail.ru',
         sex: 'Արական',
@@ -302,7 +302,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/art1.jpg',
         name: 'Արուսիկ Ափինյան',
-        subject: 'Նկարչություն',
+        subject: 'ՆԿԱՐՉՈւԹՅՈւՆ',
         phone: '(+374)-99-42-55-85',
         email: 'arik200185@mail.ru',
         sex: 'Արական',
@@ -332,7 +332,7 @@ const teachers = [
         {
         photo: '/static/assets/images/lavaguynner/art2.jpg',
         name: 'Անուշ Ղարագյոզյան',
-        subject: 'Նկարչություն',
+        subject: 'ՆԿԱՐՉՈւԹՅՈւՆ',
         phone: '(+374)-99-45-23-11',
         email: 'anushghazaryan@mail.ru',
         sex: 'Իգական',
@@ -362,7 +362,7 @@ const teachers = [
         {
         photo: '/static/assets/images/lavaguynner/art3.jpg',
         name: 'Մարինա Գրիգորյան',
-        subject: 'Նկարչություն',
+        subject: 'ՆԿԱՐՉՈւԹՅՈւՆ',
         phone: '(+374)-99-09-08-06',
         email: 'marinagrigoryan@mail.ru',
         sex: 'Իգական',
@@ -392,8 +392,8 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/angleren1.jpg',
         name: 'Ադրինե Սեթաղյան',
-        subject: 'Անգլերեն',
-        phone: '(+374)-77-85-37-88',
+        subject: 'ԱՆԳԼԵՐԵՆ',
+        phone: '(+374)-93-85-37-88',
         email: 'adrine.setaghyan@mail.ru',
         sex: 'Իգական',
         age: 24,
@@ -422,7 +422,7 @@ const teachers = [
         {
         photo: '/static/assets/images/lavaguynner/angleren2.jpg',
         name: 'Լարիսա Սարգսյան',
-        subject: 'Անգլերեն',
+        subject: 'ԱՆԳԼԵՐԵՆ',
         phone: '(+374)-77-33-54-19',
         email: 'larisasargsyan@mail.ru',
         sex: 'Իգական',
@@ -452,7 +452,7 @@ const teachers = [
         {
         photo: '/static/assets/images/lavaguynner/angleren3.jpg',
         name: 'Հասմիկ Միքայելյան',
-        subject: 'Անգլերեն',
+        subject: 'ԱՆԳԼԵՐԵՆ',
         phone: '(+374)-77-98-45-45',
         email: 'hasmikmikayelyan@mail.ru',
         sex: 'Իգական',
@@ -482,7 +482,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/matem2.jpg',
         name: 'Գոռ Մանուկյան',
-        subject: 'Մաթեմատիկա',
+        subject: 'ՄԱԹԵՄԱՏԻԿԱ',
         phone: '(+374)-94-16-19-90',
         email: 'email address',
         sex: 'Արական',
@@ -512,7 +512,7 @@ const teachers = [
         {
         photo: '/static/assets/images/lavaguynner/matem3.jpg',
         name: 'Հարութ Կիրակոսյան',
-        subject: 'Մաթեմատիկա',
+        subject: 'ՄԱԹԵՄԱՏԻԿԱ',
         phone: '(+374)-94-11-12-13',
         email: 'harutkirakosyan@mail.ru',
         sex: 'Արական',
@@ -542,7 +542,7 @@ const teachers = [
         {
         photo: '/static/assets/images/lavaguynner/matem1.jpg',
         name: 'Տաթև Հակոբյան',
-        subject: 'Մաթեմատիկա',
+        subject: 'ՄԱԹԵՄԱՏԻԿԱ',
         phone: '(+374)-94-55-45-25',
         email: 'tatevhakobyan@mail.ru',
         sex: 'Իգական',
@@ -572,7 +572,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/fizika1.jpg',
         name: 'Էդգար Նիկողոսյան',
-        subject: 'Ֆիզիկա',
+        subject: 'ՖԻԶԻԿԱ',
         phone: '(+374)-77-33-36-96',
         email: 'nikogosjanedgar@gmail.com',
         sex: 'Արական',
@@ -602,7 +602,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/fizika2.jpg',
         name: 'Դավիթ Այվազյան',
-        subject: 'Ֆիզիկա',
+        subject: 'ՖԻԶԻԿԱ',
         phone: '(+374)-77-54-45-54',
         email: 'davitayvazyan@gmail.com',
         sex: 'Արական',
@@ -632,7 +632,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/fizika3.jpg',
         name: 'Մարինե Դավթյան',
-        subject: 'Ֆիզիկա',
+        subject: 'ՖԻԶԻԿԱ',
         phone: '(+374)-77-76-36-56',
         email: 'marinedavtyan@gmail.com',
         sex: 'Իգական',
@@ -662,7 +662,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/shakhmat1.jpg',
         name: 'Կարեն Միրզոյան',
-        subject: 'Շախմատ',
+        subject: 'ՇԱԽՄԱՏ',
         phone: '(+374)-98-66-65-56',
         email: 'karenmirzoyan@gmail.com',
         sex: 'Արական',
@@ -692,7 +692,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/shakhmat2.jpg',
         name: 'Մանուկ Մանուկյան',
-        subject: 'Շախմատ',
+        subject: 'ՇԱԽՄԱՏ',
         phone: '(+374)-98-44-55-66',
         email: 'manukmanukyan@gmail.com',
         sex: 'Արական',
@@ -722,7 +722,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/shakhmat3.jpg',
         name: 'Արարատ Անանյան',
-        subject: 'Շախմատ',
+        subject: 'ՇԱԽՄԱՏ',
         phone: '(+374)-98-23-33-62',
         email: 'araratananyan@gmail.com',
         sex: 'Արական',
@@ -752,7 +752,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/dance1.jpg',
         name: 'Ելենա Մխիթարյան',
-        subject: 'Պար',
+        subject: 'ՊԱՐ',
         phone: '(+374)-98-78-33-11',
         email: 'yelenamkhitaryan@gmail.com',
         sex: 'Իգական',
@@ -782,7 +782,7 @@ const teachers = [
         {
         photo: '/static/assets/images/lavaguynner/dance2.jpg',
         name: 'Վանուհի Խաչիկյան',
-        subject: 'Պար',
+        subject: 'ՊԱՐ',
         phone: '(+374)-98-33-33-11',
         email: 'vanuhikhachikyan@gmail.com',
         sex: 'Իգական',
@@ -812,7 +812,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/dance3.jpg',
         name: 'Նանե Հարությունյան',
-        subject: 'Պար',
+        subject: 'ՊԱՐ',
         phone: '(+374)-77-21-22-22',
         email: 'naneharutyunyan@gmail.com',
         sex: 'Իգական',
@@ -842,7 +842,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/gorg1.jpg',
         name: 'Սիլվա Սիրունյան',
-        subject: 'Գորգագործություն',
+        subject: 'ԳՈՐԳԱԳՈՐԾՈւԹՅՈւՆ',
         phone: '(+374)-91-15-55-35',
         email: 'silvasirunyan@gmail.com',
         sex: 'Իգական',
@@ -872,7 +872,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/gorg2.jpg',
         name: 'Կարապետ Կարապետյան',
-        subject: 'Գորգագործություն',
+        subject: 'ԳՈՐԳԱԳՈՐԾՈւԹՅՈւՆ',
         phone: '(+374)-43-73-34-13',
         email: 'karapetkarapetyan@gmail.com',
         sex: 'Արական',
@@ -902,7 +902,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/gorg3.jpg',
         name: 'Մարգարիտա Առաքելյան',
-        subject: 'Գորգագործություն',
+        subject: 'ԳՈՐԳԱԳՈՐԾՈւԹՅՈւՆ',
         phone: '(+374)-91-22-23-22',
         email: 'margaritaarakelyan@gmail.com',
         sex: 'Իգական',
@@ -932,7 +932,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/wood1.jpg',
         name: 'Պողոս Պողոսյան',
-        subject: 'Փայտամշակում',
+        subject: 'ՓԱՅՏԱՄՇԱԿՈւՄ',
         phone: '(+374)-77-66-97-36',
         email: 'poghospoghosyan@gmail.com',
         sex: 'Արական',
@@ -962,7 +962,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/wood2.jpg',
         name: 'Պետրոս Պետրոսյան',
-        subject: 'Փայտամշակում',
+        subject: 'ՓԱՅՏԱՄՇԱԿՈւՄ',
         phone: '(+374)-77-38-16-20',
         email: 'petrospetrosyan@gmail.com',
         sex: 'Արական',
@@ -992,7 +992,7 @@ const teachers = [
     {
         photo: '/static/assets/images/lavaguynner/wood3.jpg',
         name: 'Սահակ Սահակյան',
-        subject: 'Փայտամշակում',
+        subject: 'ՓԱՅՏԱՄՇԱԿՈւՄ',
         phone: '(+374)-77-91-97-67',
         email: 'sahaksahakyan@gmail.com',
         sex: 'Արական',

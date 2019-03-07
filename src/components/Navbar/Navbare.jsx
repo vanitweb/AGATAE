@@ -34,6 +34,7 @@ import {RegisterPage} from './RegisterPage';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import {LogOut} from './LogOut';
 import {ColappseUserIcon} from './CollapseUserButton/ColappseUserIcon';
+import {Messages} from '../../Messages';
 
 @observer
 class Navbare extends React.Component {
@@ -91,7 +92,7 @@ class Navbare extends React.Component {
                                         <NavbarDropdown nav={nav} />
                                     ))}                         
                             <InputGroup className={navCss.inputSrch}>
-                                <Input placeholder="Search..." onChange={this.onchangeSearch} className={navCss.search}/>
+                                <Input placeholder={Messages.search} type='search' onChange={this.onchangeSearch} className={navCss.search}/>
                                     <InputGroupAddon addonType="append">
                                         <NavLink onClick={this.onclicSearch} data-link="/lavaguynner" to={`/teachers/${this.context.appStore.searchValue}`} tag={Link}>
                                             <Button color="light" className={navCss.btn}>

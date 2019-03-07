@@ -19,7 +19,7 @@ const Messages = {
 	aboutMe: 'Անձնական ինֆորմացիա՝',
 	grafik: 'Պարապմունքների գրաֆիկ',
 	vandak: '#',
-	day: 'ՕՐ',
+	day: 'Օր',
 	hour: 'Ժամ',
 	submit: 'Հերթագրվել',
 	register: 'ԳՐԱՆՑՈւՄ',
@@ -27,7 +27,7 @@ const Messages = {
 	mail: 'Էլ.հասցե',
 	password: 'Գաղտնաբառ',
 	remember: 'Հիշել',
-	mutq: 'Մուտք',
+	mutq: 'ՄՈւՏՔ',
 	name: 'Անուն',
 	mutqName: 'Մուտքագրել անունը',
 	surname: 'Ազգանուն',
@@ -45,9 +45,10 @@ const Messages = {
 	account: 'Ստեղծել անձնական էջ',
     close: 'Փակել',
 	register: 'ԳՐԱՆՑՈՒՄ',
-	out: 'Ելք',
+	out: 'ԵԼՔ',
 	forErrPage:"ԷՋԸ ՉԻ ԳՏՆՎԵԼ",
 	pupilsName: 'Աշակերտի անուն, ազգանուն',
-	toRegister: 'Հերթագրել'
+	toRegister: 'Հերթագրել',
+	search: 'ՓՆՏՐԵԼ . . .'
 };
 export {Messages};

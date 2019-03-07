@@ -3,7 +3,7 @@ import {Cards} from './Cards';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import {Constants} from '../../Constants';
-import s from '../../../assets/styles/Lavaguynner/Lavaguynner.module.css';
+import s from '../../../assets/styles/Lavaguynner/Lavaguynner.css';
 
 import {
     Container,
@@ -32,7 +32,7 @@ class Lavaguynner extends Component {
         return(
 
             <div className="container">
-                <h1 className={s.center}>{subjectName}</h1>
+                <h1 className='subject'>{subjectName}</h1>
                 <Cards/>
             </div>
 
