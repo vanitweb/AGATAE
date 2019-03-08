@@ -28,9 +28,9 @@ class LoginForm extends Component {
         this.context.UserStore.validateAuthForm();
     }
 
-   /* errorClass(error) {
-        return(error.length === 0 ? '' : 'has-error');
-    }*/
+    errorClass(error) {
+       this.context.UserStore.isValid();
+    }
     render() {
         return (
             <Container>
