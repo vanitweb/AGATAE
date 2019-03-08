@@ -15,6 +15,9 @@ class PersonalPageUsers extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
+	onClick = (event) => {
+		event.target.disabled = true;
+	}
     render() {
         const {teacher} = this.context.appStore;
         return (
@@ -40,7 +43,7 @@ class PersonalPageUsers extends Component {
                                             <th scope="row">{i + 1}</th>
                                             <td>{item.day}</td>
                                             <td>{item.time}</td>
-                                            <td><Button color="success">{Messages.submit}</Button></td>
+                                            <td><Button color="success" onClick={this.onClick}>{Messages.submit}</Button></td>
                                         </tr>
                                     );
                                 })}
