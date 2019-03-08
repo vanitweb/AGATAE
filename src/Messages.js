@@ -49,6 +49,9 @@ const Messages = {
     pupilsName: 'Աշակերտի անուն, ազգանուն',
     toRegister: 'Հերթագրել',
     search: 'ՓՆՏՐԵԼ . . .',
-    arajatar: 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ'
+    arajatar: 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ',
+	dontRegister: 'Դուք դեռ գրանցված չեք!',
+	confirm: 'Հաստատել',
+	cansel: 'Չեղարկել'
 };
 export {Messages};

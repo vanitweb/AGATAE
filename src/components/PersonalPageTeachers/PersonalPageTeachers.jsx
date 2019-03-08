@@ -10,14 +10,17 @@ import {
     Table 
 } from 'reactstrap';
 
+
+
 @observer
 class PersonalPageTeachers extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
     render() {
+		/*const {teacher[i]} = this.props;*/
         const {teacher} = this.context.appStore;
-        return (
+		return (
             <Container>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
@@ -37,7 +40,7 @@ class PersonalPageTeachers extends Component {
 								 </tr>
                             </thead>
                             <tbody>
-                                {teacher.graphic.map((item, i) => {
+                                {teacher[i].graphic.map((item, i) => {
                                     return(
                                         <tr>
                                             <th scope="row">{i + 1}</th>
@@ -48,9 +51,9 @@ class PersonalPageTeachers extends Component {
 											<td>{item.currentGraphic.time}</td>
                                             <td>
 											    <Button color="info">
-											        Հաստատել
+											        {Messages.confirm}
 												</Button>
-												<Button color="info">    Չեղարկել
+												<Button color="info">    {Messages.cansel}
 												</Button>
 											</td>
                                         </tr>

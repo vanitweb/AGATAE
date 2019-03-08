@@ -11,17 +11,32 @@ import {
 
 import {Messages} from '../../Messages';
 
+import {teachers} from '../../data/data.js';
+//import {Cookies} from '../../Cookies/Cookies.jsx';
+
+//import {PersonalPageTeachers} from '../PersonalPageTeachers/PersonalPageTeachers.js';
+
 @observer
 class PersonalPageUsers extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
+	
 	onClick = (event) => {
 		event.target.disabled = true;
+		for(let i = 0; i <teachers.lenght; i++) {
+			if(!cookie.username) {
+				return <h3>{Messages.dontRegister}</h3>;
+			}
+			else if(document.cookie.username === teachers[i].username){
+				return teachers[i];
+			}
+		}
+		console.log(teachers[0]);
 	}
     render() {
         const {teacher} = this.context.appStore;
-        return (
+		return (
             <Container>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
