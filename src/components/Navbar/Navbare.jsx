@@ -47,7 +47,7 @@ class Navbare extends React.Component {
     };
     @observable currentSearch;
     onchangeSearch = (event) => {
-        this.currentSearch = event.target.value;
+        this.context.appStore.searchValue = event.target.value;
     }
     toggle(e) {
         this.setState({
@@ -83,7 +83,7 @@ class Navbare extends React.Component {
                                 <InputGroup className={navCss.inputSrch}>
                                     <Input placeholder={Messages.search} onBlur={this.onchangeSearch} className={navCss.search}/>
                                     <InputGroupAddon addonType="append">
-                                        <NavLink to={`/teachers/${this.currentSearch}`} tag={Link}>
+                                        <NavLink to='/teachers' tag={Link}>
                                             <Button color="light" className={navCss.btn}>
                                                 <img src={search} width="25" height="25" alt=""/>
                                             </Button>

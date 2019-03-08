@@ -28,7 +28,7 @@ const routes = [
         component: Lavaguynner
     },
     {
-        path: '/teachers/:category',
+        path: '/teachers/:category?',
         component: Lavaguynner
     },
     {
