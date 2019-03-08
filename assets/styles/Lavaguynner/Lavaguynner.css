@@ -1,3 +1,7 @@
+.card {
+	min-height: 280px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .card-body {
 	padding: 15px;
 }
@@ -22,16 +26,21 @@
 .card .card-title {
 	color: rgba(168, 168, 168, 1);
 }
-
-
+.subject {
+	text-align: center;
+	color: rgba(168, 168, 168, 1);
+	margin-top: 30px;
+}
+.cardContent {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
 .card .btn {
 	border: 2px solid rgba(168, 168, 168, 1);
 	background: rgba(168, 168, 168, 1);
 	color: lightpink;
-	border-bottom-left-radius: 25px;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-	border-bottom-right-radius: 25px;
+	border-radius: 25px;
 }
 .card-subtitle {
 	color: rgba(168, 168, 168, 1);

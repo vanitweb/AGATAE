@@ -15,18 +15,18 @@ class Footer extends Component {
                     <Row className="aboutUs  justify-content-center">
                         <Col className={ftrStyle.logo} md={12}><img src={logo} alt="logo" width="160px" height="50px"/></Col>
                     </Row>
-                    <Row>
-                        <Col lg={3} md={4} sm={2} className="contacts">
+                    <Row className="aboutUs  justify-content-center">
+                        <Col lg={3} md={4} sm={2} xl='auto' className={ftrStyle.contacts}>
                             <h6>{Messages.contactData}</h6>
                             <p>{Messages.vanadzor}</p>
                             <p>{Messages.email}</p>
                             <p>{Messages.phone}</p>
                         </Col>
-                        <Col lg={6} md={5} sm={7} className={ftrStyle.aboutSite}>
+                        <Col lg={6} md={5} sm={7} xl='auto'  className={ftrStyle.aboutSite}>
                             <h5>{Messages.aboutSite}</h5>
                             <FontIcons />
                         </Col>
-                        <Col  lg={3} md={3} sm={7} className={ftrStyle.ftrLi}>
+                        <Col  lg={3} md={3} sm={7}  xl='auto' className={ftrStyle.ftrLi}>
                             <h6>{Messages.abouteUs}</h6>
                             <ul>
                                 <li ><a href="https://www.facebook.com/adrine.setaghyan" target="_blanc">{Messages.adrine}</a></li>
@@ -38,7 +38,7 @@ class Footer extends Component {
                             </ul>
                         </Col>
                     </Row>
-                    <Row className="justify-content-md-center">
+                    <Row className="justify-content-md-center" className={ftrStyle.copy} fluid>
                         <p>Copyright &copy; AGATAE {new Date().getFullYear()}</p>
                     </Row>
                 </Container>

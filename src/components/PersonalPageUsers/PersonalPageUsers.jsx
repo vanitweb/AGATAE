@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { observer } from 'mobx-react';
+import {observer} from 'mobx-react';
 import PropTypes from 'prop-types';
-import {Messages} from '../../Messages';
 import {
     Button,
     Container,
@@ -9,6 +8,8 @@ import {
     Col,
     Table 
 } from 'reactstrap';
+
+import {Messages} from '../../Messages';
 
 @observer
 class PersonalPageUsers extends Component {

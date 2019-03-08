@@ -1,5 +1,6 @@
 import {extendObservable, computed, action} from 'mobx';
 
+import {Messages} from '../Messages';
 import {teachers} from '../data/data';
 
 class AppStore {
@@ -9,8 +10,8 @@ class AppStore {
         _subjectName: '',
         _searchValue: '',
         _currentLink: '',
-		_teacherID: '',
-		 isDataInitialized: false
+        _teacherID: '',
+        isDataInitialized: false
     };	
     constructor() {
         extendObservable(this, this.storeValues);
@@ -18,30 +19,44 @@ class AppStore {
     @action
     initData = () => {
         this._teachers = teachers;
-		this.isDataInitialized = true;
+        this.isDataInitialized = true;
     };
     @computed get subjectData() {
         /*return this._teachers.filter(item => (item.subject === this._subjectName && item.name.includes(this._searchValue) || (item.name === this._searchValue && item.subject.includes(this._subjectName))));*/
-        return this._teachers.filter(item => item.subject === this._subjectName || item.name === this._searchValue);
+        return this.filterOnlyTeachers.filter(item => item.subject === this._subjectName && item.name.includes(this.searchValue.split('%').join(' ')));
     }
     @computed get bestTeachers() {
-        let tempTeachersArray = [...this._teachers];
+        let tempTeachersArray = [...this.filterOnlyTeachers];
         return (tempTeachersArray.sort((a,b) => (a.raiting < b.raiting) ? 1 : ((b.raiting < a.raiting) ? -1 : 0)).slice(0, 8));
     }
     @computed get currentTeachers() {
-        if(this._currentLink === '/') {
+        if(this._subjectName === Messages.arajatar) {
             return this.bestTeachers;
         } else {
             return this.subjectData;
         }
     }
-    @computed get teacher() {
-        return this._teachers.filter(item => item.username === this._teacherID)[0];
+    getKeyByValue = (object, value) => {
+        for(let prop in object) {
+            if(object.hasOwnProperty(prop)) {
+                if(object[prop] === value)
+                {return prop;}
+            }
+        }
     }
-    @computed get subjectName() {
+    get filterOnlyTeachers() {
+        return this._teachers.filter(item => item.isTeacher);
+    }
+    findID = (id) => {
+        return id.username === this._teacherID;
+    }
+    @computed get teacher() {
+        return this._teachers.find(this.findID);
+    }
+    get subjectName() {
         return this._subjectName;
     }
-	@computed get searchValue() {
+    get searchValue() {
         return this._searchValue;
     }
     set searchValue(search) {
@@ -53,12 +68,12 @@ class AppStore {
     set currentLink(link) {
         this._currentLink = link;
     }
-	set teacherID(id) {
-		this._teacherID = id;
-	}
-	get teacherID() {
-		return this._teacherID;
-	}
+    set teacherID(id) {
+        this._teacherID = id;
+    }
+    get teacherID() {
+        return this._teacherID;
+    }
 }
 
 export {AppStore};
