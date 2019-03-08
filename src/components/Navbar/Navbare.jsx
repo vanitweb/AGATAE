@@ -54,6 +54,16 @@ class Navbare extends React.Component {
             dropdownOpen: e.target.getAttribute('data-name')
         });
     }
+    toggle() {
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
+    toggle2() {
+        this.setState({
+            dropdownOpen: !this.state.dropdownOpen
+        });
+    }
     render() {
         return (
             <Container>
