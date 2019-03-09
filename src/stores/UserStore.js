@@ -1,11 +1,11 @@
-import {extendObservable, computed} from 'mobx';
+import {extendObservable, computed, action} from 'mobx';
 import {validators} from '../helpers/validate';
 class UserStore {
 	
 	storData = {
 		authentification:{
 			email: '',
-			pass: '',
+			password: '',
 			
 		},
 		userData: {
@@ -24,6 +24,7 @@ class UserStore {
 		error: {},
 		
 	}; 
+
 	constructor() {
         extendObservable(this, this.storData);
     }
@@ -33,15 +34,24 @@ class UserStore {
 	setUserDataField = (name, value) => {
 		this.userData[name] = value;
 	};
-    @computed
+   /* @computed
         get isValid() {
         return !this.errors.email && !this.errors.pass;
-    };  
+    };  */
+    submitForm(){
+    	
+    			if (this.validateAuthForm()) {
+    				alert("Valid");
+    			}else{
+    				alert("InValid");
+    			}
+    }
   
-  
+  @action
 	validateAuthForm = () => {
 		this.error.email = !validators.isEmailValid(this.authentification.email);
-		this.error.pass = !validators.isPasswordValid(this.authentification.pass);
+		this.error.password = !validators.isPasswordValid(this.authentification.password);
+		return !this.error.email && !this.error.password;
 		
 	};
 };
