@@ -1,13 +1,11 @@
 body {
-   /*background-image: url(../../../assets/images/Books3.jpg);*/
-   color:rgba(168, 168, 168, 1);
+   background-image: url(../../../assets/images/Books3.jpg);
    background-size: cover;
 }
 .text_muted {
-    color: rgba(168, 168, 168, 1) !important;
+    color: black !important;
 }
 .mainForm {
-    color: rgba(168, 168, 168, 1);
     line-height: 15px;
     margin-bottom: 40px;
 }

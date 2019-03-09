@@ -69,7 +69,7 @@ class Navbare extends React.Component {
         return (
             <Container>
                 <Row>
-                    <Navbar expand="lg" fixed="top" bg="dark" variant="light" className={navCss.main}>
+                    <Navbar expand="lg" fixed="top" variant="light" className={navCss.main}>
                         <NavLink to='/' tag={Link}>
                             <NavbarBrand>
                                 <img src={logo} width="130" height="40" alt=""/>
