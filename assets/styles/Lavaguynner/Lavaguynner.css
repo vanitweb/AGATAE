@@ -22,13 +22,12 @@
 	background-color: rgba(242, 243, 242, 1);
 	border-top: 4px solid lightblue;
 }
-
 .card .card-title {
 	color: rgba(168, 168, 168, 1);
 }
 .subject {
 	text-align: center;
-	color: rgba(168, 168, 168, 1);
+	color: lightblue;
 	margin-top: 30px;
 }
 .cardContent {

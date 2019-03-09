@@ -1,9 +1,12 @@
 const validators = {
 	isEmailValid: function(value) {
+		debugger;
 		return value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
 	},
 	isPasswordValid: function(value) {
-		return value.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{9,})$/i);
+
+		debugger;
+		return value.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/i);
 	},
 	isConfirmedPasswordValid: function(value, pass) {
 		return value === pass;

@@ -1,87 +1,96 @@
-.App{
-   background-image: url(../images/Books3.jpg);
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
+.App {
+	background-image: url(../images/Books3.jpg);
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
 }
-.appContent{
-  flex: 1;
-  margin-top: 75px;
+.appContent {
+	flex: 1;
+	margin-top: 75px;
+}
+.navBtn {
+	border-radius: 25px;
+}
+.navbar {
+	align-items: baseline;
+}
+.navbar-collapse {
+	align-items: baseline;
 }
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+	animation: App-logo-spin infinite 20s linear;
+	height: 40vmin;
+	pointer-events: none;
 }
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 CardDeck {
 	margin-top: 10px;
 }
-li{
-  list-style-type: none;
+li {
+	list-style-type: none;
 }
-a.dropdown-toggle.nav-link::after  {
+a.dropdown-toggle.nav-link::after {
     display: none;
 }
 a.dropdown-toggle.nav-link {
-color: rgba(255,255,255,.8) !important;
+	color: rgba(255,255,255,.8) !important;
 }
-a.dropdown-toggle.nav-link:hover{
-  color: #fff !important;
+a.dropdown-toggle.nav-link:hover {
+	color: #fff !important;
 }
-.dropdown-menu.show a{
-  color: #f2f2f2 !important;
+.dropdown-menu.show a {
+	color: #f2f2f2 !important;
 
 } 
-.dropdown-menu.show a:hover{
-  background:#f2f2f2;
-  color: #394046 !important;
-  transition-duration: .5s;
-   box-shadow: 100px 0 0 0 #f2f2f2 inset;
+.dropdown-menu.show a:hover {
+	background:#f2f2f2;
+	color: #394046 !important;
+	transition-duration: .5s;
+	box-shadow: 100px 0 0 0 #f2f2f2 inset;
 } 
-.dropdown-menu.show{
+.dropdown-menu.show {
     padding: 5px;
     margin-top: 15px;
     background:#394046;
 }
  @media (max-width:990px){
-.Navbar_mainMenu__14j7n.collapse.show.navbar-collapse {
-  background: #343A40;
-  position: fixed;
-  width: 100%;
-  top: 83px;
-  left:0px;
-  padding: 10px;
-}
-.dropdown-menu.show{
-    margin-top: 20px;
-    padding: 15px;
-    margin-left: 130px;
-    margin-top: -30px;
-    width: auto;
+	.Navbar_mainMenu__14j7n.collapse.show.navbar-collapse {
+		background: #343A40;
+		position: fixed;
+		width: 100%;
+		top: 83px;
+		left:0px;
+		padding: 10px;
+	}
+	.dropdown-menu.show {
+		margin-top: 20px;
+		padding: 15px;
+		margin-left: 130px;
+		margin-top: -30px;
+		width: auto;
 
-}
+	}
 }

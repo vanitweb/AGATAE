@@ -1,10 +1,8 @@
-
 .inputSrch {
     min-width: 150px;
     margin-top: 17px;
     padding: 5px;
 }
-
 .btn {
     position: relative;
     right: 11px;
@@ -14,22 +12,21 @@
     margin-left: 0px;
     margin-top: -8px;
     padding:  0px 6px 0px 6px;
-    color: #f2f2f2;  
+    color: #f2f2f2; 
+	border-bottom-right-radius: 25px;
+	border-top-right-radius:25px;
 }
- 
-
-/* .search{
-    position: relative;
-    right: 5px;
-}  */
-
+.search{
+    border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+}
 .main {
     width: 100%;
 	padding-top: 0;
-	padding-bottom: 0; 
+	padding-bottom: 0;
+	background-color: grey;
 }
-
-.mainMenu li{
+.mainMenu li {
     font-size: 18px;
 	padding: 15px 20px;
 	list-style: none;
@@ -37,45 +34,37 @@
 .mainMenu {
     justify-content: flex-end;
 }
-
-
-.navbar-collapse{
+.navbar-collapse {
     background: #222;
 }
-
 .nav-link a {
     color: #f2f2f2;
 }
-.brand{
+.brand {
 	margin-left: 30px;
 }
-
-
-
 @media (min-width: 425px){
-	.img{
-	position: relative;
-	right: 30%
+	.img {
+		position: relative;
+		right: 30%
+	}
 }
-}
-
-.dropUser{
+.dropUser {
     display: none;
 }
-.dropButtons{
+.dropButtons {
     display: flex;
 }
 @media (min-width: 992px) and (max-width: 1240px){
-
-.dropUser{
-    display:block;
-}
-.dropButtons{
-    display: none;
-}
+	.dropUser {
+		display:block;
+	}
+	.dropButtons {
+		display: none;
+	}
 }
 @media (max-width: 1350px){
-    .mainMenu li{
-    padding: 10px ;
-}
+	.mainMenu li {
+		padding: 10px ;
+	}
 }

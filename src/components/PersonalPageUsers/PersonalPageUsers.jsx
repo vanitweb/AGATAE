@@ -13,15 +13,15 @@ import {Messages} from '../../Messages';
 
 import {teachers} from '../../data/data.js';
 //import {Cookies} from '../../Cookies/Cookies.jsx';
-
 //import {PersonalPageTeachers} from '../PersonalPageTeachers/PersonalPageTeachers.js';
+
+import '../../../assets/styles/PersonalPageUsers/PersonalPageUsers.css';
 
 @observer
 class PersonalPageUsers extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
-	
 	onClick = (event) => {
 		event.target.disabled = true;
 		for(let i = 0; i <teachers.lenght; i++) {
@@ -59,7 +59,7 @@ class PersonalPageUsers extends Component {
                                             <th scope="row">{i + 1}</th>
                                             <td>{item.day}</td>
                                             <td>{item.time}</td>
-                                            <td><Button color="success" onClick={this.onClick}>{Messages.submit}</Button></td>
+                                            <td><Button className="hertagrvel" onClick={this.onClick}>{Messages.submit}</Button></td>
                                         </tr>
                                     );
                                 })}
