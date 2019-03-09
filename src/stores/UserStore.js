@@ -37,14 +37,17 @@ class UserStore {
 		this.userData[name] = value;
 	};
     submitForm(){
+		debugger
     	if(this.validateAuthForm()){
 			 for(let teacher in teachers){
 				 if((this.authentification.email===teacher.email)&&(this.authentification.password===teacher.password)){
 					 setCookie(teacher.email, teacher.password)
+					 debugger
 				 }
-				 else alert("sxal mutqayin tvyalner")
+				 
 			 }
 		}
+		else alert("voch korekt login kam password");
     }
   
   @action
