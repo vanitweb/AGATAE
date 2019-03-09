@@ -1,6 +1,6 @@
 import {extendObservable, computed, action} from 'mobx';
 import {validators} from '../helpers/validate';
-import {Cookies} from '../helpers/Cookies';
+import {Cookies} from './../helpers/Cookies';
 import {teachers} from './data/data'
 class UserStore {
 	
