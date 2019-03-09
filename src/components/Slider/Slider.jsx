@@ -7,7 +7,9 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
+
 import {items} from './items';
+
 import '../../../assets/styles/Slider/Slider.css';
 
 class Slider extends Component {

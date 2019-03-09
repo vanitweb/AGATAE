@@ -1,20 +1,16 @@
-
-body  {
+body {
    /*background-image: url(../../../assets/images/Books3.jpg);*/
    color:rgba(168, 168, 168, 1);
    background-size: cover;
 }
-
-  .text_muted{
+.text_muted {
     color: rgba(168, 168, 168, 1) !important;
-  }
-
-  .mainForm{
+}
+.mainForm {
     color: rgba(168, 168, 168, 1);
     line-height: 15px;
     margin-bottom: 40px;
-
-  }
-  .Reg_Page_Bg{
-     margin-top: 100px;
-  }
+}
+.Reg_Page_Bg {
+     margin-top: 40px;
+}

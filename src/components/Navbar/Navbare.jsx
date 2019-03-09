@@ -17,7 +17,6 @@ import {
     Row 
 } from 'reactstrap';
 import Navbar from 'react-bootstrap/Navbar';
-import {navs} from '../../configs/navData';
 
 import logo from '../../../assets/images/newProject4.png';
 import search from '../../../assets/images/search.png';
@@ -29,6 +28,8 @@ import {LogOut} from './LogOut';
 import {ColappseUserIcon} from './CollapseUserButton/ColappseUserIcon';
 
 import {Messages} from '../../Messages';
+
+import {navs} from '../../configs/navData';
 
 import navCss from '../../../assets/styles/Navbar/Navbar.module.css';
 
