@@ -1,6 +1,6 @@
 import {extendObservable, computed, action} from 'mobx';
 import {validators} from '../helpers/validate';
-import {Cookies} from '../helpers/cookies';
+import {setCookie} from '../helpers/cookies';
 import {teachers} from '../data/data'
 class UserStore {
 	
@@ -56,20 +56,15 @@ class UserStore {
 	
 	 @action
 	 logForm =() => {
-	for(let teacher in teachers){
+		 debugger
+		teachers.forEach(this.logTeachers);
+	 }
+	logTeachers = (teacher) => {
 		debugger
-		 if((authentification.email===teacher.email)&&(authentification.password===teacher.password)){
-			debugger
-			 setCookie(teacher.email, teacher.password)
-			
-		 }
-		 
-		 else {
-			 debugger
-			 alert("sxal mutqayin tvyalner");
-		 }
-		 
-	}
-};
+		if((this.authentification.email===teacher.email)&&(this.authentification.password===teacher.password)){
+			debugger 
+			setCookie(teacher.email, teacher.password);
+		} 
+	}	 
 };
 export {UserStore};

@@ -56,7 +56,7 @@ const teachers = [
         hasce: 'Ք. Վանաձոր Երևանյան խճ. 147/20',
         raiting: 3,
         username: 'Grigor',
-        password: 'G112233',
+        password: 'tarrY%rjj44',
         isTeacher: true
     },
     {
