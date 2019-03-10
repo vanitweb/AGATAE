@@ -45,6 +45,15 @@ class UserStore {
 		}
 		else alert("voch korekt login kam password");
     };
+	
+	logTeachers = (teacher) => {
+		debugger
+		return((this.authentification.email===teacher.email)&&(this.authentification.password===teacher.password))
+	}
+	setCookies = (teacher) => {
+		debugger
+		setCookie(this.authentification.email, this.authentification.password);
+	}
   
   @action
 	validateAuthForm = () => {
@@ -55,16 +64,20 @@ class UserStore {
 	};
 	
 	 @action
-	 logForm =() => {
-		 debugger
-		teachers.forEach(this.logTeachers);
-	 }
-	logTeachers = (teacher) => {
+	logForm =() => {
 		debugger
-		if((this.authentification.email===teacher.email)&&(this.authentification.password===teacher.password)){
-			debugger 
-			setCookie(teacher.email, teacher.password);
-		} 
-	}	 
+		let y = teachers.find(this.logTeachers);
+		debugger
+		if(y === undefined) {
+			alert("sxal mutqayin tvyalner")
+		}
+		
+		else {
+			debugger
+			setCookie(this.authentification.email, this.authentification.password);
+		}
+	 }
+		 
+ 
 };
 export {UserStore};

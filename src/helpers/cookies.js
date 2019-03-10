@@ -6,8 +6,9 @@ import cookie from 'react-cookies'
 function setCookie(email, password, exdays=1) {
 	debugger
   let d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  let expires = "expires="+d.toUTCString();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  debugger
   document.cookie = email + "=" + password + ";" + expires + "; path=/{email}";
 }
 
@@ -17,7 +18,6 @@ function getCookie(name, password) {
   ));
   return email ? decodeURIComponent(email[1]) : undefined;
 }
-
 
 /*function checkCookie() {
   let user = getCookie("email");
@@ -31,4 +31,4 @@ function getCookie(name, password) {
   }
 } */
 
-export {setCookie, getCookie, logForm }
+export {setCookie, getCookie}
