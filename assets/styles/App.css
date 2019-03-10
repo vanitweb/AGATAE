@@ -74,7 +74,7 @@ a.dropdown-toggle.nav-link:hover {
 .dropdown-menu.show {
     padding: 5px;
     margin-top: 15px;
-    background:#394046;
+    background:#737373;
 }
  @media (max-width:990px){
 	.Navbar_mainMenu__14j7n.collapse.show.navbar-collapse {

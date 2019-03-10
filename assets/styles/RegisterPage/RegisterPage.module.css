@@ -12,3 +12,7 @@ body {
 .Reg_Page_Bg {
      margin-top: 40px;
 }
+.radioBtn{
+	
+	float: left;
+}
