@@ -1,7 +1,9 @@
 import {extendObservable, computed, action} from 'mobx';
+
 import {validators} from '../helpers/validate';
 import {setCookie} from '../helpers/cookies';
 import {teachers} from '../data/data'
+
 class UserStore {
 	
 	storData = {
@@ -38,21 +40,15 @@ class UserStore {
 	};
 	
     submitForm(){
-		debugger
     	if(this.validateAuthForm()){
-			debugger
-		 this.logForm();
+		    this.logForm();
 		}
-		else alert("voch korekt login kam password");
+		else alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
     };
 	
 	logTeachers = (teacher) => {
 		debugger
 		return((this.authentification.email===teacher.email)&&(this.authentification.password===teacher.password))
-	}
-	setCookies = (teacher) => {
-		debugger
-		setCookie(this.authentification.email, this.authentification.password);
 	}
   
   @action
@@ -62,22 +58,18 @@ class UserStore {
 		return !this.error.email && !this.error.password;
 		
 	};
-	
-	 @action
+  @action
 	logForm =() => {
 		debugger
 		let y = teachers.find(this.logTeachers);
 		debugger
 		if(y === undefined) {
-			alert("sxal mutqayin tvyalner")
+			alert("Մուտքային տվյալերը սխալ են")
 		}
-		
 		else {
 			debugger
 			setCookie(this.authentification.email, this.authentification.password);
 		}
-	 }
-		 
- 
+	}
 };
 export {UserStore};

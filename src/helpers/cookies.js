@@ -4,7 +4,7 @@ import cookie from 'react-cookies'
 
 
 function setCookie(email, password, exdays=1) {
-	debugger
+  debugger
   let d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   var expires = "expires=" + d.toGMTString();
