@@ -30,4 +30,4 @@ function getCookie(name, password) {
   }
 } */
 
-export {setCookie, getCookie }
+export {setCookie, getCookie, logForm }
