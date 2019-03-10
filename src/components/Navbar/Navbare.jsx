@@ -67,9 +67,9 @@ class Navbare extends React.Component {
     }
 	log (){
 		if(document.cookies = ""){
-			return (
+			return (<div>
 			<SighInButton/>
-			<SignUp/>)
+			<SignUp/></div>)
 		}
         else {    
 		    return <LogOut/>
