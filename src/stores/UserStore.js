@@ -1,7 +1,7 @@
 import {extendObservable, computed, action} from 'mobx';
 import {validators} from '../helpers/validate';
-import {Cookies} from '../helpers/Cookies';
-import {teachers} from './data/data'
+import {Cookies} from '../helpers/cookies';
+import {teachers} from '../data/data'
 class UserStore {
 	
 	storData = {
@@ -36,16 +36,15 @@ class UserStore {
 	setUserDataField = (name, value) => {
 		this.userData[name] = value;
 	};
+	
     submitForm(){
+		debugger
     	if(this.validateAuthForm()){
-			 for(let teacher in teachers){
-				 if((this.authentification.email===teacher.email)&&(this.authentification.password===teacher.password)){
-					 setCookie(teacher.email, teacher.password)
-				 }
-				 else alert("sxal mutqayin tvyalner")
-			 }
+			debugger
+		 this.logForm();
 		}
-    }
+		else alert("voch korekt login kam password");
+    };
   
   @action
 	validateAuthForm = () => {
@@ -54,5 +53,23 @@ class UserStore {
 		return !this.error.email && !this.error.password;
 		
 	};
+	
+	 @action
+	 logForm =() => {
+	for(let teacher in teachers){
+		debugger
+		 if((authentification.email===teacher.email)&&(authentification.password===teacher.password)){
+			debugger
+			 setCookie(teacher.email, teacher.password)
+			
+		 }
+		 
+		 else {
+			 debugger
+			 alert("sxal mutqayin tvyalner");
+		 }
+		 
+	}
+};
 };
 export {UserStore};

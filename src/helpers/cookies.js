@@ -18,7 +18,7 @@ function getCookie(name, password) {
 }
 
 
-function checkCookie() {
+/*function checkCookie() {
   let user = getCookie("email");
   if (user != "") {
     alert("Welcome again " + user);
@@ -28,6 +28,6 @@ function checkCookie() {
       setCookie("email", user, 7);
     }
   }
-}
+} */
 
-export {setCookie, getCookie, checkCookie }
+export {setCookie, getCookie, logForm }

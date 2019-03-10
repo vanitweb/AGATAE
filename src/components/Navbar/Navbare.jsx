@@ -65,16 +65,7 @@ class Navbare extends React.Component {
             dropdownOpen: !this.state.dropdownOpen
         });
     }
-	log (){
-		if(document.cookies = ""){
-			return (<div>
-			<SighInButton/>
-			<SignUp/></div>)
-		}
-        else {    
-		    return <LogOut/>
-		}
-	}
+    
     render() {
         return (
             <Container>
@@ -106,7 +97,8 @@ class Navbare extends React.Component {
                                 <ColappseUserIcon/>
                             </div>
                             <div className={navCss.dropButtons}>
-								{log}
+                                <SighInButton/>
+                                <SignUp/>
                             </div>
                         </Collapse>
                     </Navbar>
