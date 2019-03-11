@@ -39,7 +39,7 @@ class UserStore {
 		this.userData[name] = value;
 	};
 	
-    submitForm(){
+    submitLogForm(){
     	if(this.validateAuthForm()){
 		    this.logForm();
 		}
@@ -71,7 +71,10 @@ class UserStore {
 			setCookie(this.authentification.email, this.authentification.password);
 		}
 	};
-
+    registorForm = () => {
+		consol.log("")
+	}
+	
 	@action
 	    validateUserData = () => {
 	    	this.error.name = !validators.isCorrectName(this.userData.name);

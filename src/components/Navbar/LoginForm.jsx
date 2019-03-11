@@ -33,8 +33,8 @@ class LoginForm extends Component {
        this.context.userStore.isValid();
     }
 
-    submitForm = () => {
-this.context.userStore.submitForm();
+    submitLogForm = () => {
+        this.context.userStore.submitLogForm();
     }
 
     render() {
@@ -79,7 +79,7 @@ this.context.userStore.submitForm();
                             <Form.Check type="checkbox" label={Messages.remember} />
                         </Form.Group>
                         <div>
-                            <Button variant="dark" type="submit" fullWidth ClassName="loginBtn" onClick={this.submitForm}>
+                            <Button variant="dark" type="submit" fullWidth ClassName="loginBtn" onClick={this.submitLogForm}>
                                 {Messages.mutq}
                             </Button>
                         </div>
