@@ -14,6 +14,11 @@ const validators = {
 	/*isCorrectNumber: function(value) {
 		return value.match(/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/);
 	},*/
+    isCorrectName: function(value) {
+    	debugger;
+    	return value;
+    },
+	
 };
 
 export {validators};
