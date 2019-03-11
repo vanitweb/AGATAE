@@ -7,9 +7,12 @@ function setCookie(email, password, exdays=1) {
   debugger
   let d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  debugger
   var expires = "expires=" + d.toGMTString();
   debugger
   document.cookie = email + "=" + password + ";" + expires + "; path=/{email}";
+  debugger
+  console.log(document.cookie);
 }
 
 function getCookie(name, password) {
