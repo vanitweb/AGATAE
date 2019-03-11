@@ -38,11 +38,13 @@ class UserStore {
 	setUserDataField = (name, value) => {
 		this.userData[name] = value;
 	};
+	
 	submitRegistrForm() {
-		if(this.validateUserData()){
+		//if(this.validateUserData()){
+			debugger
 			this.registerForm();
-		}
-		else alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
+		//}
+		//else alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
 	}
 	
     submitLogForm(){
@@ -81,17 +83,19 @@ class UserStore {
 			setCookie(this.authentification.email, this.authentification.password);
 		}
 	};
-    
+	
+    @action
 	registerForm = () => {
 		let user = teachers.find(this.registorTeachers)
 		if (user === undefined){
+			let teacher = new Object();
 			this.userData.name = teacher.name;
 			this.userData.surname = teacher.surname;
 			this.userData.email = teacher.email;
 			this.userData.phoneNumber = teacher.phoneNumber;
 			this.userData.createPassword = teacher.createPassword;
 			this.userData.confirmPassword = teacher.confirmPassword;
-			this.userData.isMember = teacher.isMember;
+			debugger
 			this.userData.isTeacher = teacher.isTeacher;
 		}
 		else {
