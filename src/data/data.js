@@ -21,6 +21,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Կ. Դեմիրճյան 15/28',
@@ -51,6 +52,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Երևանյան խճ. 147/20',
@@ -81,6 +83,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Չուխաջյան 30/15',
@@ -111,6 +114,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Զոր. Անդրանիկի 120/41',
@@ -141,6 +145,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Ամիրյան 34/6',
@@ -171,6 +176,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Բաթումի 20/1',
@@ -201,6 +207,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Ստ. Զորյան 30/20',
@@ -231,6 +238,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Վարդանանց 40/2',
@@ -261,6 +269,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Տիգրան Մեծի 80/5',
@@ -291,6 +300,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Գր.Լուսավորիչի 10/39',
@@ -321,6 +331,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Աղայան 12/12',
@@ -351,6 +362,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Մեքենաշինարարների 40բ/20',
@@ -381,6 +393,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր  Երևանյան խճ. 2/10',
@@ -411,6 +424,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Հալաբյան 18',
@@ -441,6 +455,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Մոսկովյան 50/25',
@@ -471,6 +486,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Բաթումի 100/11',
@@ -501,6 +517,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Մյասնիկյան 49/23',
@@ -531,6 +548,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Բաթումի 28/1',
@@ -561,6 +579,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Կ. Աբովյան 12/2',
@@ -591,6 +610,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Կնունյանց 2/8',
@@ -621,6 +641,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Կ. Դեմիրճյան 10/49',
@@ -651,6 +672,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Կ. Իսահակյան 38/37',
@@ -681,6 +703,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Կ. Սուխումի 2/2',
@@ -711,6 +734,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Չուխաջյան 28/28',
@@ -741,6 +765,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Տիգրան Մեծի 26/1',
@@ -771,6 +796,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Վարդանանց 30/12',
@@ -801,6 +827,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Աղայան 29/2',
@@ -831,6 +858,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Համբարձումյան 16/8',
@@ -861,6 +889,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Շինարարների 35/6',
@@ -891,6 +920,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Մյասնիկյան 1/25',
@@ -921,6 +951,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Աբովյան 2/45',
@@ -951,6 +982,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Երևանյան խճ. 101/21',
@@ -981,6 +1013,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Զոր. Անդրանիկի 34/52',
@@ -1011,6 +1044,7 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
+        currentGraphic: [],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Կ. Դեմիրճյան 1/6',
@@ -1026,7 +1060,6 @@ const teachers = [
         email: 'davitdavtyan@gmail.com',
         sex: 'Արական',
         age: 12,
-        currentGraphic: [],
         hasce: 'Ք. Վանաձոր Կ. Դեմիրճյան 1/1',
         username: 'Davitik',
         password: 'D121212',
@@ -1039,7 +1072,6 @@ const teachers = [
         email: 'animkrtchyan@gmail.com',
         sex: 'Իգական',
         age: 10,
-        currentGraphic: [],
         hasce: 'Ք. Վանաձոր Ամիրյան 34/5',
         username: 'Anulik',
         password: 'A876876',
@@ -1052,7 +1084,6 @@ const teachers = [
         email: 'goharkarapetyan@gmail.com',
         sex: 'Իգական',
         age: 14,
-        currentGraphic: [],
         hasce: 'Ք. Վանաձոր Մյասնիկյան 23/51',
         username: 'Goharik',
         password: 'G767876',
