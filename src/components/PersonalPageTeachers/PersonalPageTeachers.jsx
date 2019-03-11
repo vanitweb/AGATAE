@@ -21,7 +21,7 @@ class PersonalPageTeachers extends Component {
 		/*const {teacher[i]} = this.props;*/
         const {teacher} = this.context.appStore;
 		return (
-            <Container>
+		    <Container>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
                         <h5>{Messages.grafik}</h5>
@@ -40,7 +40,7 @@ class PersonalPageTeachers extends Component {
 								 </tr>
                             </thead>
                             <tbody>
-                                {teacher[i].graphic.map((item, i) => {
+                                {teacher.map((item, i) => {
                                     return(
                                         <tr>
                                             <th scope="row">{i + 1}</th>
