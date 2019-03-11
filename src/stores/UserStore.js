@@ -1,7 +1,7 @@
 import {extendObservable, computed, action} from 'mobx';
 
 import {validators} from '../helpers/validate';
-import {setCookie} from '../helpers/cookies';
+import {setCookie, getCookie} from '../helpers/cookies';
 import {teachers} from '../data/data'
 
 class UserStore {
@@ -81,6 +81,8 @@ class UserStore {
 		else {
 			debugger
 			setCookie(this.authentification.email, this.authentification.password);
+			debugger
+			getCookie(this.authentification.email);
 		}
 	};
 	
