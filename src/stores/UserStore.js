@@ -70,6 +70,19 @@ class UserStore {
 			debugger
 			setCookie(this.authentification.email, this.authentification.password);
 		}
-	}
+	};
+
+	@action
+	    validateUserData = () => {
+	    	this.error.name = !validators.isCorrectName(this.userData.name);
+	    	this.error.surname = !validators.isCorrectName(this.userData.surname);
+	    	this.error.email = !validators.isCorrectName(this.userData.email);
+	    	this.error.phoneNumber = !validators.isCorrectName(this.userData.phoneNumber);
+	    	this.error.createPassword = !validators.isCorrectName(this.userData.createPassword);
+	    	this.error.confirmPassword = !validators.isCorrectName(this.userData.confirmPassword);
+	    	return !this.error.name && !this.error.surname && !this.error.email &&
+	    	    !this.error.phoneNumber && !this.error.createPassword && !this.error.confirmPassword;
+	    };
+
 };
 export {UserStore};
