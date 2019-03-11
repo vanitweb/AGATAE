@@ -21,7 +21,15 @@ const teachers = [
             {day: 'Շաբաթ',
              time: '16:00 - 18:00'}
         ],
-        currentGraphic: [],
+        currentGraphic: [
+            {
+                name: 'xyz',
+                email: 'email',
+                phone: 'phone',
+                day: 'Երկուշաբթի',
+                time: '14:00 - 16:00'
+            }
+        ],
         company: 'Անհատ',
         aboutMe: 'Անձնական ինֆորմացիա',
         hasce: 'Ք. Վանաձոր Կ. Դեմիրճյան 15/28',

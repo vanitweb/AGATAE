@@ -38,6 +38,12 @@ class UserStore {
 	setUserDataField = (name, value) => {
 		this.userData[name] = value;
 	};
+	submitRegistrForm() {
+		if(this.validateUserData()){
+			this.registerForm();
+		}
+		else alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
+	}
 	
     submitLogForm(){
     	if(this.validateAuthForm()){
@@ -49,7 +55,11 @@ class UserStore {
 	logTeachers = (teacher) => {
 		debugger
 		return((this.authentification.email===teacher.email)&&(this.authentification.password===teacher.password))
-	}
+	};
+	
+	 registorTeachers = (teacher) => {
+		return(this.authentification.email===teacher.email);
+	};
   
   @action
 	validateAuthForm = () => {
@@ -61,9 +71,9 @@ class UserStore {
   @action
 	logForm =() => {
 		debugger
-		let y = teachers.find(this.logTeachers);
+		let user = teachers.find(this.logTeachers);
 		debugger
-		if(y === undefined) {
+		if(user === undefined) {
 			alert("Մուտքային տվյալերը սխալ են")
 		}
 		else {
@@ -71,8 +81,22 @@ class UserStore {
 			setCookie(this.authentification.email, this.authentification.password);
 		}
 	};
-    registorForm = () => {
-		consol.log("")
+    
+	registerForm = () => {
+		let user = teachers.find(this.registorTeachers)
+		if (user === undefined){
+			this.userData.name = teacher.name;
+			this.userData.surname = teacher.surname;
+			this.userData.email = teacher.email;
+			this.userData.phoneNumber = teacher.phoneNumber;
+			this.userData.createPassword = teacher.createPassword;
+			this.userData.confirmPassword = teacher.confirmPassword;
+			this.userData.isMember = teacher.isMember;
+			this.userData.isTeacher = teacher.isTeacher;
+		}
+		else {
+			alert("tvyal email-ov arden grancvac user ka, xndrum em ayl email greq")
+		}
 	}
 	
 	@action
