@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Button, Container, Row, Label, Input, FormFeedback, FormText} from 'reactstrap';
+import {Button, Container, Row, Label, Input, FormFeedback, FormText, FormGroup} from 'reactstrap';
 import Form from 'react-bootstrap/Form';
 import PropTypes from 'prop-types';
 import { Messages } from '../../Messages';
@@ -14,6 +14,11 @@ const initialState = {
 };
 
 class LoginForm extends Component {
+state = {
+    validMail: false,
+    validPassword: false,
+  
+  }
 	static contextTypes = {
     userStore: PropTypes.object   
   }
@@ -34,10 +39,17 @@ class LoginForm extends Component {
     }
 
     submitForm = () => {
-this.context.userStore.submitForm();
+      if(this.context.userStore.submitForm()){
+          this.setState({
+          validMail: true,
+          validPassword:true,
+        });
+      }
     }
 
     render() {
+  
+   const {validMail} = this.state;
     const{Emailvalue}= this.context.userStore;
     const{passwordvalue}= this.context.userStore;
     console.log(this.context);
@@ -45,36 +57,27 @@ this.context.userStore.submitForm();
             <Container>
                 <Row className="justify-content-md-center">
                     <Form onSubmit={this.handleSubmit}>
-                        <Form.Group controlId="formBasicEmail">
-                            <Form.Label>{Messages.mail}</Form.Label>
-                            <Form.Control
-                             type="email"
-                              placeholder={Messages.mail}
-                              onChange={this.onChange}
-                              name="email"
-                              value={Emailvalue}
-                               />
+                      <FormGroup>
+                        <Label for="exampleEmail">{Messages.mail}</Label>
+                          <Input 
+                          type="email"
+                          placeholder={Messages.mail}
+                          onChange={this.onChange}
+                          name="email"
+                          value={Emailvalue}/>
+                          <FormText>Invalid Email</FormText>
+                      </FormGroup>
 
-                                  <Label for="formBasicEmail">Invalid input</Label>
-                                  <FormFeedback tooltip>Oh noes! that name is already taken</FormFeedback>
-
-                            <Form.Text className="text-muted">
-                            </Form.Text>
-                        </Form.Group>
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Label>{Messages.password}</Form.Label>
-                            <Form.Control
-                             type="text" 
-                             placeholder={Messages.password}
-                              onChange={this.onChange}
-                              name='password'
-                              value={passwordvalue}
-                              />
-
-                              <Label for="formBasicPassword">Invalid Password!!!</Label>
-                              <FormFeedback tooltip>sss</FormFeedback>
-
-                        </Form.Group>
+                         <FormGroup>
+                        <Label for="PassWord">{Messages.password}</Label>
+                          <Input 
+                          type="password" 
+                          placeholder={Messages.password}
+                          onChange={this.onChange}
+                          name='password'
+                          value={passwordvalue}/>
+                          <FormText>Wrong Password</FormText>
+                      </FormGroup>
                         <Form.Group controlId="formBasicChecbox">
                             <Form.Check type="checkbox" label={Messages.remember} />
                         </Form.Group>

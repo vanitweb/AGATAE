@@ -8,6 +8,7 @@ class UserStore {
 		authentification:{
 			email: '',
 			password: '',
+			ValidMail: false,
 			
 		},
 		userData: {
@@ -19,8 +20,6 @@ class UserStore {
 			confirmPassword: '',
 			isMember: false,
 			isTeacher: false,
-
-			
 		},
 		
 		error: {},
@@ -44,6 +43,7 @@ class UserStore {
 		 this.logForm();
 		}
 		else alert("voch korekt login kam password");
+		this.authentification.ValidMail = true;
     };
   
   @action
