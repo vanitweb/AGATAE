@@ -46,12 +46,13 @@ const Messages = {
     close: 'Փակել',
     out: 'ԵԼՔ',
     forErrPage:'ԷՋԸ ՉԻ ԳՏՆՎԵԼ',
-    pupilsName: 'Աշակերտի անուն, ազգանուն',
+    pupilsName: 'Աշակերտ',
     toRegister: 'Հերթագրել',
     search: 'ՓՆՏՐԵԼ . . .',
     arajatar: 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ',
 	dontRegister: 'Դուք դեռ գրանցված չեք!',
 	confirm: 'Հաստատել',
-	cansel: 'Չեղարկել'
+	cansel: 'Չեղարկել',
+	phoneNum: 'Հեռ.'
 };
 export {Messages};

@@ -33,7 +33,7 @@ class PersonalPageTeachers extends Component {
                                     <th>{Messages.vandak}</th>
                                     <th>{Messages.pupilsName}</th>
                                     <th>{Messages.mail}</th>
-									<th>{Messages.phone}</th>
+									<th>{Messages.phoneNum}</th>
 									<th>{Messages.day}</th>
 									<th>{Messages.hour}</th>
 									<th>{Messages.toRegister}</th>
