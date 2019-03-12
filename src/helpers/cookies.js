@@ -9,7 +9,7 @@ function setCookie(email, password, exdays=1) {
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   var expires = "expires=" + d.toGMTString();
   debugger
-  document.cookie = email + "=" + password + ";" + expires + "; path=/{email}";
+  document.cookie = "email=" + email ; "password=" + password ; expires;
 }
 
 function getCookie(name) {
