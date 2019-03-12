@@ -23,9 +23,9 @@ const teachers = [
         ],
         currentGraphic: [
             {
-                name: 'xyz',
-                email: 'email',
-                phone: 'phone',
+                name: 'Գոհար Կարապետյան',
+                email: 'goharkarapetyan@gmail.com',
+                phone: '(+374)-77-12-23-12',
                 day: 'Երկուշաբթի',
                 time: '14:00 - 16:00'
             }
