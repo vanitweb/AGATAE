@@ -13,6 +13,11 @@ class Lavaguynner extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
+    static propTypes = {
+        match: PropTypes.object,
+        value: PropTypes.array,
+        category: PropTypes.string
+    }
     componentDidMount() {
         if(!this.props.value) {
             this.context.appStore.subjectName = this.context.appStore.getKeyByValue(Constants, this.props.match.params.category);	

@@ -17,7 +17,10 @@ import tStyle from '../../../assets/styles/TeacherPage/TeacherPage.module.css';
 
 @observer
 class TeacherPage extends Component {
-    
+    static propTypes = {
+        match: PropTypes.object,
+        username: PropTypes.string
+    }
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
