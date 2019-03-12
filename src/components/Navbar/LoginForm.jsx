@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {Button, Container, Row, Label, Input, FormFeedback, FormText, FormGroup} from 'reactstrap';
 import Form from 'react-bootstrap/Form';
 import PropTypes from 'prop-types';
+
 import { Messages } from '../../Messages';
+
 import classes from '../../../assets/styles/RegisterPage/LoginForm.module.css';
 
 const initialState = {
@@ -15,45 +17,36 @@ const initialState = {
 };
 
 class LoginForm extends Component {
-state = {
-    validMail: false,
-    validPassword: true
-  
-}
-	static contextTypes = {
-	    userStore: PropTypes.object   
-	}
+    state = {
+        validMail: false,
+        validPassword: true
 
+    }
+    static contextTypes = {
+        userStore: PropTypes.object   
+    }
     onChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
         this.context.userStore.setAuthField(name, value);
     }
-
     validateForm() {
         this.context.userStore.validateAuthForm();
-    }
-	
-	
+    }	
     errorClass(error) {
         this.context.userStore.isValid();
     }
-
     submitLogForm = () => {
         this.context.userStore.submitLogForm();
-        	  this.setState({
+        this.setState({
             validMail: true,
             validPassword:true
         });
     }
-
     render() {
         const{Emailvalue}= this.context.userStore;
         const{validMail}= this.state;
         const{passwordvalue,error}= this.context.userStore;
-
-        console.log(this.context);
-
         return (
             <Container>
                 <Row className="justify-content-md-center">
@@ -68,8 +61,6 @@ state = {
                                 value={Emailvalue} /> 
                             {error.email && <FormText className={classes.formtext}>Invalid e-mail address</FormText>}
                         </FormGroup>
-
-
                         <FormGroup>
                             <Label for="PassWord">{Messages.password}</Label>
                             <Input 

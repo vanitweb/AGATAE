@@ -14,6 +14,7 @@ import {RegisterPage} from './Navbar/RegisterPage';
 import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import {ErrorPage} from './Error';
 import {TeacherPage} from './TeacherPage/TeacherPage';
+import { Icons } from '../components/Navbar/Icons/Icons';
 
 import '../../assets/styles/App.css';
 
