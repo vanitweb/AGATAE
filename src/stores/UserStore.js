@@ -47,8 +47,7 @@ class UserStore {
     submitLogForm(){
     	if(this.validateAuthForm()){
 		    this.logForm();
-		}else
-		 alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
+		}
     };
 	
 	logTeachers = (teacher) => {
