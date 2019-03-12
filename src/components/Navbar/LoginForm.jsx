@@ -44,14 +44,15 @@ this.context.userStore.submitForm();
             <Container>
                 <Row className="justify-content-md-center">
                     <Form onSubmit={this.handleSubmit}>
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="formBasicEmail" >
                             <Form.Label>{Messages.mail}</Form.Label>
-                            <Form.Control
+                            <Form.Control  
                              type="email"
                               placeholder={Messages.mail}
                               onChange={this.onChange}
                               name="email"
                               value={Emailvalue}
+                              invalid
                                />
 
                                   <Label for="formBasicEmail">Invalid input</Label>
