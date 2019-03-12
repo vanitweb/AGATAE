@@ -78,12 +78,13 @@ a.dropdown-toggle.nav-link:hover {
 }
  @media (max-width:990px){
 	.Navbar_mainMenu__14j7n.collapse.show.navbar-collapse {
-		background: #343A40;
+		background: rgb(98,98,98);
 		position: fixed;
 		width: 100%;
-		top: 83px;
+		top: 66px;
 		left:0px;
 		padding: 10px;
+		border-top: 1px solid #555;
 	}
 	.dropdown-menu.show {
 		margin-top: 20px;
