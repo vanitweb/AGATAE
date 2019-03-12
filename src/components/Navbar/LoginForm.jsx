@@ -16,7 +16,7 @@ const initialState = {
 class LoginForm extends Component {
 state = {
     validMail: false,
-    validPassword: false,
+    validPassword: true,
   
   }
 	static contextTypes = {
@@ -47,25 +47,30 @@ state = {
     }
 
     render() {
-  
-   const {ValidMail} = this.context.userStore;
     const{Emailvalue}= this.context.userStore;
+    const{validMail}= this.state;
     const{passwordvalue}= this.context.userStore;
     console.log(this.context);
+
         return (
             <Container>
                 <Row className="justify-content-md-center">
                     <Form onSubmit={this.handleSubmit}>
-                       <FormGroup>
+                      {!validMail ? <FormGroup>
                         <Label for="exampleEmail">{Messages.mail}</Label>
                           <Input 
+                          type="email"
+                          onChange={this.onChange}
+                          name="email"
+                          value={Emailvalue}/></FormGroup>: <FormGroup>
+                          <Input invalid
                           type="email"
                           placeholder={Messages.mail}
                           onChange={this.onChange}
                           name="email"
-                          value={Emailvalue}/>
+                          value={Emailvalue} />
                           <FormText>Invalid e-mail address</FormText>
-                      </FormGroup>
+                            </FormGroup>}
 
                          <FormGroup>
                         <Label for="PassWord">{Messages.password}</Label>

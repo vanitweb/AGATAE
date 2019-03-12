@@ -10,7 +10,6 @@ class UserStore {
 		authentification:{
 			email: '',
 			password: '',
-			
 		},
 		userData: {
 			name: '',
@@ -49,10 +48,7 @@ class UserStore {
     	if(this.validateAuthForm()){
 		    this.logForm();
 		}else
-
 		 alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
-		
-
     };
 	
 	logTeachers = (teacher) => {
