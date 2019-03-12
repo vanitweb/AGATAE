@@ -3,8 +3,10 @@ body {
    background-size: cover;
 }
 .text_muted {
-    color: black !important;
+    color: red !important;
+    
 }
+
 .mainForm {
     line-height: 15px;
     margin-bottom: 40px;

@@ -3,6 +3,7 @@ import {Button, Container, Row, Label, Input, FormFeedback, FormText, FormGroup}
 import Form from 'react-bootstrap/Form';
 import PropTypes from 'prop-types';
 import { Messages } from '../../Messages';
+import classes from '../../../assets/styles/RegisterPage/LoginForm.module.css';
 
 const initialState = {
   name: "",
@@ -65,7 +66,7 @@ state = {
                           onChange={this.onChange}
                           name="email"
                           value={Emailvalue} /> 
-                          {error.email && <FormText>Invalid e-mail address</FormText>}
+                          {error.email && <FormText className={classes.formtext}>Invalid e-mail address</FormText>}
                           </FormGroup>
 
 
@@ -77,7 +78,7 @@ state = {
                           onChange={this.onChange}
                           name='password'
                           value={passwordvalue}/>
-                          <FormText>Wrong Password</FormText>
+                          <FormText className={classes.formtext}>Wrong Password</FormText>
                       </FormGroup>
                         <Form.Group controlId="formBasicChecbox">
                             <Form.Check type="checkbox" label={Messages.remember} />
