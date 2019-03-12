@@ -24,7 +24,6 @@ import search from '../../../assets/images/search.png';
 import {NavbarDropdown} from './NavbarDropdown';
 import {SignUp} from './SignUp';
 import {SighInButton} from './SighInButton';
-import {LogOut} from './LogOut';
 import {ColappseUserIcon} from './CollapseUserButton/ColappseUserIcon';
 
 import {Messages} from '../../Messages';
@@ -50,11 +49,6 @@ class Navbare extends React.Component {
     onchangeSearch = (event) => {
         this.context.appStore.searchValue = event.target.value;
     }
-    toggle(e) {
-        this.setState({
-            dropdownOpen: e.target.getAttribute('data-name')
-        });
-    }
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
@@ -79,8 +73,8 @@ class Navbare extends React.Component {
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar className={navCss.mainMenu} >
                             <Nav className="mr-auto" navbar className={navCss.nav}>
-                                {navs.map((nav) => (
-                                    <NavbarDropdown nav={nav} />
+                                {navs.map((nav, i) => (
+                                    <NavbarDropdown key={i} nav={nav} />
                                 ))}                         
                                 <InputGroup className={navCss.inputSrch}>
                                     <Input placeholder={Messages.search} onBlur={this.onchangeSearch} className={navCss.search}/>

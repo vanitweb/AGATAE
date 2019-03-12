@@ -3,21 +3,26 @@ import {
     Button,
     Container,
     Row,
-    Col,
+    Col
 } from 'reactstrap';
 import {Form} from 'react-bootstrap';
-import classes from '../../../assets/styles/RegisterPage/RegisterPage.module.css';
+
 import { Header } from './Header';
+
 import { Messages } from '../../Messages';
 
+import classes from '../../../assets/styles/RegisterPage/RegisterPage.module.css';
 
 class RegisterPage extends Component {
+    submitRegistrForm = () => {
+        this.context.userStore.submitRegistrForm();
+    }
     render() {
         return (
             <Container className={classes.Reg_Page_Bg}>
                 <Row>
                     <Col md={5}>
-                    <Header/>
+                        <Header/>
                         <Form className={classes.mainForm}>
                             <Form.Group controlId="formBasicName">
                                 <Form.Label>{Messages.name}</Form.Label>
@@ -59,7 +64,7 @@ class RegisterPage extends Component {
 
 
                             <div>
-                                <Button variant="info" type="submit" ClassName="loginBtn" size="lg" block>
+                                <Button variant="info" type="submit" onClick={this.submitRegistrForm} ClassName="loginBtn" size="lg" block>
                                     {Messages.account}
                                 </Button>
                             </div>

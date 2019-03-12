@@ -1,38 +1,38 @@
 import React, { Component } from 'react';
-import {PersonalPageUsers} from'../PersonalPageUsers/PersonalPageUsers';
-import {PersonalPageTeachers} from'../PersonalPageTeachers/PersonalPageTeachers';
-
 import {
-    Button,
     Container,
     Row, 
     Col
 } from 'reactstrap';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
-import tStyle from '../../../assets/styles/TeacherPage/TeacherPage.module.css';
+import {observable} from 'mobx';
+
+import {PersonalPageUsers} from'../PersonalPageUsers/PersonalPageUsers';
+import {PersonalPageTeachers} from'../PersonalPageTeachers/PersonalPageTeachers';
 import {MainTabs} from './MainTabs';
 import {Messages} from '../../Messages';
-import {observable} from 'mobx';
+
+import tStyle from '../../../assets/styles/TeacherPage/TeacherPage.module.css';
 
 @observer
 class TeacherPage extends Component {
-	
-	static contextTypes = {
+    
+    static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
-	componentDidMount() {
-		this.context.appStore.teacherID = this.props.match.params.username;
+    componentDidMount() {
+        this.context.appStore.teacherID = this.props.match.params.username;
     }
-    @observable istrue = false;
+    @observable istrue = true;
     render() {
         let element;
         if(this.istrue) {
-            element = <PersonalPageUsers /> 
+            element = <PersonalPageUsers />; 
         } else {
-            element = <PersonalPageTeachers /> 
+            element = <PersonalPageTeachers />; 
         }
-		const {teacher, teacherID} = this.context.appStore;
+        const {teacher, teacherID} = this.context.appStore;
         return (
             !!teacherID && <Container className={tStyle.main}>
                 <Row className="justify-content-lg-left">    
@@ -46,8 +46,8 @@ class TeacherPage extends Component {
                         {element}
                     </Col>
                     <Col lg={true}>
-                    	<img className={tStyle.teacherImage} src={teacher.photo} width="250" height="300" alt="Your Teacher"/>
-                    	<MainTabs teacher={teacher}/>
+                        <img className={tStyle.teacherImage} src={teacher.photo} width="250" height="300" alt="Your Teacher"/>
+                        <MainTabs teacher={teacher}/>
                     </Col>
                 </Row>
             </Container>

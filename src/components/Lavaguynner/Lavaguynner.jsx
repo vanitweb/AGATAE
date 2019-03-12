@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {observer} from 'mobx-react';
-import {Container} from 'reactstrap';
 import PropTypes from 'prop-types';
 
 import {Cards} from './Cards';
@@ -19,12 +18,12 @@ class Lavaguynner extends Component {
             this.context.appStore.subjectName = this.context.appStore.getKeyByValue(Constants, this.props.match.params.category);	
         }
     }
-	componentDidUpdate(prevProps) {
-		if(!this.props.value){
-		if(prevProps.category !== this.props.match.params.category) {
-			this.context.appStore.subjectName = this.context.appStore.getKeyByValue(Constants, this.props.match.params.category);
-		}
-	}}
+    componentDidUpdate(prevProps) {
+        if(!this.props.value){
+            if(prevProps.category !== this.props.match.params.category) {
+                this.context.appStore.subjectName = this.context.appStore.getKeyByValue(Constants, this.props.match.params.category);
+            }
+        }}
     render() {
         const {subjectName} = this.context.appStore;
         return(
