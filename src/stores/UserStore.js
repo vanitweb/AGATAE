@@ -10,7 +10,6 @@ class UserStore {
 		authentification:{
 			email: '',
 			password: '',
-			ValidMail: false,
 			
 		},
 		userData: {
@@ -49,13 +48,11 @@ class UserStore {
     submitLogForm(){
     	if(this.validateAuthForm()){
 		    this.logForm();
-		}
-<<<<<<< HEAD
-		else alert("voch korekt login kam password");
-		this.authentification.ValidMail = true;
-=======
-		else alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
->>>>>>> 61f13cb305176bb3ed208404d1913e7bb3251cc0
+		}else
+
+		 alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
+		
+
     };
 	
 	logTeachers = (teacher) => {

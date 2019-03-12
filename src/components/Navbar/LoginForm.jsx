@@ -38,19 +38,17 @@ state = {
        this.context.userStore.isValid();
     }
 
-
-    submitForm = () => {
-      this.context.userStore.submitForm();
-          this.setState({
+    submitLogForm = () => {
+        this.context.userStore.submitLogForm();
+        	  this.setState({
           validMail: true,
           validPassword:true,
         });
-      }
-
+    }
 
     render() {
   
-   const {validMail} = this.state;
+   const {ValidMail} = this.context.userStore;
     const{Emailvalue}= this.context.userStore;
     const{passwordvalue}= this.context.userStore;
     console.log(this.context);
@@ -58,7 +56,7 @@ state = {
             <Container>
                 <Row className="justify-content-md-center">
                     <Form onSubmit={this.handleSubmit}>
-                      <FormGroup>
+                       <FormGroup>
                         <Label for="exampleEmail">{Messages.mail}</Label>
                           <Input 
                           type="email"
@@ -66,7 +64,7 @@ state = {
                           onChange={this.onChange}
                           name="email"
                           value={Emailvalue}/>
-                          <FormText>Invalid Email</FormText>
+                          <FormText>Invalid e-mail address</FormText>
                       </FormGroup>
 
                          <FormGroup>
