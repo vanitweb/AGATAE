@@ -12,8 +12,7 @@ import {
 import {Messages} from '../../Messages';
 
 import {teachers} from '../../data/data.js';
-//import {Cookies} from '../../Cookies/Cookies.jsx';
-//import {PersonalPageTeachers} from '../PersonalPageTeachers/PersonalPageTeachers.js';
+
 
 import '../../../assets/styles/PersonalPageUsers/PersonalPageUsers.css';
 
@@ -25,10 +24,13 @@ class PersonalPageUsers extends Component {
 	onClick = (event) => {
 		event.target.disabled = true;
 		for(let i = 0; i <teachers.lenght; i++) {
-			if(!cookie.username) {
+			if(!document.cookie.email && !document.cookie.password) {
 				return <h3>{Messages.dontRegister}</h3>;
 			}
-			else if(document.cookie.username === teachers[i].username){
+			else if(document.cookie.email === teachers[i].email && document.cookie.password === teacher[i].password){
+				teacher[i].currentGraphic.push(teacher[i].graphic.day);
+				teacher[i].currentGraphic.push(teacher[i].graphic.time);
+				
 				return teachers[i];
 			}
 		}

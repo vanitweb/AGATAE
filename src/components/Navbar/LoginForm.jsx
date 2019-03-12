@@ -38,14 +38,15 @@ state = {
        this.context.userStore.isValid();
     }
 
+
     submitForm = () => {
-      if(this.context.userStore.submitForm()){
+      this.context.userStore.submitForm();
           this.setState({
           validMail: true,
           validPassword:true,
         });
       }
-    }
+
 
     render() {
   
@@ -82,7 +83,7 @@ state = {
                             <Form.Check type="checkbox" label={Messages.remember} />
                         </Form.Group>
                         <div>
-                            <Button variant="dark" type="submit" fullWidth ClassName="loginBtn" onClick={this.submitForm}>
+                            <Button variant="dark" type="submit" fullWidth ClassName="loginBtn" onClick={this.submitLogForm}>
                                 {Messages.mutq}
                             </Button>
                         </div>

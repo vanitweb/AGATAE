@@ -11,7 +11,13 @@ import { Header } from './Header';
 import { Messages } from '../../Messages';
 
 
+
 class RegisterPage extends Component {
+	submitRegistrForm = () => {
+		debugger
+        this.context.userStore.submitRegistrForm();
+		debugger
+    }
     render() {
         return (
             <Container className={classes.Reg_Page_Bg}>
@@ -59,7 +65,7 @@ class RegisterPage extends Component {
 
 
                             <div>
-                                <Button variant="info" type="submit" ClassName="loginBtn" size="lg" block>
+                                <Button variant="info" type="submit"  onClick={this.submitRegistrForm} ClassName="loginBtn" size="lg" block>
                                     {Messages.account}
                                 </Button>
                             </div>
