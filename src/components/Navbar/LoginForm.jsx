@@ -49,30 +49,26 @@ state = {
     render() {
     const{Emailvalue}= this.context.userStore;
     const{validMail}= this.state;
-    const{passwordvalue}= this.context.userStore;
+    const{passwordvalue,error}= this.context.userStore;
+
     console.log(this.context);
 
         return (
             <Container>
                 <Row className="justify-content-md-center">
                     <Form onSubmit={this.handleSubmit}>
+                    <Label for="email">{Messages.mail}</Label>
+                       <FormGroup>
+                          <Input invalid={error.email}
+                          type="email"
+                          placeholder={Messages.mail}
+                          onChange={this.onChange}
+                          name="email"
+                          value={Emailvalue} /> 
+                          {error.email && <FormText>Invalid e-mail address</FormText>}
+                          </FormGroup>
 
-                      {!validMail ? <FormGroup>
-                        <Label for="exampleEmail">{Messages.mail}</Label>
-                          <Input 
-                          type="email"
-                          placeholder={Messages.mail}
-                          onChange={this.onChange}
-                          name="email"
-                          value={Emailvalue}/></FormGroup>: <FormGroup>
-                          <Input invalid
-                          type="email"
-                          placeholder={Messages.mail}
-                          onChange={this.onChange}
-                          name="email"
-                          value={Emailvalue} />
-                          <FormText>Invalid e-mail address</FormText>
-                          </FormGroup>}
+
                          <FormGroup>
                         <Label for="PassWord">{Messages.password}</Label>
                           <Input 
