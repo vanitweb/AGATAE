@@ -1,6 +1,6 @@
 .inputSrch {
     min-width: 150px;
-    margin-top: 17px;
+    margin-top: 14px;
     padding: 5px;
 }
 .btn {
@@ -24,10 +24,10 @@
     width: 100%;
 	padding-top: 0;
 	padding-bottom: 0;
-	background-color: grey;
+	background-color: rgb(98,98,98);
 }
 .mainMenu li {
-    font-size: 18px;
+    font-size: 16px;
 	padding: 15px 20px;
 	list-style: none;
 }

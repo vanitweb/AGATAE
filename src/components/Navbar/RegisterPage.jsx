@@ -3,21 +3,27 @@ import {
     Button,
     Container,
     Row,
-    Col
+    Col,
 } from 'reactstrap';
 import {Form} from 'react-bootstrap';
 import classes from '../../../assets/styles/RegisterPage/RegisterPage.module.css';
 import { Header } from './Header';
 import { Messages } from '../../Messages';
 
+
+
 class RegisterPage extends Component {
+	submitRegistrForm = () => {
+		debugger
+        this.context.userStore.submitRegistrForm();
+		debugger
+    }
     render() {
         return (
             <Container className={classes.Reg_Page_Bg}>
                 <Row>
-                    <Col md={7}></Col>
                     <Col md={5}>
-                        <Header/>
+                    <Header/>
                         <Form className={classes.mainForm}>
                             <Form.Group controlId="formBasicName">
                                 <Form.Label>{Messages.name}</Form.Label>
@@ -50,17 +56,23 @@ class RegisterPage extends Component {
                                 <Form.Control type="password" placeholder={Messages.password2} />
                             </Form.Group>
                             <Form.Group controlId="formBasicChecbox">
-                                <Form.Check type="checkbox" label={Messages.pupil} />
+                                <Form.Check type="radio" className={classes.radioBtn} name="radioBtn"/>
+                                {Messages.pupil}
                             </Form.Group>
                             <Form.Group controlId="formBasicChecbox">
-                                <Form.Check type="checkbox" label={Messages.teacher} />
+                                <Form.Check type="radio" className={classes.radioBtn} name="radioBtn"/>{Messages.teacher}
                             </Form.Group>
+
+
                             <div>
-                                <Button variant="info" type="submit" ClassName="loginBtn" size="lg" block>
+                                <Button variant="info" type="submit"  onClick={this.submitRegistrForm} ClassName="loginBtn" size="lg" block>
                                     {Messages.account}
                                 </Button>
                             </div>
                         </Form>
+
+                    </Col>
+                    <Col md={7}>
                     </Col>
                 </Row>
             </Container>

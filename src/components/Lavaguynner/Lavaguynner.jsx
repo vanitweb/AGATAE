@@ -19,10 +19,16 @@ class Lavaguynner extends Component {
             this.context.appStore.subjectName = this.context.appStore.getKeyByValue(Constants, this.props.match.params.category);	
         }
     }
+	componentDidUpdate(prevProps) {
+		if(!this.props.value){
+		if(prevProps.category !== this.props.match.params.category) {
+			this.context.appStore.subjectName = this.context.appStore.getKeyByValue(Constants, this.props.match.params.category);
+		}
+	}}
     render() {
         const {subjectName} = this.context.appStore;
         return(
-            !!subjectName && <div className="container">
+            <div className="container">
                 <h1 className='subject'>{subjectName}</h1>
                 <Cards/>
             </div>

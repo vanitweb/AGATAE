@@ -65,6 +65,7 @@ class Navbare extends React.Component {
             dropdownOpen: !this.state.dropdownOpen
         });
     }
+    
     render() {
         return (
             <Container>
@@ -98,7 +99,6 @@ class Navbare extends React.Component {
                             <div className={navCss.dropButtons}>
                                 <SighInButton/>
                                 <SignUp/>
-                                <LogOut/>
                             </div>
                         </Collapse>
                     </Navbar>

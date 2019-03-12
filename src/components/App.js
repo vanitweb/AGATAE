@@ -67,6 +67,9 @@ class App extends Component {
             userStore: this.userStore
         };
     }
+	isCookieTrue () {
+		
+	}
     componentDidMount() {
         this.appStore.initData();
     }

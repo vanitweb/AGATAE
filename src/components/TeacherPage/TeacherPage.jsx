@@ -13,16 +13,25 @@ import PropTypes from 'prop-types';
 import tStyle from '../../../assets/styles/TeacherPage/TeacherPage.module.css';
 import {MainTabs} from './MainTabs';
 import {Messages} from '../../Messages';
+import {observable} from 'mobx';
 
 @observer
 class TeacherPage extends Component {
+	
 	static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
 	componentDidMount() {
 		this.context.appStore.teacherID = this.props.match.params.username;
     }
+    @observable istrue = false;
     render() {
+        let element;
+        if(this.istrue) {
+            element = <PersonalPageUsers /> 
+        } else {
+            element = <PersonalPageTeachers /> 
+        }
 		const {teacher, teacherID} = this.context.appStore;
         return (
             !!teacherID && <Container className={tStyle.main}>
@@ -34,7 +43,7 @@ class TeacherPage extends Component {
                         <p>{Messages.age} {teacher.age}</p>
                         <p>{Messages.company} {teacher.company}</p>
                         <p>{Messages.aboutMe} {teacher.aboutMe}</p>
-                        <PersonalPageUsers teacher={teacher}/>
+                        {element}
                     </Col>
                     <Col lg={true}>
                     	<img className={tStyle.teacherImage} src={teacher.photo} width="250" height="300" alt="Your Teacher"/>
