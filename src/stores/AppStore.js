@@ -22,9 +22,9 @@ class AppStore {
         this.isDataInitialized = true;
     };
     @computed get subjectData() {
-		if(!this.subjectName) {
-			return this.filterOnlyTeachers.filter(item => item.name.toLowerCase().includes(this.searchValue.toLowerCase()));
-		}
+        if(!this.subjectName) {
+            return this.filterOnlyTeachers.filter(item => item.name.toLowerCase().includes(this.searchValue.toLowerCase()));
+        }
         return this.filterOnlyTeachers.filter(item => item.subject === this._subjectName && item.name.toLowerCase().includes(this.searchValue.toLowerCase()));
     }
     @computed get bestTeachers() {

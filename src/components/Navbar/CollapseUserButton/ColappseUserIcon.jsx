@@ -10,33 +10,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class ColappseUserIcon extends React.Component {
     constructor(props) {
-    super(props);
-    this.toggle = this.toggle.bind(this);
-    this.state = { collapse: false };
-  }
+        super(props);
+        this.toggle = this.toggle.bind(this);
+        this.state = { collapse: false };
+    }
 
-  toggle() {
-    this.setState({ collapse: !this.state.collapse });
-  }
+    toggle() {
+        this.setState({ collapse: !this.state.collapse });
+    }
 
-  render() {
-    return (
-      <div>
-        <Button color="outline-success" onClick={this.toggle}>
-        <FontAwesomeIcon icon="user" /></Button>
-        <Collapse isOpen={this.state.collapse}>
-          <Card className={dropUser.card}>
-            <CardBody>
-            <SighInButton/>
-            <SignUp/>
-            <LogOut/>
+    render() {
+        return (
+            <div>
+                <Button color="outline-success" onClick={this.toggle}>
+                    <FontAwesomeIcon icon="user" /></Button>
+                <Collapse isOpen={this.state.collapse}>
+                    <Card className={dropUser.card}>
+                        <CardBody>
+                            <SighInButton/>
+                            <SignUp/>
+                            <LogOut/>
            
-            </CardBody>
-          </Card>
-        </Collapse>
-      </div>
-    );
-  }
+                        </CardBody>
+                    </Card>
+                </Collapse>
+            </div>
+        );
+    }
 }
 
 export {ColappseUserIcon};

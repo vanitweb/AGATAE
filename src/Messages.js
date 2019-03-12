@@ -50,9 +50,9 @@ const Messages = {
     toRegister: 'Հերթագրել',
     search: 'ՓՆՏՐԵԼ . . .',
     arajatar: 'ՄԵՐ ԱՌԱՋԱՏԱՐՆԵՐԸ',
-	dontRegister: 'Դուք դեռ գրանցված չեք!',
-	confirm: 'Հաստատել',
-	cansel: 'Չեղարկել',
-	phoneNum: 'Հեռ.'
+    dontRegister: 'Դուք դեռ գրանցված չեք!',
+    confirm: 'Հաստատել',
+    cansel: 'Չեղարկել',
+    phoneNum: 'Հեռ.'
 };
 export {Messages};

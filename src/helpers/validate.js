@@ -1,16 +1,16 @@
 
 const validators = {
-	isEmailValid: function(value) {
-		debugger;
-		return value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-	},
-	isPasswordValid: function(value) {
+    isEmailValid: function(value) {
+        debugger;
+        return value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+    },
+    isPasswordValid: function(value) {
 
-		debugger;
-		return value.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/i);
-	},
+        debugger;
+        return value.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/i);
+    },
 	
-	isCorrectName: function(value) {
+    isCorrectName: function(value) {
     	debugger;
     	return value.match(/([A-Z])\w+/);
     },
@@ -27,8 +27,8 @@ const validators = {
     	return usersPassword;
     },
     isConfirmedPasswordValid: function(value) {
-		return value === usersPassword;
-	},
+        return value === usersPassword;
+    }
 	
 };
 

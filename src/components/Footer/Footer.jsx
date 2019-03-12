@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+
 import logo from '../../../assets/images/mainLogo.png';
-import ftrStyle from '../../../assets/styles/Footer/footer.module.css';
+
 import {FontIcons} from './FontIcons';
 import {Messages} from '../../Messages';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ftrStyle from '../../../assets/styles/Footer/footer.module.css';
 
 class Footer extends Component {
     render() {
@@ -22,11 +23,11 @@ class Footer extends Component {
                             <p>{Messages.email}</p>
                             <p>{Messages.phone}</p>
                         </Col>
-                        <Col lg={6} md={5} sm={7} xl='auto'  className={ftrStyle.aboutSite}>
+                        <Col lg={6} md={5} sm={7} xl='auto' className={ftrStyle.aboutSite}>
                             <h5>{Messages.aboutSite}</h5>
                             <FontIcons />
                         </Col>
-                        <Col  lg={3} md={3} sm={7}  xl='auto' className={ftrStyle.ftrLi}>
+                        <Col lg={3} md={3} sm={7} xl='auto' className={ftrStyle.ftrLi}>
                             <h6>{Messages.abouteUs}</h6>
                             <ul>
                                 <li ><a href="https://www.facebook.com/adrine.setaghyan" target="_blanc">{Messages.adrine}</a></li>

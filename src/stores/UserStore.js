@@ -2,103 +2,103 @@ import {extendObservable, computed, action} from 'mobx';
 
 import {validators} from '../helpers/validate';
 import {setCookie, getCookie} from '../helpers/cookies';
-import {teachers} from '../data/data'
+import {teachers} from '../data/data';
 
 class UserStore {
 	
 	storData = {
-		authentification:{
-			email: '',
-			password: '',
-		},
-		userData: {
-			name: '',
-			surname: '',
-			email: '',
-			phoneNumber: '',
-			createPassword: '',
-			confirmPassword: '',
-			isMember: false,
-			isTeacher: false,
-		},
+	    authentification:{
+	        email: '',
+	        password: ''
+	    },
+	    userData: {
+	        name: '',
+	        surname: '',
+	        email: '',
+	        phoneNumber: '',
+	        createPassword: '',
+	        confirmPassword: '',
+	        isMember: false,
+	        isTeacher: false
+	    },
 		
-		error: {},
+	    error: {}
 		
 	}; 
 
 	constructor() {
-        extendObservable(this, this.storData);
-    }
+	    extendObservable(this, this.storData);
+	}
 	setAuthField = (name, value) => {
-		this.authentification[name] = value;
+	    this.authentification[name] = value;
 	};
 	setUserDataField = (name, value) => {
-		this.userData[name] = value;
+	    this.userData[name] = value;
 	};
 	
 	submitRegistrForm() {
-		//if(this.validateUserData()){
-			debugger
-			this.registerForm();
-		//}
-		//else alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
+	    //if(this.validateUserData()){
+	    debugger;
+	    this.registerForm();
+	    //}
+	    //else alert("Ոչ կոռեկտ էլեկտրոնային հասցե կամ գաղտնաբառ");
 	}
 	
-    submitLogForm(){
+	submitLogForm(){
     	if(this.validateAuthForm()){
 		    this.logForm();
-		}
-    };
+	    }
+	}
 	
 	logTeachers = (teacher) => {
-		debugger
-		return((this.authentification.email===teacher.email)&&(this.authentification.password===teacher.password))
+	    debugger;
+	    return((this.authentification.email===teacher.email)&&(this.authentification.password===teacher.password));
 	};
 	
 	 registorTeachers = (teacher) => {
-		return(this.authentification.email===teacher.email);
-	};
+	     return(this.authentification.email===teacher.email);
+	 };
   
   @action
 	validateAuthForm = () => {
-		this.error.email = !validators.isEmailValid(this.authentification.email);
-		this.error.password = !validators.isPasswordValid(this.authentification.password);
-		return !this.error.email && !this.error.password;
+	    this.error.email = !validators.isEmailValid(this.authentification.email);
+	    this.error.password = !validators.isPasswordValid(this.authentification.password);
+	    return !this.error.email && !this.error.password;
 		
 	};
   @action
 	logForm =() => {
-		debugger
-		let user = teachers.find(this.logTeachers);
-		debugger
-		if(user === undefined) {
-			alert("Մուտքային տվյալերը սխալ են")
-		}
-		else {
-			debugger
-			setCookie(this.authentification.email, this.authentification.password);
-			debugger
-			getCookie(this.authentification.email);
-		}
+	    debugger;
+	    let user = teachers.find(this.logTeachers);
+	    debugger;
+	    if(user === undefined) {
+	        alert('Մուտքային տվյալերը սխալ են');
+	    }
+	    else {
+	        debugger;
+	        setCookie(this.authentification.email, this.authentification.password);
+	        debugger;
+	        getCookie(this.authentification.email);
+	    }
 	};
 	
     @action
 	registerForm = () => {
-		let user = teachers.find(this.registorTeachers)
-		if (user === undefined){
-			let teacher = new Object();
-			this.userData.name = teacher.name;
-			this.userData.surname = teacher.surname;
-			this.userData.email = teacher.email;
-			this.userData.phoneNumber = teacher.phoneNumber;
-			this.userData.createPassword = teacher.createPassword;
-			this.userData.confirmPassword = teacher.confirmPassword;
-			debugger
-			this.userData.isTeacher = teacher.isTeacher;
-		}
-		else {
-			alert("tvyal email-ov arden grancvac user ka, xndrum em ayl email greq")
-		}
+	    let user = teachers.find(this.registorTeachers);
+	    if (user === undefined){
+	        let teacher = new Object();
+	        this.userData.name = teacher.name;
+	        this.userData.surname = teacher.surname;
+	        this.userData.email = teacher.email;
+	        this.userData.phoneNumber = teacher.phoneNumber;
+	        this.userData.createPassword = teacher.createPassword;
+	        this.userData.confirmPassword = teacher.confirmPassword;
+	        debugger;
+	        this.userData.isTeacher = teacher.isTeacher;
+	    }
+	    else {
+	        alert('tvyal email-ov arden grancvac user ka, xndrum em ayl email greq');
+	    }
 	}
 	
 	@action
@@ -113,5 +113,5 @@ class UserStore {
 	    	    !this.error.phoneNumber && !this.error.createPassword && !this.error.confirmPassword;
 	    };
 
-};
+}
 export {UserStore};

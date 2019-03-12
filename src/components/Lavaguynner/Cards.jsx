@@ -18,7 +18,6 @@ import {Messages} from '../../Messages';
 
 import '../../../assets/styles/Lavaguynner/Lavaguynner.css';
 
-
 @observer
 class Cards extends Component {
     static contextTypes = {
@@ -30,7 +29,7 @@ class Cards extends Component {
             <CardDeck inverse className="cardContent">
                 {currentTeachers.map((item,i) => {
                     return (
-                        <Col sm={6} md={4} lg={3} className="pt-4">
+                        <Col key={i} sm={6} md={4} lg={3} className="pt-4">
                             <Card key={i} className={`card${i % 2}`}>
                                 <CardImg top className="cardImg" src={item.photo}/>
                                 <CardBody className="text-center">

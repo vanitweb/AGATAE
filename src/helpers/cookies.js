@@ -1,24 +1,24 @@
-import {teachers} from './../data/data'
+import {teachers} from './../data/data';
 import React, { Component } from 'react';
-import cookie from 'react-cookies'
+import cookie from 'react-cookies';
 
 
 function setCookie(email, password, exdays=1) {
-  debugger
-  let d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  var expires = "expires=" + d.toGMTString();
-  debugger
-  document.cookie = "email=" + email ; "password=" + password ; expires;
+    debugger;
+    let d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = `expires=${d.toGMTString()}`;
+    debugger;
+    document.cookie = `email=${email}` ; `password=${password}` ; expires;
 }
 
 function getCookie(name) {
-	debugger
-  let email = document.cookie.match(new RegExp(
-    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-  ));
-  debugger
-  return email ? decodeURIComponent(email[1]) : undefined;
+    debugger;
+    let email = document.cookie.match(new RegExp(
+    `(?:^|; )${name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1')}=([^;]*)`
+    ));
+    debugger;
+    return email ? decodeURIComponent(email[1]) : undefined;
 }
 
 /*function checkCookie() {
@@ -33,4 +33,4 @@ function getCookie(name) {
   }
 } */
 
-export {setCookie, getCookie}
+export {setCookie, getCookie};

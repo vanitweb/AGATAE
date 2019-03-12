@@ -11,9 +11,6 @@ import {
 
 import {Messages} from '../../Messages';
 
-import {teachers} from '../../data/data.js';
-
-
 import '../../../assets/styles/PersonalPageUsers/PersonalPageUsers.css';
 
 @observer
@@ -21,24 +18,24 @@ class PersonalPageUsers extends Component {
     static contextTypes = {
         appStore: PropTypes.object.isRequired
     };
-	onClick = (event) => {
-		event.target.disabled = true;
-		for(let i = 0; i <teachers.lenght; i++) {
-			if(!document.cookie.email && !document.cookie.password) {
-				return <h3>{Messages.dontRegister}</h3>;
-			}
-			else if(document.cookie.email === teachers[i].email && document.cookie.password === teacher[i].password){
-				teacher[i].currentGraphic.push(teacher[i].graphic.day);
-				teacher[i].currentGraphic.push(teacher[i].graphic.time);
-				
-				return teachers[i];
-			}
-		}
-		console.log(teachers[0]);
-	}
+    onClick = (event) => {
+        event.target.disabled = true;
+        /*for(let i = 0; i <teachers.lenght; i++) {
+            if(!document.cookie.email && !document.cookie.password) {
+                return <h3>{Messages.dontRegister}</h3>;
+            }
+            else if(document.cookie.email === teachers[i].email && document.cookie.password === teacher[i].password){
+                teacher[i].currentGraphic.push(teacher[i].graphic.day);
+                teacher[i].currentGraphic.push(teacher[i].graphic.time);
+                
+                return teachers[i];
+            }
+        }
+        console.log(teachers[0]);*/
+    }
     render() {
         const {teacher} = this.context.appStore;
-		return (
+        return (
             <Container>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
@@ -57,7 +54,7 @@ class PersonalPageUsers extends Component {
                             <tbody>
                                 {teacher.graphic.map((item, i) => {
                                     return(
-                                        <tr>
+                                        <tr key={i}>
                                             <th scope="row">{i + 1}</th>
                                             <td>{item.day}</td>
                                             <td>{item.time}</td>

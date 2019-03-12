@@ -17,13 +17,13 @@ class SighInButton extends Component {
                     color="light"
                     onClick={() => this.setState({ modalShow: true })}
                 >
-				{Messages.mutq}
+                    {Messages.mutq}
                 </Button>
                 <SignIn
                     show={this.state.modalShow}
                     onHide={modalClose}
                 />
-           </div>
+            </div>
         );
     }
 }

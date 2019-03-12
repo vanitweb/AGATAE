@@ -14,7 +14,6 @@ import {RegisterPage} from './Navbar/RegisterPage';
 import {Lavaguynner} from './Lavaguynner/Lavaguynner';
 import {ErrorPage} from './Error';
 import {TeacherPage} from './TeacherPage/TeacherPage';
-import { Icons } from '../components/Navbar/Icons/Icons';
 
 import '../../assets/styles/App.css';
 
@@ -67,30 +66,15 @@ class App extends Component {
             userStore: this.userStore
         };
     }
-	isCookieTrue () {
-		
-	}
     componentDidMount() {
         this.appStore.initData();
     }
-    drawClickHandler = () => {
-        this.setState((prevState) => {
-            return {sideDrowOpen: !prevState.sideDrowOpen};
-        });
-    };
-    backdropClickHendler = () => {
-        this.setState({sideDrowOpen: false});
-    };
     render() {
-        let backDrop;
-        if (this.state.sideDrowOpen) {
-            backDrop = <BackDrop click={this.backdropClickHendler}/>;
-        }
         const routeComponents = routes.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
         return (
             <BrowserRouter>
                 {this.appStore.isDataInitialized && <div className="App">
-                    <Navbare drawClick={this.drawClickHandler} />
+                    <Navbare />
                     <div className="appContent">
                         <Switch>
                             {routeComponents}

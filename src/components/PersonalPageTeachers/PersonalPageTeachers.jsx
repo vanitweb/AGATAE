@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
-import {Messages} from '../../Messages';
 import {
     Button,
     Container,
@@ -10,7 +9,7 @@ import {
     Table 
 } from 'reactstrap';
 
-
+import {Messages} from '../../Messages';
 
 @observer
 class PersonalPageTeachers extends Component {
@@ -18,10 +17,9 @@ class PersonalPageTeachers extends Component {
         appStore: PropTypes.object.isRequired
     };
     render() {
-		/*const {teacher[i]} = this.props;*/
         const {teacher} = this.context.appStore;
-		return (
-		    <Container>
+        return (
+            <Container>
                 <Row className="justify-content-lg-left">    
                     <Col xs={8}>
                         <h5>{Messages.grafik}</h5>
@@ -33,29 +31,29 @@ class PersonalPageTeachers extends Component {
                                     <th>{Messages.vandak}</th>
                                     <th>{Messages.pupilsName}</th>
                                     <th>{Messages.mail}</th>
-									<th>{Messages.phoneNum}</th>
-									<th>{Messages.day}</th>
-									<th>{Messages.hour}</th>
-									<th>{Messages.toRegister}</th>
-								 </tr>
+                                    <th>{Messages.phoneNum}</th>
+                                    <th>{Messages.day}</th>
+                                    <th>{Messages.hour}</th>
+                                    <th>{Messages.toRegister}</th>
+                                </tr>
                             </thead>
                             <tbody>
                                 {teacher.currentGraphic.map((item, i) => {
                                     return(
-                                        <tr>
+                                        <tr key={i}>
                                             <th scope="row">{i + 1}</th>
                                             <td>{item.name}</td>
                                             <td>{item.email}</td>
-											<td>{item.phone}</td>
-											<td>{item.day}</td>
-											<td>{item.time}</td>
+                                            <td>{item.phone}</td>
+                                            <td>{item.day}</td>
+                                            <td>{item.time}</td>
                                             <td>
-											    <Button color="info">
-											        {Messages.confirm}
-												</Button>
-												<Button color="info">    {Messages.cansel}
-												</Button>
-											</td>
+                                                <Button color="info">
+                                                    {Messages.confirm}
+                                                </Button>
+                                                <Button color="info">    {Messages.cansel}
+                                                </Button>
+                                            </td>
                                         </tr>
                                     );
                                 })}

@@ -6,23 +6,23 @@ import { Messages } from '../../Messages';
 import classes from '../../../assets/styles/RegisterPage/LoginForm.module.css';
 
 const initialState = {
-  name: "",
-  email: "",
-  password: "",
-  nameError: "",
-  emailError: "",
-  passwordError: ""
+    name: '',
+    email: '',
+    password: '',
+    nameError: '',
+    emailError: '',
+    passwordError: ''
 };
 
 class LoginForm extends Component {
 state = {
     validMail: false,
-    validPassword: true,
+    validPassword: true
   
-  }
+}
 	static contextTypes = {
-    userStore: PropTypes.object   
-  }
+	    userStore: PropTypes.object   
+	}
 
     onChange = (e) => {
         const name = e.target.name;
@@ -36,50 +36,50 @@ state = {
 	
 	
     errorClass(error) {
-       this.context.userStore.isValid();
+        this.context.userStore.isValid();
     }
 
     submitLogForm = () => {
         this.context.userStore.submitLogForm();
         	  this.setState({
-          validMail: true,
-          validPassword:true,
+            validMail: true,
+            validPassword:true
         });
     }
 
     render() {
-    const{Emailvalue}= this.context.userStore;
-    const{validMail}= this.state;
-    const{passwordvalue,error}= this.context.userStore;
+        const{Emailvalue}= this.context.userStore;
+        const{validMail}= this.state;
+        const{passwordvalue,error}= this.context.userStore;
 
-    console.log(this.context);
+        console.log(this.context);
 
         return (
             <Container>
                 <Row className="justify-content-md-center">
                     <Form onSubmit={this.handleSubmit}>
-                    <Label for="email">{Messages.mail}</Label>
-                       <FormGroup>
-                          <Input invalid={error.email}
-                          type="email"
-                          placeholder={Messages.mail}
-                          onChange={this.onChange}
-                          name="email"
-                          value={Emailvalue} /> 
-                          {error.email && <FormText className={classes.formtext}>Invalid e-mail address</FormText>}
-                          </FormGroup>
+                        <Label for="email">{Messages.mail}</Label>
+                        <FormGroup>
+                            <Input invalid={error.email}
+                                type="email"
+                                placeholder={Messages.mail}
+                                onChange={this.onChange}
+                                name="email"
+                                value={Emailvalue} /> 
+                            {error.email && <FormText className={classes.formtext}>Invalid e-mail address</FormText>}
+                        </FormGroup>
 
 
-                         <FormGroup>
-                        <Label for="PassWord">{Messages.password}</Label>
-                          <Input 
-                          type="password" 
-                          placeholder={Messages.password}
-                          onChange={this.onChange}
-                          name='password'
-                          value={passwordvalue}/>
-                          <FormText className={classes.formtext}>Wrong Password</FormText>
-                      </FormGroup>
+                        <FormGroup>
+                            <Label for="PassWord">{Messages.password}</Label>
+                            <Input 
+                                type="password" 
+                                placeholder={Messages.password}
+                                onChange={this.onChange}
+                                name='password'
+                                value={passwordvalue}/>
+                            <FormText className={classes.formtext}>Wrong Password</FormText>
+                        </FormGroup>
                         <Form.Group controlId="formBasicChecbox">
                             <Form.Check type="checkbox" label={Messages.remember} />
                         </Form.Group>
