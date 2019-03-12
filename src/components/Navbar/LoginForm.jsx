@@ -60,6 +60,7 @@ state = {
                         <Label for="exampleEmail">{Messages.mail}</Label>
                           <Input 
                           type="email"
+                          placeholder={Messages.mail}
                           onChange={this.onChange}
                           name="email"
                           value={Emailvalue}/></FormGroup>: <FormGroup>
