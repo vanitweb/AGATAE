@@ -1,6 +1,7 @@
 .inputSrch {
-    min-width: 150px;
-    margin-top: 14px;
+    min-width: 100px;
+    margin-top: 15px;
+    margin-right: -18px;
     padding: 5px;
 }
 .btn {
